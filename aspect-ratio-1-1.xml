@@ -1,0 +1,256 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <view name="screen">
+      <text name="clock">
+         <pos>0.75 0.02</pos>
+         <size>0.23 0.05</size>
+         <fontSize>0.035</fontSize>
+         <color>ffffff</color>
+         <alignment>right</alignment>
+         <fontPath>./_inc/fonts/FOT-NewRodin Pro DB.otf</fontPath>
+      </text>
+      <batteryIndicator name="batteryIndicator">
+         <pos>0.027 0.02</pos>
+         <size>0.10 0.05</size>
+         <fontSize>0.03</fontSize>
+         <color>ffffff</color>
+      </batteryIndicator>
+   </view>
+   <view name="system">
+      <carousel name="systemcarousel">
+         <type>horizontal</type>
+         <logoAlignment>center</logoAlignment>
+         <pos>-0.30 0.27</pos>
+         <size>1.3 0.2</size>
+         <logoSize>0.15 0.15</logoSize>
+         <maxLogoCount>5</maxLogoCount>
+         <defaultTransition>instant</defaultTransition>
+         <origin>0 0</origin>
+      </carousel>
+      <image name="e_system_content" extra="true">
+         <pos>0.35 0.56</pos>
+         <maxSize>0.12 0.16</maxSize>
+         <origin>0.5 0.5</origin>
+      </image>
+      <text name="e_system_name" extra="true">
+         <pos>0.42 0.49</pos>
+         <size>0.55 0.06</size>
+         <fontSize>0.06</fontSize>
+      </text>
+      <image name="e_metadata_line" extra="true">
+         <pos>0.42 0.57</pos>
+         <size>0.60 0.002</size>
+      </image>
+      <text name="systemInfo">
+         <pos>0.42 0.59</pos>
+         <size>0.55 0.05</size>
+         <fontSize>0.03</fontSize>
+      </text>
+   </view>
+    <view name="system,basic,detailed,video,grid">
+       <helpsystem name="help">
+          <pos>2 2</pos>
+       </helpsystem>
+        <image name="e_help_start_icon" extra="true">
+           <path>./_inc/images/help-button-start-XBOX.svg</path>
+           <pos>0.027 0.920</pos>
+           <maxSize>0.045 0.06</maxSize>
+           <origin>0 0</origin>
+           <color>ffffffcc</color>
+           <zIndex>90</zIndex>
+        </image>
+        <text name="e_help_start_text" extra="true">
+           <text>${helpMenu}</text>
+            <pos>0.079125 0.920</pos>
+           <size>0.20 0.06</size>
+           <fontSize>0.035</fontSize>
+           <color>ffffffcc</color>
+           <fontPath>./_inc/fonts/FOT-NewRodin Pro DB.otf</fontPath>
+           <alignment>left</alignment>
+           <verticalAlignment>center</verticalAlignment>
+           <zIndex>90</zIndex>
+        </text>
+        <image name="e_help_a_icon" extra="true">
+           <path>./_inc/images/help-button-a-switch.svg</path>
+           <pos>0.973 0.920</pos>
+           <maxSize>0.045 0.06</maxSize>
+           <origin>1 0</origin>
+           <color>ffffffcc</color>
+           <zIndex>90</zIndex>
+        </image>
+        <text name="e_help_a_text" extra="true">
+           <text>${helpSelect}</text>
+            <pos>0.919875 0.920</pos>
+           <size>0.42 0.06</size>
+           <fontSize>0.035</fontSize>
+           <color>ffffffcc</color>
+           <fontPath>./_inc/fonts/FOT-NewRodin Pro DB.otf</fontPath>
+           <alignment>right</alignment>
+           <verticalAlignment>center</verticalAlignment>
+           <origin>1 0</origin>
+           <zIndex>90</zIndex>
+        </text>
+    </view>
+   <view name="basic, detailed, video">
+      <image name="logo">
+         <path>${systemCarouselImagePath}/${system.theme}.png</path>
+         <default>${systemCarouselImagePath}/_default.png</default>
+         <pos>0.08 0.12</pos>
+         <maxSize>0.12 0.12</maxSize>
+         <origin>0.5 0.5</origin>
+         <zIndex>50</zIndex>
+      </image>
+      <textlist name="gamelist">
+         <pos>0.02 0.23</pos>
+         <size>0.25 0.65</size>
+         <alignment>left</alignment>
+         <horizontalMargin>0.04</horizontalMargin>
+         <fontSize>0.035</fontSize>
+         <fontPath>${fontRegular}</fontPath>
+         <selectorColor>ffffff22</selectorColor>
+         <selectedColor>ffffff</selectedColor>
+         <primaryColor>ffffff88</primaryColor>
+         <secondaryColor>ffffff44</secondaryColor>
+         <zIndex>50</zIndex>
+      </textlist>
+      <video name="md_video">
+         <pos>0.30 0.45</pos>
+         <maxSize>0.28 0.45</maxSize>
+         <origin>0.5 0.5</origin>
+         <zIndex>40</zIndex>
+      </video>
+      <image name="md_image">
+         <pos>0.30 0.45</pos>
+         <maxSize>0.28 0.45</maxSize>
+         <origin>0.5 0.5</origin>
+         <zIndex>39</zIndex>
+      </image>
+      <text name="md_name">
+         <pos>0.48 0.42</pos>
+         <size>0.48 0.06</size>
+         <fontSize>0.05</fontSize>
+         <fontPath>${fontBold}</fontPath>
+         <color>ffffff</color>
+         <alignment>left</alignment>
+         <zIndex>50</zIndex>
+      </text>
+      <image name="md_line" extra="true">
+         <path>${spacerImage}</path>
+         <pos>0.48 0.49</pos>
+         <size>0.48 0.002</size>
+         <color>ffffff88</color>
+         <zIndex>45</zIndex>
+      </image>
+      <image name="md_players_icon" extra="true">
+         <path>./_inc/images/icon-players.svg</path>
+         <pos>0.48 0.515</pos>
+         <maxSize>0.03 0.035</maxSize>
+         <color>ffffffaa</color>
+         <zIndex>50</zIndex>
+      </image>
+      <text name="md_players">
+         <pos>0.52 0.51</pos>
+         <size>0.15 0.04</size>
+         <fontSize>0.03</fontSize>
+         <fontPath>${fontRegular}</fontPath>
+         <color>ffffffaa</color>
+         <zIndex>50</zIndex>
+      </text>
+      <text name="md_genre">
+         <pos>0.48 0.56</pos>
+         <size>0.48 0.04</size>
+         <fontSize>0.025</fontSize>
+         <fontPath>${fontRegular}</fontPath>
+         <color>ffffffaa</color>
+         <alignment>left</alignment>
+         <zIndex>50</zIndex>
+      </text>
+      <text name="md_description"><pos>2 2</pos></text>
+      <text name="md_lbl_rating"><pos>2 2</pos></text>
+      <datetime name="md_releasedate"><pos>2 2</pos></datetime>
+      <text name="md_lbl_developer"><pos>2 2</pos></text>
+      <text name="md_developer"><pos>2 2</pos></text>
+      <text name="md_lbl_publisher"><pos>2 2</pos></text>
+      <text name="md_publisher"><pos>2 2</pos></text>
+      <text name="md_lbl_lastplayed"><pos>2 2</pos></text>
+      <datetime name="md_lastplayed"><pos>2 2</pos></datetime>
+      <text name="md_lbl_playcount"><pos>2 2</pos></text>
+      <text name="md_playcount"><pos>2 2</pos></text>
+      <text name="md_lbl_players"><pos>2 2</pos></text>
+      <text name="md_lbl_genre"><pos>2 2</pos></text>
+   </view>
+   <view name="grid">
+      <image name="logo">
+         <pos>2 2</pos>
+      </image>
+      <imagegrid name="gamegrid">
+         <pos>0.02 0.15</pos>
+         <size>0.22 0.75</size>
+         <padding>0.02 0.05 0.02 0.05</padding>
+         <autoLayout>1 3</autoLayout>
+         <scrollDirection>verticalCenter</scrollDirection>
+         <centerSelection>true</centerSelection>
+         <autoLayoutSelectedZoom>1.5</autoLayoutSelectedZoom>
+         <imageSource>marquee</imageSource>
+         <folderImage>./_inc/images/xmb_folder.png</folderImage>
+         <gameImage>./_inc/images/xmb_game.png</gameImage>
+         <zIndex>50</zIndex>
+      </imagegrid>
+      <gridtile name="default">
+         <size>0.18 0.24</size>
+         <padding>5 5</padding>
+         <backgroundCenterColor>00000000</backgroundCenterColor>
+         <backgroundEdgeColor>00000000</backgroundEdgeColor>
+      </gridtile>
+      <gridtile name="selected">
+         <backgroundCenterColor>00000000</backgroundCenterColor>
+         <backgroundEdgeColor>00000000</backgroundEdgeColor>
+      </gridtile>
+      <text name="md_name">
+         <pos>0.30 0.45</pos>
+         <size>0.65 0.08</size>
+         <fontSize>0.038</fontSize>
+         <fontPath>${fontBold}</fontPath>
+         <color>ffffff</color>
+         <alignment>left</alignment>
+         <zIndex>60</zIndex>
+      </text>
+      <image name="md_line" extra="true">
+         <path>${spacerImage}</path>
+         <pos>0.30 0.52</pos>
+         <size>0.70 0.002</size>
+         <color>ffffff88</color>
+         <zIndex>55</zIndex>
+      </image>
+      <text name="md_description">
+         <pos>0.30 0.54</pos>
+         <size>0.65 0.35</size>
+         <fontSize>0.025</fontSize>
+         <fontPath>${fontRegular}</fontPath>
+         <color>ffffffcc</color>
+         <alignment>left</alignment>
+         <multiLine>true</multiLine>
+         <zIndex>60</zIndex>
+      </text>
+      <image name="md_image">
+         <pos>0.5 0.5</pos>
+         <minSize>1 1</minSize>
+         <origin>0.5 0.5</origin>
+         <zIndex>1</zIndex>
+      </image>
+      <video name="md_video">
+         <pos>0.5 0.5</pos>
+         <minSize>1 1</minSize>
+         <origin>0.5 0.5</origin>
+         <delay>2.0</delay>
+         <zIndex>2</zIndex>
+      </video>
+      <image name="background_overlay" extra="true">
+         <path>${spacerImage}</path>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <color>00000088</color>
+         <zIndex>5</zIndex>
+      </image>
+   </view>
+</theme>

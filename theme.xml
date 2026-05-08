@@ -1,0 +1,129 @@
+<theme defaultView="grid">
+   <formatVersion>7</formatVersion>
+   <variables>
+      <fontRegular>./_inc/fonts/FOT-NewRodin Pro DB.otf</fontRegular>
+      <fontBold>./_inc/fonts/FOT-NewRodin Pro B.otf</fontBold>
+      <systemCarouselImagePath>./_inc/systems/controller</systemCarouselImagePath>
+      <systemContentImagePath>./_inc/systems/physical-media</systemContentImagePath>
+      <spacerImage>./_inc/images/white.png</spacerImage>
+      <backgroundImage>./_inc/images/background.png</backgroundImage>
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>SELECT</helpSelect>
+      <backgroundColor>0D0018</backgroundColor>
+      <systemBackgroundColor>0D0018</systemBackgroundColor>
+      <accentColor>7B2FBE</accentColor>
+      <systemLogoColor>ffffff</systemLogoColor>
+      <textColor>ffffff</textColor>
+      <gamelistPanelColor>0D001888</gamelistPanelColor>
+      <gamelistLogoColor>ffffffCC</gamelistLogoColor>
+      <gamelistSelectedColor>ffffff</gamelistSelectedColor>
+      <gamelistUnselectedColor>ffffff55</gamelistUnselectedColor>
+      <metadataColor>ffffffCC</metadataColor>
+      <metadataLabelColor>ffffff66</metadataLabelColor>
+      <helpTextColor>ffffff66</helpTextColor>
+      <helpIconColor>ffffff66</helpIconColor>
+      <statusBarIconColor>ffffff</statusBarIconColor>
+      <menuBackgroundColor>1A0033DD</menuBackgroundColor>
+   </variables>
+   <variables lang="pt,br">
+      <helpSelect>SELECIONAR</helpSelect>
+   </variables>
+   <variables lang="es">
+      <helpMenu>MENÚ</helpMenu>
+      <helpSelect>SELECCIONAR</helpSelect>
+   </variables>
+   <variables lang="fr">
+      <helpSelect>SÉLECTIONNER</helpSelect>
+   </variables>
+   <variables lang="de">
+      <helpMenu>MENÜ</helpMenu>
+      <helpSelect>AUSWÄHLEN</helpSelect>
+   </variables>
+   <variables lang="it">
+      <helpSelect>SELEZIONA</helpSelect>
+   </variables>
+   <subset name="aspect-ratio" displayName="Aspect Ratio">
+      <include name="4-3" displayName="4:3" />
+      <include name="1-1" displayName="1:1" />
+   </subset>
+   <view name="system, basic, detailed, video, grid">
+      <image name="bg_image" extra="true">
+         <path>./_inc/background/waves.png</path>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>0</zIndex>
+      </image>
+      <video name="bg_video" extra="true">
+         <path>./_inc/background/waves.mp4</path>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>1</zIndex>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>false</showSnapshotDelay>
+         <delay>0</delay>
+      </video>
+   </view>
+   <view name="system">
+      <carousel name="systemcarousel">
+         <type>horizontal</type>
+         <logoAlignment>center</logoAlignment>
+         <zIndex>40</zIndex>
+         <color>00000000</color>
+         <maxLogoCount>7</maxLogoCount>
+         <logoScale>1.2</logoScale>
+         <scrollSound>./_inc/sounds/systembrowse.wav</scrollSound>
+      </carousel>
+      <image name="logo">
+         <path>${systemCarouselImagePath}/${system.theme}.png</path>
+         <default>${systemCarouselImagePath}/_default.png</default>
+      </image>
+      <image name="e_system_content" extra="true">
+         <path>${systemContentImagePath}/${system.theme}.png</path>
+         <default>${systemContentImagePath}/_default.png</default>
+         <zIndex>45</zIndex>
+      </image>
+      <text name="e_system_name" extra="true">
+         <text>${system.fullName}</text>
+         <fontPath>${fontBold}</fontPath>
+         <color>ffffff</color>
+         <alignment>left</alignment>
+         <zIndex>50</zIndex>
+      </text>
+      <image name="e_metadata_line" extra="true">
+         <path>${spacerImage}</path>
+         <color>ffffff88</color>
+         <zIndex>45</zIndex>
+      </image>
+      <text name="systemInfo">
+         <systemdata>gamecount</systemdata>
+         <fontPath>${fontRegular}</fontPath>
+         <color>ffffff</color>
+         <alignment>left</alignment>
+         <zIndex>50</zIndex>
+      </text>
+      <helpsystem name="help">
+         <fontPath>${fontRegular}</fontPath>
+         <iconColor>ffffff99</iconColor>
+         <textColor>ffffff99</textColor>
+      </helpsystem>
+   </view>
+   <include ifSubset="aspect-ratio:4-3">./aspect-ratio-4-3.xml</include>
+   <include ifSubset="aspect-ratio:1-1">./aspect-ratio-1-1.xml</include>
+   <view name="system, basic, detailed, video, grid">
+      <carousel name="systemcarousel">
+         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
+      </carousel>
+      <textlist name="gamelist">
+         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
+      </textlist>
+      <imagegrid name="gamegrid">
+         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
+      </imagegrid>
+      <sound name="back">
+         <path>./_inc/sounds/back.wav</path>
+      </sound>
+      <sound name="launch">
+         <path>./_inc/sounds/launch.wav</path>
+      </sound>
+   </view>
+</theme>
