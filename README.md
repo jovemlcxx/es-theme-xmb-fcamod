@@ -31,8 +31,7 @@ A premium, high-performance XMB-styled theme designed specifically for **ES-DE (
 This project utilizes assets, logic, and design inspiration from several amazing community projects:
 
 - **Assets**: Icons and UI elements sourced from the [RetroArch Assets](https://github.com/libretro/retroarch-assets) repository.
-- **Base Project**: [anthonycaccese/xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de) - This project is a refined fork of this excellent base.
-- **Design References**:
+- **Base Project**: [anthonycaccese/xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de) - Primary structural and design reference, adapted for compatibility with the legacy FCAMOD engine.
     - [mohamedhany1024/ps3-xmb-web](https://github.com/mohamedhany1024/ps3-xmb-web) - Logic and layout reference for the PS3 XMB style.
     - [RobZombie9043/xmb-es-de](https://github.com/RobZombie9043/xmb-es-de) - Additional layout and styling inspirations.
     - [lcdyk0517/arkos4clone](https://github.com/lcdyk0517/arkos4clone) - Structural guidance for ArkOS compatibility.
