@@ -24,6 +24,8 @@
       <helpIconColor>ffffff66</helpIconColor>
       <statusBarIconColor>ffffff</statusBarIconColor>
       <menuBackgroundColor>1A0033DD</menuBackgroundColor>
+      <wallpaperPath>./_inc/background/bg_1.png</wallpaperPath>
+      <wallpaperVideoPath>./_inc/background/bg_1.mp4</wallpaperVideoPath>
    </variables>
    <variables lang="pt,br">
       <helpSelect>SELECIONAR</helpSelect>
@@ -46,15 +48,37 @@
       <include name="4-3" displayName="4:3" />
       <include name="1-1" displayName="1:1" />
    </subset>
+   <subset name="wallpaper" displayName="Wallpaper">
+      <include name="1" displayName="Wallpaper 1 (default)">./_inc/wallpapers/1.xml</include>
+      <include name="2" displayName="Wallpaper 2">./_inc/wallpapers/2.xml</include>
+      <include name="3" displayName="Wallpaper 3">./_inc/wallpapers/3.xml</include>
+      <include name="4" displayName="Wallpaper 4">./_inc/wallpapers/4.xml</include>
+      <include name="5" displayName="Wallpaper 5">./_inc/wallpapers/5.xml</include>
+      <include name="6" displayName="Wallpaper 6">./_inc/wallpapers/6.xml</include>
+      <include name="7" displayName="Wallpaper 7">./_inc/wallpapers/7.xml</include>
+      <include name="8" displayName="Wallpaper 8">./_inc/wallpapers/8.xml</include>
+      <include name="9" displayName="Wallpaper 9">./_inc/wallpapers/9.xml</include>
+      <include name="10" displayName="Wallpaper 10">./_inc/wallpapers/10.xml</include>
+      <include name="11" displayName="Wallpaper 11">./_inc/wallpapers/11.xml</include>
+      <include name="12" displayName="Wallpaper 12">./_inc/wallpapers/12.xml</include>
+      <include name="13" displayName="Wallpaper 13">./_inc/wallpapers/13.xml</include>
+      <include name="14" displayName="Wallpaper 14">./_inc/wallpapers/14.xml</include>
+      <include name="15" displayName="Wallpaper 15">./_inc/wallpapers/15.xml</include>
+      <include name="16" displayName="Wallpaper 16">./_inc/wallpapers/16.xml</include>
+      <include name="17" displayName="Wallpaper 17">./_inc/wallpapers/17.xml</include>
+      <include name="18" displayName="Wallpaper 18">./_inc/wallpapers/18.xml</include>
+      <include name="19" displayName="Wallpaper 19">./_inc/wallpapers/19.xml</include>
+      <include name="20" displayName="Wallpaper 20">./_inc/wallpapers/20.xml</include>
+   </subset>
    <view name="system, basic, detailed, video, grid">
       <image name="bg_image" extra="true">
-         <path>./_inc/background/waves.png</path>
+         <path>${wallpaperPath}</path>
          <pos>0 0</pos>
          <size>1 1</size>
          <zIndex>0</zIndex>
       </image>
       <video name="bg_video" extra="true">
-         <path>./_inc/background/waves.mp4</path>
+         <path>${wallpaperVideoPath}</path>
          <pos>0 0</pos>
          <size>1 1</size>
          <zIndex>1</zIndex>
