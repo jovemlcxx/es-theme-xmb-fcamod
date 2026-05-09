@@ -208,8 +208,8 @@
          <backgroundEdgeColor>00000000</backgroundEdgeColor>
       </gridtile>
       <text name="md_name">
-         <pos>0.22 0.45</pos>
-         <size>0.65 0.08</size>
+         <pos>0.26 0.45</pos>
+         <size>0.70 0.08</size>
          <fontSize>0.038</fontSize>
          <fontPath>${fontBold}</fontPath>
          <color>ffffff</color>
@@ -218,14 +218,14 @@
       </text>
       <image name="md_line" extra="true">
          <path>${spacerImage}</path>
-         <pos>0.22 0.52</pos>
-         <size>0.70 0.002</size>
+         <pos>0.26 0.52</pos>
+         <size>0.74 0.002</size>
          <color>ffffff88</color>
          <zIndex>55</zIndex>
       </image>
       <text name="md_description">
-         <pos>0.22 0.54</pos>
-         <size>0.65 0.35</size>
+         <pos>0.26 0.54</pos>
+         <size>0.70 0.35</size>
          <fontSize>0.025</fontSize>
          <fontPath>${fontRegular}</fontPath>
          <color>ffffffcc</color>
