@@ -185,20 +185,21 @@
       </image>
       <imagegrid name="gamegrid">
          <pos>0.02 0.15</pos>
-         <size>0.22 0.75</size>
+         <size>0.20 0.75</size>
          <padding>0.02 0.05 0.02 0.05</padding>
          <autoLayout>1 3</autoLayout>
          <scrollDirection>verticalCenter</scrollDirection>
          <centerSelection>true</centerSelection>
-         <autoLayoutSelectedZoom>1.5</autoLayoutSelectedZoom>
+         <autoLayoutSelectedZoom>1.0</autoLayoutSelectedZoom>
          <imageSource>marquee</imageSource>
          <folderImage>./_inc/images/xmb_folder.png</folderImage>
          <gameImage>./_inc/images/xmb_game.png</gameImage>
          <zIndex>50</zIndex>
       </imagegrid>
       <gridtile name="default">
-         <size>0.18 0.24</size>
+         <size>0.18 0.18</size>
          <padding>5 5</padding>
+         <imageSizeMode>maxSize</imageSizeMode>
          <backgroundCenterColor>00000000</backgroundCenterColor>
          <backgroundEdgeColor>00000000</backgroundEdgeColor>
       </gridtile>
@@ -207,7 +208,7 @@
          <backgroundEdgeColor>00000000</backgroundEdgeColor>
       </gridtile>
       <text name="md_name">
-         <pos>0.30 0.45</pos>
+         <pos>0.22 0.45</pos>
          <size>0.65 0.08</size>
          <fontSize>0.038</fontSize>
          <fontPath>${fontBold}</fontPath>
@@ -217,13 +218,13 @@
       </text>
       <image name="md_line" extra="true">
          <path>${spacerImage}</path>
-         <pos>0.30 0.52</pos>
+         <pos>0.22 0.52</pos>
          <size>0.70 0.002</size>
          <color>ffffff88</color>
          <zIndex>55</zIndex>
       </image>
       <text name="md_description">
-         <pos>0.30 0.54</pos>
+         <pos>0.22 0.54</pos>
          <size>0.65 0.35</size>
          <fontSize>0.025</fontSize>
          <fontPath>${fontRegular}</fontPath>
