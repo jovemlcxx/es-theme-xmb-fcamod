@@ -30,9 +30,9 @@ Optimized for **FCAMOD,** a fork of EmulationStation by [christianhaitian](https
    - **System Layout:** Choose between **Horizontal (XMB Classic)** or **Vertical (Left Bar)**.
    - **Wallpaper:** Select the number corresponding to your custom background (1 to 20).
 
-## 🖼️ Wallpaper Customization
+## 🖼️ Background Customization
 
-The theme supports up to 20 custom wallpapers (Images and/or Videos). You can easily add your own:
+The theme supports up to 20 custom wallpapers (Images and Videos). You can easily add your own:
 
 1. **Prepare your files:** 
    - Static images must be in **.png** format.
