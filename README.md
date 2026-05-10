@@ -1,9 +1,13 @@
-# XMB Theme for EmulationStation
+# XMB FCAMOD Theme
 
 ![Platform](https://img.shields.io/badge/Platform-EmulationStation-purple)
 ![Style](https://img.shields.io/badge/Style-XMB-blue)
+[![Github](https://img.shields.io/badge/Github-Repository-black?logo=github)](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
 
-A premium, high-performance XMB-styled theme designed specifically for handheld devices. This theme brings the classic console interface experience to your system with smooth animations and a refined layout.
+A premium, high-performance XMB-styled theme designed specifically for handheld devices. This theme brings the classic console interface experience to your system with a clean, optimized code and a refined layout.
+
+**Official Repository:** [github.com/jovemlcxx/es-theme-xmb-fcamod](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
+
 Optimized for **FCAMOD,** a fork of EmulationStation by [christianhaitian](https://github.com/christianhaitian/EmulationStation-fcamod).
 
 ![Preview](./xmb.png)
@@ -23,8 +27,9 @@ Optimized for **FCAMOD,** a fork of EmulationStation by [christianhaitian](https
 
 1. Connect to your device via SCP or SFTP.
 2. Navigate to your themes directory (usually `/roms/themes/` or `~/.emulationstation/themes/`).
-3. Copy the `es-theme-xmb-fcamod` folder into the themes directory.
-4. In EmulationStation, go to **UI Settings** > **Theme Set** and select `es-theme-xmb-fcamod`.
+3. Copy the theme folder into the directory. 
+   - **Note:** The folder should be named `es-theme-xmb-fcamod` or `es-theme-xmb-fcamod-main` (if downloaded directly from GitHub).
+4. In EmulationStation, go to **UI Settings** > **Theme Set** and select the theme.
 5. Go to **UI Settings** > **Theme Configuration** to customize:
    - **Aspect Ratio:** Select the one that matches your device (4:3 or 1:1).
    - **System Layout:** Choose between **Horizontal (XMB Classic)** or **Vertical (Left Bar)**.
