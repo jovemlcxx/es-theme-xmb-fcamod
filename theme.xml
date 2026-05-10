@@ -456,7 +456,7 @@
          <zIndex>40</zIndex>
          <color>00000000</color>
          <maxLogoCount>5</maxLogoCount>
-         <logoScale>1.2</logoScale>
+         <logoScale>1.0</logoScale>
          <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
       </carousel>
       <image name="logo">
