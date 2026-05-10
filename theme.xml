@@ -70,6 +70,10 @@
       <include name="19" displayName="Wallpaper 19">./_inc/wallpapers/19.xml</include>
       <include name="20" displayName="Wallpaper 20">./_inc/wallpapers/20.xml</include>
    </subset>
+   <subset name="layout" displayName="System Layout">
+      <include name="horizontal" displayName="Horizontal (XMB Classic)" />
+      <include name="vertical" displayName="Vertical (Left Bar)" />
+   </subset>
    <view name="system, basic, detailed, video, grid">
       <image name="bg_image" extra="true">
          <path>${wallpaperPath}</path>
@@ -93,7 +97,7 @@
          <logoAlignment>center</logoAlignment>
          <zIndex>40</zIndex>
          <color>00000000</color>
-         <maxLogoCount>7</maxLogoCount>
+         <maxLogoCount>5</maxLogoCount>
          <logoScale>1.2</logoScale>
          <scrollSound>./_inc/sounds/systembrowse.wav</scrollSound>
       </carousel>
@@ -131,8 +135,9 @@
          <textColor>ffffff99</textColor>
       </helpsystem>
    </view>
-   <include ifSubset="aspect-ratio:4-3">./aspect-ratio-4-3.xml</include>
-   <include ifSubset="aspect-ratio:1-1">./aspect-ratio-1-1.xml</include>
+   <include subset="aspect-ratio" name="4-3">./aspect-ratio-4-3.xml</include>
+   <include subset="aspect-ratio" name="1-1">./aspect-ratio-1-1.xml</include>
+   <include subset="layout" name="vertical">./_inc/layouts/vertical.xml</include>
    <view name="system, basic, detailed, video, grid">
       <carousel name="systemcarousel">
          <scrollSound>./_inc/sounds/scroll.wav</scrollSound>

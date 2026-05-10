@@ -27,6 +27,7 @@ Optimized for **FCAMOD,** a fork of EmulationStation by [christianhaitian](https
 4. In EmulationStation, go to **UI Settings** > **Theme Set** and select `es-theme-xmb-fcamod`.
 5. Go to **UI Settings** > **Theme Configuration** to customize:
    - **Aspect Ratio:** Select the one that matches your device (4:3 or 1:1).
+   - **System Layout:** Choose between **Horizontal (XMB Classic)** or **Vertical (Left Bar)**.
    - **Wallpaper:** Select the number corresponding to your custom background (1 to 20).
 
 ## 🖼️ Wallpaper Customization

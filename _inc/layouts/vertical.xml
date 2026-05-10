@@ -1,0 +1,5 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <include subset="aspect-ratio" name="4-3">./vertical-4-3.xml</include>
+   <include subset="aspect-ratio" name="1-1">./vertical-1-1.xml</include>
+</theme>

@@ -1,0 +1,36 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <view name="system">
+      <carousel name="systemcarousel">
+         <type>vertical</type>
+         <pos>0.02 0.125</pos>
+         <size>0.20 0.75</size>
+         <logoSize>0.17 0.17</logoSize>
+         <logoScale>1.0</logoScale>
+         <maxLogoCount>3</maxLogoCount>
+         <logoAlignment>center</logoAlignment>
+         <defaultTransition>instant</defaultTransition>
+      </carousel>
+      <image name="e_system_content" extra="true">
+         <pos>0.32 0.50</pos>
+         <maxSize>0.12 0.16</maxSize>
+         <origin>0.5 0.5</origin>
+      </image>
+      <text name="e_system_name" extra="true">
+         <pos>0.43 0.42</pos>
+         <size>0.55 0.06</size>
+         <fontSize>0.06</fontSize>
+         <alignment>left</alignment>
+      </text>
+      <image name="e_metadata_line" extra="true">
+         <pos>0.43 0.50</pos>
+         <size>0.57 0.002</size>
+      </image>
+      <text name="systemInfo">
+         <pos>0.43 0.52</pos>
+         <size>0.55 0.05</size>
+         <fontSize>0.03</fontSize>
+         <alignment>left</alignment>
+      </text>
+   </view>
+</theme>
