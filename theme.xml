@@ -1,5 +1,9 @@
 <theme defaultView="grid">
    <formatVersion>7</formatVersion>
+   <capabilities>
+      <suppressGamelistViewStyle>true</suppressGamelistViewStyle>
+      <suppressDefaultGridSize>true</suppressDefaultGridSize>
+   </capabilities>
    <variables>
       <fontRegular>./_inc/fonts/FOT-NewRodin Pro DB.otf</fontRegular>
       <fontBold>./_inc/fonts/FOT-NewRodin Pro B.otf</fontBold>
@@ -9,6 +13,14 @@
       <backgroundImage>./_inc/images/background.png</backgroundImage>
       <helpMenu>MENU</helpMenu>
       <helpSelect>SELECT</helpSelect>
+      <aspectRatioLabel>Aspect Ratio</aspectRatioLabel>
+      <wallpaperLabel>Wallpaper</wallpaperLabel>
+      <layoutLabel>System Layout</layoutLabel>
+      <videoLabel>Background Video</videoLabel>
+      <horizontalLabel>Horizontal (XMB Classic)</horizontalLabel>
+      <verticalLabel>Vertical (Left Bar)</verticalLabel>
+      <enabledLabel>Enabled</enabledLabel>
+      <disabledLabel>Disabled</disabledLabel>
       <backgroundColor>0D0018</backgroundColor>
       <systemBackgroundColor>0D0018</systemBackgroundColor>
       <accentColor>7B2FBE</accentColor>
@@ -26,55 +38,382 @@
       <menuBackgroundColor>1A0033DD</menuBackgroundColor>
       <wallpaperPath>./_inc/background/bg_1.png</wallpaperPath>
       <wallpaperVideoPath>./_inc/background/bg_1.mp4</wallpaperVideoPath>
+      <showBackgroundVideo>true</showBackgroundVideo>
    </variables>
+   <view name="system, grid, menu">
+      <sound name="select">
+         <path>./_inc/sounds/select.wav</path>
+      </sound>
+      <sound name="back">
+         <path>./_inc/sounds/back.wav</path>
+      </sound>
+      <sound name="favorite">
+         <path>./_inc/sounds/favorite.wav</path>
+      </sound>
+      <sound name="systembrowse">
+         <path>./_inc/sounds/systembrowse.wav</path>
+      </sound>
+      <sound name="scroll">
+         <path>./_inc/sounds/scroll.wav</path>
+      </sound>
+      <sound name="quicksysselect">
+         <path>./_inc/sounds/quicksysselect.wav</path>
+      </sound>
+      <sound name="launch">
+         <path>./_inc/sounds/launch.wav</path>
+      </sound>
+   </view>
    <variables lang="pt,br">
       <helpSelect>SELECIONAR</helpSelect>
+      <aspectRatioLabel>Proporção de Tela</aspectRatioLabel>
+      <wallpaperLabel>Papel de Parede</wallpaperLabel>
+      <layoutLabel>Layout do Sistema</layoutLabel>
+      <videoLabel>Vídeo de Fundo</videoLabel>
+      <horizontalLabel>Horizontal (Clássico XMB)</horizontalLabel>
+      <verticalLabel>Vertical (Barra Lateral)</verticalLabel>
+      <enabledLabel>Ativado</enabledLabel>
+      <disabledLabel>Desativado</disabledLabel>
    </variables>
    <variables lang="es">
       <helpMenu>MENÚ</helpMenu>
       <helpSelect>SELECCIONAR</helpSelect>
+      <aspectRatioLabel>Relación de Aspecto</aspectRatioLabel>
+      <wallpaperLabel>Fondo de Pantalla</wallpaperLabel>
+      <layoutLabel>Diseño del Sistema</layoutLabel>
+      <videoLabel>Video de Fondo</videoLabel>
+      <horizontalLabel>Horizontal (Clásico XMB)</horizontalLabel>
+      <verticalLabel>Vertical (Barra Lateral)</verticalLabel>
+      <enabledLabel>Activado</enabledLabel>
+      <disabledLabel>Desactivado</disabledLabel>
    </variables>
    <variables lang="fr">
       <helpSelect>SÉLECTIONNER</helpSelect>
+      <aspectRatioLabel>Format d'Image</aspectRatioLabel>
+      <wallpaperLabel>Fond d'Écran</wallpaperLabel>
+      <layoutLabel>Mise en Page</layoutLabel>
+      <videoLabel>Vidéo de Fond</videoLabel>
+      <horizontalLabel>Horizontal (Classique XMB)</horizontalLabel>
+      <verticalLabel>Vertical (Barre Latérale)</verticalLabel>
+      <enabledLabel>Activé</enabledLabel>
+      <disabledLabel>Désactivé</disabledLabel>
    </variables>
    <variables lang="de">
       <helpMenu>MENÜ</helpMenu>
       <helpSelect>AUSWÄHLEN</helpSelect>
+      <aspectRatioLabel>Seitenverhältnis</aspectRatioLabel>
+      <wallpaperLabel>Hintergrundbild</wallpaperLabel>
+      <layoutLabel>System-Layout</layoutLabel>
+      <videoLabel>Hintergrundvideo</videoLabel>
+      <horizontalLabel>Horizontal (Klassisches XMB)</horizontalLabel>
+      <verticalLabel>Vertikal (Seitenleiste)</verticalLabel>
+      <enabledLabel>Aktiviert</enabledLabel>
+      <disabledLabel>Deaktiviert</disabledLabel>
    </variables>
    <variables lang="it">
       <helpSelect>SELEZIONA</helpSelect>
+      <aspectRatioLabel>Rapporto d'Aspetto</aspectRatioLabel>
+      <wallpaperLabel>Sfondo</wallpaperLabel>
+      <layoutLabel>Layout del Sistema</layoutLabel>
+      <videoLabel>Video di Sfondo</videoLabel>
+      <horizontalLabel>Orizzontale (Classico XMB)</horizontalLabel>
+      <verticalLabel>Verticale (Barra Laterale)</verticalLabel>
+      <enabledLabel>Abilitato</enabledLabel>
+      <disabledLabel>Disabilitato</disabledLabel>
    </variables>
-   <subset name="aspect-ratio" displayName="Aspect Ratio">
+   <variables lang="ja">
+      <helpMenu>メニュー</helpMenu>
+      <helpSelect>決定</helpSelect>
+      <aspectRatioLabel>アスペクト比</aspectRatioLabel>
+      <wallpaperLabel>壁紙</wallpaperLabel>
+      <layoutLabel>システムレイアウト</layoutLabel>
+      <videoLabel>背景ビデオ</videoLabel>
+      <horizontalLabel>横型 (XMB Classic)</horizontalLabel>
+      <verticalLabel>縦型 (左バー)</verticalLabel>
+      <enabledLabel>有効</enabledLabel>      <disabledLabel>無効</disabledLabel>
+   </variables>
+   <variables lang="ko">
+      <helpMenu>메뉴</helpMenu>
+      <helpSelect>선택</helpSelect>
+      <aspectRatioLabel>화면 비율</aspectRatioLabel>
+      <wallpaperLabel>배경화면</wallpaperLabel>
+      <layoutLabel>시스템 레이아웃</layoutLabel>
+      <videoLabel>배경 비디오</videoLabel>
+      <horizontalLabel>가로 (XMB Classic)</horizontalLabel>
+      <verticalLabel>세로 (왼쪽 바)</verticalLabel>
+      <enabledLabel>활성화</enabledLabel>
+      <disabledLabel>비활성화</disabledLabel>
+   </variables>
+   <variables lang="ru">
+      <helpMenu>МЕНЮ</helpMenu>
+      <helpSelect>ВЫБРАТЬ</helpSelect>
+      <aspectRatioLabel>Соотношение сторон</aspectRatioLabel>
+      <wallpaperLabel>Обои</wallpaperLabel>
+      <layoutLabel>Макет системы</layoutLabel>
+      <videoLabel>Фоновое видео</videoLabel>
+      <horizontalLabel>Горизонтальный</horizontalLabel>
+      <verticalLabel>Вертикальный</verticalLabel>
+      <enabledLabel>Включено</enabledLabel>
+      <disabledLabel>Отключено</disabledLabel>
+   </variables>
+   <variables lang="zh-cn">
+      <helpMenu>菜单</helpMenu>
+      <helpSelect>选择</helpSelect>
+      <aspectRatioLabel>屏幕比例</aspectRatioLabel>
+      <wallpaperLabel>壁纸</wallpaperLabel>
+      <layoutLabel>系统布局</layoutLabel>
+      <videoLabel>背景视频</videoLabel>
+      <horizontalLabel>横向 (XMB Classic)</horizontalLabel>
+      <verticalLabel>纵向 (左侧栏)</verticalLabel>
+      <enabledLabel>已启用</enabledLabel>
+      <disabledLabel>已禁用</disabledLabel>
+   </variables>
+   <variables lang="zh-tw">
+      <helpMenu>菜單</helpMenu>
+      <helpSelect>選擇</helpSelect>
+      <aspectRatioLabel>螢幕比例</aspectRatioLabel>
+      <wallpaperLabel>桌布</wallpaperLabel>
+      <layoutLabel>系統佈局</layoutLabel>
+      <videoLabel>背景視頻</videoLabel>
+      <horizontalLabel>橫向 (XMB Classic)</horizontalLabel>
+      <verticalLabel>縱向 (左側欄)</verticalLabel>
+      <enabledLabel>已啟用</enabledLabel>
+      <disabledLabel>已禁用</disabledLabel>
+   </variables>
+   <variables lang="tr">
+      <helpMenu>MENÜ</helpMenu>
+      <helpSelect>SEÇ</helpSelect>
+      <aspectRatioLabel>En Boy Oranı</aspectRatioLabel>
+      <wallpaperLabel>Duvar Kağıdı</wallpaperLabel>
+      <layoutLabel>Sistem Düzeni</layoutLabel>
+      <videoLabel>Arka Plan Videosu</videoLabel>
+      <horizontalLabel>Yatay (XMB Klasik)</horizontalLabel>
+      <verticalLabel>Dikey (Sol Çubuk)</verticalLabel>
+      <enabledLabel>Etkin</enabledLabel>
+      <disabledLabel>Devre Dışı</disabledLabel>
+   </variables>
+   <variables lang="nl">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>SELECTEER</helpSelect>
+      <aspectRatioLabel>Beeldverhouding</aspectRatioLabel>
+      <wallpaperLabel>Achtergrond</wallpaperLabel>
+      <layoutLabel>Systeemindeling</layoutLabel>
+      <videoLabel>Achtergrondvideo</videoLabel>
+      <horizontalLabel>Horizontaal (XMB Classic)</horizontalLabel>
+      <verticalLabel>Verticaal (Linkerbalk)</verticalLabel>
+      <enabledLabel>Ingeschakeld</enabledLabel>
+      <disabledLabel>Uitgeschakeld</disabledLabel>
+   </variables>
+   <variables lang="sv">
+      <helpMenu>MENY</helpMenu>
+      <helpSelect>VÄLJ</helpSelect>
+      <aspectRatioLabel>Bildförhållande</aspectRatioLabel>
+      <wallpaperLabel>Bakgrundsbild</wallpaperLabel>
+      <layoutLabel>Systemlayout</layoutLabel>
+      <videoLabel>Bakgrundsvideo</videoLabel>
+      <horizontalLabel>Horisontell (XMB Classic)</horizontalLabel>
+      <verticalLabel>Vertikal (Vänster fält)</verticalLabel>
+      <enabledLabel>Aktiverad</enabledLabel>
+      <disabledLabel>Inaktiverad</disabledLabel>
+   </variables>
+   <variables lang="pl">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>WYBIERZ</helpSelect>
+      <aspectRatioLabel>Proporcje ekranu</aspectRatioLabel>
+      <wallpaperLabel>Tapeta</wallpaperLabel>
+      <layoutLabel>Układ systemu</layoutLabel>
+      <videoLabel>Wideo w tle</videoLabel>
+      <horizontalLabel>Poziomy (XMB Classic)</horizontalLabel>
+      <verticalLabel>Pionowy (Lewy pasek)</verticalLabel>
+      <enabledLabel>Włączone</enabledLabel>
+      <disabledLabel>Wyłączone</disabledLabel>
+   </variables>
+   <variables lang="ca">
+      <helpMenu>MENÚ</helpMenu>
+      <helpSelect>SELECCIONA</helpSelect>
+      <aspectRatioLabel>Relació d'aspecte</aspectRatioLabel>
+      <wallpaperLabel>Fons de pantalla</wallpaperLabel>
+      <layoutLabel>Disposició del sistema</layoutLabel>
+      <videoLabel>Vídeo de fons</videoLabel>
+      <horizontalLabel>Horitzontal (XMB Classic)</horizontalLabel>
+      <verticalLabel>Vertical (Barra esquerra)</verticalLabel>
+      <enabledLabel>Activat</enabledLabel>
+      <disabledLabel>Desactivat</disabledLabel>
+   </variables>
+   <variables lang="da">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>VÆLG</helpSelect>
+      <aspectRatioLabel>Billedformat</aspectRatioLabel>
+      <wallpaperLabel>Baggrund</wallpaperLabel>
+      <layoutLabel>Systemlayout</layoutLabel>
+      <videoLabel>Baggrundsvideo</videoLabel>
+      <horizontalLabel>Vandret (XMB Classic)</horizontalLabel>
+      <verticalLabel>Lodret (Venstre bar)</verticalLabel>
+      <enabledLabel>Aktiveret</enabledLabel>
+      <disabledLabel>Deaktiveret</disabledLabel>
+   </variables>
+   <variables lang="fi">
+      <helpMenu>VALIKKO</helpMenu>
+      <helpSelect>VALITSE</helpSelect>
+      <aspectRatioLabel>Kuvasuhde</aspectRatioLabel>
+      <wallpaperLabel>Taustakuva</wallpaperLabel>
+      <layoutLabel>Järjestelmän asettelu</layoutLabel>
+      <videoLabel>Taustavideo</videoLabel>
+      <horizontalLabel>Vaaka (XMB Classic)</horizontalLabel>
+      <verticalLabel>Pysty (Vasen palkki)</verticalLabel>
+      <enabledLabel>Käytössä</enabledLabel>
+      <disabledLabel>Ei käytössä</disabledLabel>
+   </variables>
+   <variables lang="hu">
+      <helpMenu>MENÜ</helpMenu>
+      <helpSelect>KIVÁLASZT</helpSelect>
+      <aspectRatioLabel>Képarány</aspectRatioLabel>
+      <wallpaperLabel>Háttérkép</wallpaperLabel>
+      <layoutLabel>Rendszer elrendezés</layoutLabel>
+      <videoLabel>Háttér videó</videoLabel>
+      <horizontalLabel>Vízszintes (XMB Classic)</horizontalLabel>
+      <verticalLabel>Függőleges (Bal sáv)</verticalLabel>
+      <enabledLabel>Engedélyezve</enabledLabel>
+      <disabledLabel>Letiltva</disabledLabel>
+   </variables>
+   <variables lang="no">
+      <helpMenu>MENY</helpMenu>
+      <helpSelect>VELG</helpSelect>
+      <aspectRatioLabel>Bildeformat</aspectRatioLabel>
+      <wallpaperLabel>Bakgrunn</wallpaperLabel>
+      <layoutLabel>Systemlayout</layoutLabel>
+      <videoLabel>Bakgrunnsvideo</videoLabel>
+      <horizontalLabel>Horisontal (XMB Classic)</horizontalLabel>
+      <verticalLabel>Vertikal (Venstre felt)</verticalLabel>
+      <enabledLabel>Aktivert</enabledLabel>
+      <disabledLabel>Deaktivert</disabledLabel>
+   </variables>
+   <variables lang="ro">
+      <helpMenu>MENIU</helpMenu>
+      <helpSelect>SELECTARE</helpSelect>
+      <aspectRatioLabel>Raport aspect</aspectRatioLabel>
+      <wallpaperLabel>Tapet</wallpaperLabel>
+      <layoutLabel>Aspect sistem</layoutLabel>
+      <videoLabel>Video fundal</videoLabel>
+      <horizontalLabel>Orizontal (XMB Classic)</horizontalLabel>
+      <verticalLabel>Vertical (Bara stângă)</verticalLabel>
+      <enabledLabel>Activat</enabledLabel>
+      <disabledLabel>Dezactivat</disabledLabel>
+   </variables>
+   <variables lang="uk">
+      <helpMenu>МЕНЮ</helpMenu>
+      <helpSelect>ВИБРАТИ</helpSelect>
+      <aspectRatioLabel>Співвідношення сторін</aspectRatioLabel>
+      <wallpaperLabel>Шпалери</wallpaperLabel>
+      <layoutLabel>Макет системи</layoutLabel>
+      <videoLabel>Фонове відео</videoLabel>
+      <horizontalLabel>Горизонтальний (XMB Classic)</horizontalLabel>
+      <verticalLabel>Вертикальний (Ліва панель)</verticalLabel>
+      <enabledLabel>Увімкнено</enabledLabel>
+      <disabledLabel>Вимкнено</disabledLabel>
+   </variables>
+   <variables lang="cs">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>VYBRAT</helpSelect>
+      <aspectRatioLabel>Poměr stran</aspectRatioLabel>
+      <wallpaperLabel>Tapeta</wallpaperLabel>
+      <layoutLabel>Rozvržení systému</layoutLabel>
+      <videoLabel>Video na pozadí</videoLabel>
+      <horizontalLabel>Horizontální (XMB Classic)</horizontalLabel>
+      <verticalLabel>Vertikální (Levý panel)</verticalLabel>
+      <enabledLabel>Povoleno</enabledLabel>
+      <disabledLabel>Zakázáno</disabledLabel>
+   </variables>
+   <variables lang="el">
+      <helpMenu>ΜΕΝΟΥ</helpMenu>
+      <helpSelect>ΕΠΙΛΟΓΗ</helpSelect>
+      <aspectRatioLabel>Αναλογία Εικόνας</aspectRatioLabel>
+      <wallpaperLabel>Ταπετσαρία</wallpaperLabel>
+      <layoutLabel>Διάταξη Συστήματος</layoutLabel>
+      <videoLabel>Βίντεο Φόντου</videoLabel>
+      <horizontalLabel>Οριζόντιο (XMB Classic)</horizontalLabel>
+      <verticalLabel>Κατακόρυφο (Αριστερή Μπάρα)</verticalLabel>
+      <enabledLabel>Ενεργοποιημένο</enabledLabel>
+      <disabledLabel>Απενεργοποιημένο</disabledLabel>
+   </variables>
+   <variables lang="vi">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>CHỌN</helpSelect>
+      <aspectRatioLabel>Tỷ lệ khung hình</aspectRatioLabel>
+      <wallpaperLabel>Hình nền</wallpaperLabel>
+      <layoutLabel>Bố cục hệ thống</layoutLabel>
+      <videoLabel>Video nền</videoLabel>
+      <horizontalLabel>Ngang (XMB Classic)</horizontalLabel>
+      <verticalLabel>Dọc (Thanh bên trái)</verticalLabel>
+      <enabledLabel>Bật</enabledLabel>
+      <disabledLabel>Tắt</disabledLabel>
+   </variables>
+   <variables lang="pt">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>SELECIONAR</helpSelect>
+      <aspectRatioLabel>Proporção</aspectRatioLabel>
+      <wallpaperLabel>Papel de Parede</wallpaperLabel>
+      <layoutLabel>Layout do Sistema</layoutLabel>
+      <videoLabel>Vídeo de Fundo</videoLabel>
+      <horizontalLabel>Horizontal (XMB Classic)</horizontalLabel>
+      <verticalLabel>Vertical (Barra Esquerda)</verticalLabel>
+      <enabledLabel>Ativado</enabledLabel>
+      <disabledLabel>Desativado</disabledLabel>
+   </variables>
+   <variables lang="id">
+      <helpMenu>MENU</helpMenu>
+      <helpSelect>PILIH</helpSelect>
+      <aspectRatioLabel>Rasio Aspek</aspectRatioLabel>
+      <wallpaperLabel>Wallpaper</wallpaperLabel>
+      <layoutLabel>Tata Letak Sistem</layoutLabel>
+      <videoLabel>Video Latar Belakang</videoLabel>
+      <horizontalLabel>Horizontal (XMB Classic)</horizontalLabel>
+      <verticalLabel>Vertikal (Bilah Kiri)</verticalLabel>
+      <enabledLabel>Aktif</enabledLabel>
+      <disabledLabel>Nonaktif</disabledLabel>
+   </variables>
+   <subset name="aspect-ratio" displayName="${aspectRatioLabel}">
       <include name="4-3" displayName="4:3" />
       <include name="1-1" displayName="1:1" />
    </subset>
-   <subset name="wallpaper" displayName="Wallpaper">
-      <include name="1" displayName="Wallpaper 1 (default)">./_inc/wallpapers/1.xml</include>
-      <include name="2" displayName="Wallpaper 2">./_inc/wallpapers/2.xml</include>
-      <include name="3" displayName="Wallpaper 3">./_inc/wallpapers/3.xml</include>
-      <include name="4" displayName="Wallpaper 4">./_inc/wallpapers/4.xml</include>
-      <include name="5" displayName="Wallpaper 5">./_inc/wallpapers/5.xml</include>
-      <include name="6" displayName="Wallpaper 6">./_inc/wallpapers/6.xml</include>
-      <include name="7" displayName="Wallpaper 7">./_inc/wallpapers/7.xml</include>
-      <include name="8" displayName="Wallpaper 8">./_inc/wallpapers/8.xml</include>
-      <include name="9" displayName="Wallpaper 9">./_inc/wallpapers/9.xml</include>
-      <include name="10" displayName="Wallpaper 10">./_inc/wallpapers/10.xml</include>
-      <include name="11" displayName="Wallpaper 11">./_inc/wallpapers/11.xml</include>
-      <include name="12" displayName="Wallpaper 12">./_inc/wallpapers/12.xml</include>
-      <include name="13" displayName="Wallpaper 13">./_inc/wallpapers/13.xml</include>
-      <include name="14" displayName="Wallpaper 14">./_inc/wallpapers/14.xml</include>
-      <include name="15" displayName="Wallpaper 15">./_inc/wallpapers/15.xml</include>
-      <include name="16" displayName="Wallpaper 16">./_inc/wallpapers/16.xml</include>
-      <include name="17" displayName="Wallpaper 17">./_inc/wallpapers/17.xml</include>
-      <include name="18" displayName="Wallpaper 18">./_inc/wallpapers/18.xml</include>
-      <include name="19" displayName="Wallpaper 19">./_inc/wallpapers/19.xml</include>
-      <include name="20" displayName="Wallpaper 20">./_inc/wallpapers/20.xml</include>
+   <subset name="background-video" displayName="${videoLabel}">
+      <include name="enabled" displayName="${enabledLabel}">
+         <variables>
+            <showBackgroundVideo>true</showBackgroundVideo>
+         </variables>
+      </include>
+      <include name="disabled" displayName="${disabledLabel}">
+         <variables>
+            <showBackgroundVideo>false</showBackgroundVideo>
+         </variables>
+      </include>
    </subset>
-   <subset name="layout" displayName="System Layout">
-      <include name="horizontal" displayName="Horizontal (XMB Classic)" />
-      <include name="vertical" displayName="Vertical (Left Bar)" />
+   <subset name="wallpaper" displayName="${wallpaperLabel}">
+      <include name="1" displayName="1 (default)">./_inc/wallpapers/1.xml</include>
+      <include name="2" displayName="2">./_inc/wallpapers/2.xml</include>
+      <include name="3" displayName="3">./_inc/wallpapers/3.xml</include>
+      <include name="4" displayName="4">./_inc/wallpapers/4.xml</include>
+      <include name="5" displayName="5">./_inc/wallpapers/5.xml</include>
+      <include name="6" displayName="6">./_inc/wallpapers/6.xml</include>
+      <include name="7" displayName="7">./_inc/wallpapers/7.xml</include>
+      <include name="8" displayName="8">./_inc/wallpapers/8.xml</include>
+      <include name="9" displayName="9">./_inc/wallpapers/9.xml</include>
+      <include name="10" displayName="10">./_inc/wallpapers/10.xml</include>
+      <include name="11" displayName="11">./_inc/wallpapers/11.xml</include>
+      <include name="12" displayName="12">./_inc/wallpapers/12.xml</include>
+      <include name="13" displayName="13">./_inc/wallpapers/13.xml</include>
+      <include name="14" displayName="14">./_inc/wallpapers/14.xml</include>
+      <include name="15" displayName="15">./_inc/wallpapers/15.xml</include>
+      <include name="16" displayName="16">./_inc/wallpapers/16.xml</include>
+      <include name="17" displayName="17">./_inc/wallpapers/17.xml</include>
+      <include name="18" displayName="18">./_inc/wallpapers/18.xml</include>
+      <include name="19" displayName="19">./_inc/wallpapers/19.xml</include>
+      <include name="20" displayName="20">./_inc/wallpapers/20.xml</include>
    </subset>
-   <view name="system, basic, detailed, video, grid">
+   <subset name="layout" displayName="${layoutLabel}">
+      <include name="horizontal" displayName="${horizontalLabel}" />
+      <include name="vertical" displayName="${verticalLabel}" />
+   </subset>
+   <view name="system, grid">
       <image name="bg_image" extra="true">
          <path>${wallpaperPath}</path>
          <pos>0 0</pos>
@@ -86,16 +425,28 @@
          <pos>0 0</pos>
          <size>1 1</size>
          <zIndex>1</zIndex>
+         <visible>${showBackgroundVideo}</visible>
          <showSnapshotNoVideo>true</showSnapshotNoVideo>
          <showSnapshotDelay>false</showSnapshotDelay>
          <delay>0</delay>
       </video>
+   </view>
+   <view name="system">
       <image name="background_overlay" extra="true">
          <path>${spacerImage}</path>
-         <pos>0 0</pos>
-         <size>1 1</size>
+         <pos>-0.005 -0.005</pos>
+         <size>1.01 1.01</size>
          <color>00000033</color>
-         <zIndex>2</zIndex>
+         <zIndex>5</zIndex>
+      </image>
+   </view>
+   <view name="grid">
+      <image name="background_overlay" extra="true">
+         <path>${spacerImage}</path>
+         <pos>-0.005 -0.005</pos>
+         <size>1.01 1.01</size>
+         <color>0000008C</color>
+         <zIndex>5</zIndex>
       </image>
    </view>
    <view name="system">
@@ -106,7 +457,7 @@
          <color>00000000</color>
          <maxLogoCount>5</maxLogoCount>
          <logoScale>1.2</logoScale>
-         <scrollSound>./_inc/sounds/systembrowse.wav</scrollSound>
+         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
       </carousel>
       <image name="logo">
          <path>${systemCarouselImagePath}/${system.theme}.png</path>
@@ -136,30 +487,8 @@
          <alignment>left</alignment>
          <zIndex>50</zIndex>
       </text>
-      <helpsystem name="help">
-         <fontPath>${fontRegular}</fontPath>
-         <iconColor>ffffff99</iconColor>
-         <textColor>ffffff99</textColor>
-      </helpsystem>
    </view>
    <include subset="aspect-ratio" name="4-3">./aspect-ratio-4-3.xml</include>
    <include subset="aspect-ratio" name="1-1">./aspect-ratio-1-1.xml</include>
    <include subset="layout" name="vertical">./_inc/layouts/vertical.xml</include>
-   <view name="system, basic, detailed, video, grid">
-      <carousel name="systemcarousel">
-         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
-      </carousel>
-      <textlist name="gamelist">
-         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
-      </textlist>
-      <imagegrid name="gamegrid">
-         <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
-      </imagegrid>
-      <sound name="back">
-         <path>./_inc/sounds/back.wav</path>
-      </sound>
-      <sound name="launch">
-         <path>./_inc/sounds/launch.wav</path>
-      </sound>
-   </view>
 </theme>
