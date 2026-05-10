@@ -250,8 +250,8 @@
          <path>${spacerImage}</path>
          <pos>0 0</pos>
          <size>1 1</size>
-         <color>00000088</color>
-         <zIndex>5</zIndex>
+         <color>0000008C</color>
+         <zIndex>2</zIndex>
       </image>
    </view>
 </theme>
