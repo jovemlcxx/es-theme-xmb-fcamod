@@ -39,7 +39,7 @@ Optimized for **FCAMOD,** a fork of EmulationStation by [christianhaitian](https
 
 The theme supports up to 20 custom wallpapers (Images and Videos). **Please note that only one wallpaper (`bg_1.png` and `bg_1.mp4`) is included by default.**
 
-> **⚠️ Performance Tip:** If you experience any menu slowdowns or lag on your device, it is highly recommended to delete the `bg_1.mp4` file. Video backgrounds can be heavy and cause performance drops on certain handhelds.
+> **⚠️ Performance Tip:** If you experience any menu slowdowns or lag on your device, it is highly recommended to delete the file `bg_1.mp4`. Video backgrounds can be heavy and cause performance drops on certain handhelds.
 
 You can easily add your own:
 
