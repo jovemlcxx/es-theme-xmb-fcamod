@@ -50,7 +50,7 @@ You can easily add your own:
    - Follow the pattern `bg_{number}.png` or `bg_{number}.mp4`.
    - Example: `bg_1.png`, `bg_1.mp4`, etc.
 3. **Copy to the theme folder:**
-   - Place your files inside the `_inc/background/` directory.
+   - Place your files inside the directory `_inc/background/`.
 4. **Select the wallpaper on menu:**
    - Open the emulationstation menu, go to **Theme Configuration** > **Wallpaper** and choose the number corresponding to your file.
 
