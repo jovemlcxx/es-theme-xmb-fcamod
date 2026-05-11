@@ -1,4 +1,4 @@
-# XMB FCAMOD Theme
+# XMB EmulationStation Theme
 
 ![Platform](https://img.shields.io/badge/Platform-EmulationStation-purple)
 ![Style](https://img.shields.io/badge/Style-XMB-blue)
