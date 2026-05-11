@@ -8,7 +8,7 @@ A premium, high-performance XMB-styled theme designed specifically for handheld 
 
 **Official Repository:** [github.com/jovemlcxx/es-theme-xmb-fcamod](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
 
-Optimized for **FCAMOD,** a fork of EmulationStation by [christianhaitian](https://github.com/christianhaitian/EmulationStation-fcamod).
+Optimized for **FCAMOD,** a fork of EmulationStation by [christianhaitian](https://github.com/christianhaitian/EmulationStation-fcamod)
 
 ![Preview](./xmb.png)
 
