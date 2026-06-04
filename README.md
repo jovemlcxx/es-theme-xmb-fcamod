@@ -1,87 +1,87 @@
-# Tema XMB para EmulationStation
+# XMB Theme for EmulationStation
 
-![Platform](https://img.shields.io/badge/Plataforma-EmulationStation-purple)
-![Style](https://img.shields.io/badge/Estilo-XMB-blue)
-[![Github](https://img.shields.io/badge/Github-Repositório-black?logo=github)](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
+![Platform](https://img.shields.io/badge/Platform-EmulationStation-purple)
+![Style](https://img.shields.io/badge/Style-XMB-blue)
+[![Github](https://img.shields.io/badge/Github-Repository-black?logo=github)](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
 
-Um tema inspirado no estilo XMB, projetado especificamente para consoles com frontend EmulationStation. Este tema traz a clássica experiência de interface de consoles para o seu sistema com um código limpo, otimizado e um layout refinado.
+A theme inspired by the XMB style, designed specifically for consoles using the EmulationStation frontend. This theme brings the classic console interface experience to your system with clean, optimized code and a refined layout.
 
-**Repositório Oficial:** [github.com/jovemlcxx/es-theme-xmb-fcamod](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
+**Official Repository:** [github.com/jovemlcxx/es-theme-xmb-fcamod](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
 
-Otimizado para **FCAMOD,** um fork do EmulationStation criado por [christianhaitian](https://github.com/christianhaitian/EmulationStation-fcamod)
+Optimized for **FCAMOD,** a fork of EmulationStation created by [christianhaitian](https://github.com/christianhaitian/EmulationStation-fcamod)
 
 ![Preview](./xmb.png)
 
-## 💻 Sistemas Suportados
+## 💻 Supported Systems
 
-Totalmente compatível e otimizado para rodar nas seguintes distribuições:
+Fully compatible and optimized to run on the following distributions:
 - [ArkOS](https://github.com/christianhaitian/arkos)
 - [dArkOS](https://github.com/christianhaitian/dArkOS)
 - [ArchR](https://github.com/archr-linux/Arch-R)
 - [Batocera](https://batocera.org/)
-- E demais sistemas baseados na engine FCAMOD.
+- And other systems based on the FCAMOD engine.
 
-## 🌟 Funcionalidades
+## 🌟 Features
 
-- **Interface Clássica XMB:** Recriação aproximada da experiência XMB (Cross Media Bar) encontrada no PSP/PS3.
-- **Suporte a Múltiplos Aspect Ratios:** Layouts otimizados para diferentes formatos de tela:
-  - **4:3:** Perfeito para R36S, RG351MP e outros portáteis padrão (640x480).
-  - **1:1:** Feito sob medida para telas quadradas como o RGB30, R36 Ultra e R36 Pro Max (720x720).
-- **Suporte a Modo Escuro:** Apresenta uma paleta de cores escuras elegante e moderna para uma experiência visual confortável.
-- **Fundos Dinâmicos:** Suporte para fundos estáticos (imagens .png) e animados (vídeos .mp4).
-- **Tipografia de Alta Qualidade:** Utiliza as fontes *FOT-NewRodin Pro* para um visual premium e autêntico.
-- **Otimizado para FCAMOD:** Aproveita os layouts de grid avançados e os recursos de delay de vídeo suportados pela engine FCAMOD.
+- **Classic XMB Interface:** A close recreation of the XMB (Cross Media Bar) experience found on PSP/PS3.
+- **Multiple Aspect Ratios Support:** Layouts optimized for different screen formats:
+  - **4:3:** Perfect for R36S, RG351MP, and other standard handhelds (640x480).
+  - **1:1:** Tailor-made for square screens like the RGB30, R36 Ultra, and R36 Pro Max (720x720).
+- **Dark Mode Support:** Features an elegant and modern dark color palette for a comfortable visual experience.
+- **Dynamic Backgrounds:** Support for static backgrounds (.png images) and animated backgrounds (.mp4 videos).
+- **High-Quality Typography:** Uses the *FOT-NewRodin Pro* fonts for a premium and authentic look.
+- **Optimized for FCAMOD:** Takes advantage of advanced grid layouts and video delay features supported by the FCAMOD engine.
 
-## 📂 Instalação
+## 📂 Installation
 
-1. Conecte-se ao seu dispositivo via SCP ou SFTP.
-2. Navegue até o seu diretório de temas (geralmente `/roms/themes/` ou `~/.emulationstation/themes/`).
-3. Copie a pasta do tema para este diretório. 
-   - **Nota:** A pasta deve se chamar `es-theme-xmb-fcamod` ou `es-theme-xmb-fcamod-main` (se baixada diretamente do GitHub).
-4. No EmulationStation, vá em **UI Settings** > **Theme Set** e selecione o tema.
-5. Vá em **UI Settings** > **Theme Configuration** para customizar:
-   - **Aspect Ratio:** Selecione o formato que corresponde ao seu aparelho (4:3 ou 1:1).
-   - **System Layout:** Escolha entre **Horizontal (XMB Clássico)** ou **Vertical (Barra Esquerda)**.
-   - **Esquema de Cores:** Escolha entre **Escuro** ou **Claro**.
-   - **Wallpaper:** Selecione o número correspondente ao seu fundo customizado (de 1 a 20).
+1. Connect to your device via SCP or SFTP.
+2. Navigate to your themes directory (usually `/roms/themes/` or `~/.emulationstation/themes/`).
+3. Copy the theme folder to this directory. 
+   - **Note:** The folder must be named `es-theme-xmb-fcamod` or `es-theme-xmb-fcamod-main` (if downloaded directly from GitHub).
+4. In EmulationStation, go to **UI Settings** > **Theme Set** and select the theme.
+5. Go to **UI Settings** > **Theme Configuration** to customize:
+   - **Aspect Ratio:** Select the format that matches your device (4:3 or 1:1).
+   - **System Layout:** Choose between **Horizontal (Classic XMB)** or **Vertical (Left Bar)**.
+   - **Color Scheme:** Choose between **Dark** or **Light**.
+   - **Wallpaper:** Select the number corresponding to your custom background (from 1 to 20).
 
-## 🖼️ Customização de Papel de Parede (Wallpaper)
+## 🖼️ Wallpaper Customization
 
-O tema suporta até 20 wallpapers customizados (Imagens e Vídeos). **Por favor, note que apenas um wallpaper (`bg_1.png` e `bg_1.mp4`) vem incluído por padrão.**
+The theme supports up to 20 custom wallpapers (Images and Videos). **Please note that only one wallpaper (`bg_1.png` and `bg_1.mp4`) is included by default.**
 
-> **⚠️ Dica de Performance:** Se você sentir lentidão ou quedas de quadros nos menus do seu aparelho, é altamente recomendado apagar o arquivo `bg_1.mp4`. Vídeos de fundo podem ser pesados e causar queda de performance em aparelhos com menos de 1Gb de ram.
+> **⚠️ Performance Tip:** If you experience slowdowns or frame drops in your device's menus, it is highly recommended to delete the `bg_1.mp4` file. Background videos can be heavy and cause performance drops on devices with less than 1GB of RAM.
 
-Você pode adicionar os seus próprios arquivos facilmente:
+You can easily add your own files:
 
-### Sobre Resolução e Aspect Ratio
-O tema esticará automaticamente as imagens e vídeos para preencherem 100% da tela do seu console. Portanto, para evitar que suas mídias fiquem distorcidas, **certifique-se de que a resolução da sua imagem e vídeo corresponda à proporção da tela do seu dispositivo**.
-- Para consoles de tela **4:3** (como o R36S, Miyoo Mini), recomendamos mídias na resolução **1024x768** ou **640x480**.
-- Para consoles de tela **1:1** (como o R36 Ultra e R36 Pro Max), recomendamos criar mídias perfeitamente quadradas (ex: **720x720** ou **1080x1080**).
+### About Resolution and Aspect Ratio
+The theme will automatically stretch images and videos to fill 100% of your console's screen. Therefore, to prevent your media from looking distorted, **make sure the resolution of your image and video matches the aspect ratio of your device's screen**.
+- For **4:3** screen consoles (like the R36S, Miyoo Mini), we recommend media in **1024x768** or **640x480** resolution.
+- For **1:1** screen consoles (like the R36 Ultra and R36 Pro Max), we recommend creating perfectly square media (e.g., **720x720** or **1080x1080**).
 
-### Passo a passo para adicionar arquivos:
+### Step-by-step to add files:
 
-1. **Prepare seus arquivos:** 
-   - Imagens estáticas devem estar no formato **.png**.
-   - Fundos animados devem estar no formato **.mp4**.
-2. **Renomeie os arquivos:**
-   - Siga o padrão `bg_{número}.png` ou `bg_{número}.mp4`.
-   - Exemplo: `bg_1.png`, `bg_1.mp4`, etc.
-3. **Copie para a pasta do tema:**
-   - Coloque seus arquivos dentro do diretório `_inc/background/`.
-4. **Selecione o wallpaper no menu:**
-   - Abra o menu do EmulationStation, vá em **Theme Configuration** > **Wallpaper** e escolha o número correspondente ao seu arquivo.
+1. **Prepare your files:** 
+   - Static images must be in **.png** format.
+   - Animated backgrounds must be in **.mp4** format.
+2. **Rename the files:**
+   - Follow the pattern `bg_{number}.png` or `bg_{number}.mp4`.
+   - Example: `bg_1.png`, `bg_1.mp4`, etc.
+3. **Copy to the theme folder:**
+   - Place your files inside the `_inc/background/` directory.
+4. **Select the wallpaper in the menu:**
+   - Open the EmulationStation menu, go to **Theme Configuration** > **Wallpaper** and choose the number corresponding to your file.
 
-## 🛠️ Créditos e Referências
+## 🛠️ Credits and References
 
-Este projeto utiliza assets, lógicas e inspirações de design de diversos projetos incríveis da comunidade:
+This project uses assets, logic, and design inspirations from several amazing community projects:
 
-- **Assets:** Ícones e elementos de interface retirados do repositório [RetroArch Assets](https://github.com/libretro/retroarch-assets).
-- **Projeto Base:** [anthonycaccese/xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de) - Principal referência estrutural, adaptada para compatibilidade com a antiga engine do FCAMOD.
-    - [mohamedhany1024/ps3-xmb-web](https://github.com/mohamedhany1024/ps3-xmb-web) - Referência de lógica e layout para o estilo do XMB do PS3.
-    - [RobZombie9043/xmb-es-de](https://github.com/RobZombie9043/xmb-es-de) - Inspirações adicionais de layout.
-    - [lcdyk0517/arkos4clone](https://github.com/lcdyk0517/arkos4clone) - Orientação estrutural para compatibilidade com ArkOS.
-- **Vídeo de Fundo:** Fundo animado criado por **TizzyT** ([Vídeo Original](https://youtu.be/69RqDjCYiek)).
+- **Assets:** Icons and interface elements taken from the [RetroArch Assets](https://github.com/libretro/retroarch-assets) repository.
+- **Base Project:** [anthonycaccese/xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de) - Main structural reference, adapted for compatibility with the older FCAMOD engine.
+    - [mohamedhany1024/ps3-xmb-web](https://github.com/mohamedhany1024/ps3-xmb-web) - Logic and layout reference for the PS3 XMB style.
+    - [RobZombie9043/xmb-es-de](https://github.com/RobZombie9043/xmb-es-de) - Additional layout inspirations.
+    - [lcdyk0517/arkos4clone](https://github.com/lcdyk0517/arkos4clone) - Structural guidance for ArkOS compatibility.
+- **Background Video:** Animated background created by **TizzyT** ([Original Video](https://youtu.be/69RqDjCYiek)).
 
 ---
 
-*Desenvolvido para a comunidade Retro Gaming.*
+*Developed for the Retro Gaming community.*
