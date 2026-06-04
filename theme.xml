@@ -10,7 +10,6 @@
       <systemCarouselImagePath>./_inc/systems/controller</systemCarouselImagePath>
       <systemContentImagePath>./_inc/systems/physical-media</systemContentImagePath>
       <spacerImage>./_inc/images/white.png</spacerImage>
-      <backgroundImage>./_inc/images/background.png</backgroundImage>
       <helpMenu>MENU</helpMenu>
       <helpSelect>SELECT</helpSelect>
       <aspectRatioLabel>Aspect Ratio</aspectRatioLabel>
@@ -21,12 +20,15 @@
       <verticalLabel>Vertical (Left Bar)</verticalLabel>
       <enabledLabel>Enabled</enabledLabel>
       <disabledLabel>Disabled</disabledLabel>
-      <backgroundColor>0D0018</backgroundColor>
-      <systemBackgroundColor>0D0018</systemBackgroundColor>
-      <accentColor>7B2FBE</accentColor>
+      <colorSchemeLabel>Color Scheme</colorSchemeLabel>
+      <darkLabel>Dark</darkLabel>
+      <lightLabel>Light</lightLabel>
+      <backgroundColor>000000</backgroundColor>
+      <systemBackgroundColor>000000</systemBackgroundColor>
+      <accentColor>ffffff</accentColor>
       <systemLogoColor>ffffff</systemLogoColor>
       <textColor>ffffff</textColor>
-      <gamelistPanelColor>0D001888</gamelistPanelColor>
+      <gamelistPanelColor>00000088</gamelistPanelColor>
       <gamelistLogoColor>ffffffCC</gamelistLogoColor>
       <gamelistSelectedColor>ffffff</gamelistSelectedColor>
       <gamelistUnselectedColor>ffffff55</gamelistUnselectedColor>
@@ -35,10 +37,16 @@
       <helpTextColor>ffffff66</helpTextColor>
       <helpIconColor>ffffff66</helpIconColor>
       <statusBarIconColor>ffffff</statusBarIconColor>
-      <menuBackgroundColor>1A0033DD</menuBackgroundColor>
+      <menuBackgroundColor>111111EE</menuBackgroundColor>
+      <statusBarBackgroundColor>000000</statusBarBackgroundColor>
+      <menuTextColor>ffffffAA</menuTextColor>
+      <menuTextSelectedColor>ffffff</menuTextSelectedColor>
+      <menuSeparatorColor>ffffff1A</menuSeparatorColor>
       <wallpaperPath>./_inc/background/bg_1.png</wallpaperPath>
       <wallpaperVideoPath>./_inc/background/bg_1.mp4</wallpaperVideoPath>
       <showBackgroundVideo>true</showBackgroundVideo>
+      <systemBackgroundOverlayColor>00000033</systemBackgroundOverlayColor>
+      <backgroundOverlayColor>0000008C</backgroundOverlayColor>
    </variables>
    <view name="system, grid, menu">
       <sound name="select">
@@ -73,6 +81,9 @@
       <verticalLabel>Vertical (Barra Lateral)</verticalLabel>
       <enabledLabel>Ativado</enabledLabel>
       <disabledLabel>Desativado</disabledLabel>
+      <colorSchemeLabel>Esquema de Cores</colorSchemeLabel>
+      <darkLabel>Escuro</darkLabel>
+      <lightLabel>Claro</lightLabel>
    </variables>
    <variables lang="es">
       <helpMenu>MENÚ</helpMenu>
@@ -85,6 +96,9 @@
       <verticalLabel>Vertical (Barra Lateral)</verticalLabel>
       <enabledLabel>Activado</enabledLabel>
       <disabledLabel>Desactivado</disabledLabel>
+      <colorSchemeLabel>Esquema de Color</colorSchemeLabel>
+      <darkLabel>Oscuro</darkLabel>
+      <lightLabel>Claro</lightLabel>
    </variables>
    <variables lang="fr">
       <helpSelect>SÉLECTIONNER</helpSelect>
@@ -96,6 +110,9 @@
       <verticalLabel>Vertical (Barre Latérale)</verticalLabel>
       <enabledLabel>Activé</enabledLabel>
       <disabledLabel>Désactivé</disabledLabel>
+      <colorSchemeLabel>Schéma de Couleur</colorSchemeLabel>
+      <darkLabel>Sombre</darkLabel>
+      <lightLabel>Clair</lightLabel>
    </variables>
    <variables lang="de">
       <helpMenu>MENÜ</helpMenu>
@@ -108,6 +125,9 @@
       <verticalLabel>Vertikal (Seitenleiste)</verticalLabel>
       <enabledLabel>Aktiviert</enabledLabel>
       <disabledLabel>Deaktiviert</disabledLabel>
+      <colorSchemeLabel>Farbschema</colorSchemeLabel>
+      <darkLabel>Dunkel</darkLabel>
+      <lightLabel>Hell</lightLabel>
    </variables>
    <variables lang="it">
       <helpSelect>SELEZIONA</helpSelect>
@@ -119,6 +139,9 @@
       <verticalLabel>Verticale (Barra Laterale)</verticalLabel>
       <enabledLabel>Abilitato</enabledLabel>
       <disabledLabel>Disabilitato</disabledLabel>
+      <colorSchemeLabel>Schema Colori</colorSchemeLabel>
+      <darkLabel>Scuro</darkLabel>
+      <lightLabel>Chiaro</lightLabel>
    </variables>
    <variables lang="ja">
       <helpMenu>メニュー</helpMenu>
@@ -129,7 +152,11 @@
       <videoLabel>背景ビデオ</videoLabel>
       <horizontalLabel>横型 (XMB Classic)</horizontalLabel>
       <verticalLabel>縦型 (左バー)</verticalLabel>
-      <enabledLabel>有効</enabledLabel>      <disabledLabel>無効</disabledLabel>
+      <enabledLabel>有効</enabledLabel>
+      <disabledLabel>無効</disabledLabel>
+      <colorSchemeLabel>カラースキーム</colorSchemeLabel>
+      <darkLabel>ダーク</darkLabel>
+      <lightLabel>ライト</lightLabel>
    </variables>
    <variables lang="ko">
       <helpMenu>메뉴</helpMenu>
@@ -142,6 +169,9 @@
       <verticalLabel>세로 (왼쪽 바)</verticalLabel>
       <enabledLabel>활성화</enabledLabel>
       <disabledLabel>비활성화</disabledLabel>
+      <colorSchemeLabel>색상 테마</colorSchemeLabel>
+      <darkLabel>어두운</darkLabel>
+      <lightLabel>밝은</lightLabel>
    </variables>
    <variables lang="ru">
       <helpMenu>МЕНЮ</helpMenu>
@@ -154,6 +184,9 @@
       <verticalLabel>Вертикальный</verticalLabel>
       <enabledLabel>Включено</enabledLabel>
       <disabledLabel>Отключено</disabledLabel>
+      <colorSchemeLabel>Цветовая схема</colorSchemeLabel>
+      <darkLabel>Тёмная</darkLabel>
+      <lightLabel>Светлая</lightLabel>
    </variables>
    <variables lang="zh-cn">
       <helpMenu>菜单</helpMenu>
@@ -166,6 +199,9 @@
       <verticalLabel>纵向 (左侧栏)</verticalLabel>
       <enabledLabel>已启用</enabledLabel>
       <disabledLabel>已禁用</disabledLabel>
+      <colorSchemeLabel>配色方案</colorSchemeLabel>
+      <darkLabel>深色</darkLabel>
+      <lightLabel>浅色</lightLabel>
    </variables>
    <variables lang="zh-tw">
       <helpMenu>菜單</helpMenu>
@@ -178,6 +214,9 @@
       <verticalLabel>縱向 (左側欄)</verticalLabel>
       <enabledLabel>已啟用</enabledLabel>
       <disabledLabel>已禁用</disabledLabel>
+      <colorSchemeLabel>配色方案</colorSchemeLabel>
+      <darkLabel>深色</darkLabel>
+      <lightLabel>淺色</lightLabel>
    </variables>
    <variables lang="tr">
       <helpMenu>MENÜ</helpMenu>
@@ -190,6 +229,9 @@
       <verticalLabel>Dikey (Sol Çubuk)</verticalLabel>
       <enabledLabel>Etkin</enabledLabel>
       <disabledLabel>Devre Dışı</disabledLabel>
+      <colorSchemeLabel>Renk Şeması</colorSchemeLabel>
+      <darkLabel>Koyu</darkLabel>
+      <lightLabel>Açık</lightLabel>
    </variables>
    <variables lang="nl">
       <helpMenu>MENU</helpMenu>
@@ -202,6 +244,9 @@
       <verticalLabel>Verticaal (Linkerbalk)</verticalLabel>
       <enabledLabel>Ingeschakeld</enabledLabel>
       <disabledLabel>Uitgeschakeld</disabledLabel>
+      <colorSchemeLabel>Kleurenschema</colorSchemeLabel>
+      <darkLabel>Donker</darkLabel>
+      <lightLabel>Licht</lightLabel>
    </variables>
    <variables lang="sv">
       <helpMenu>MENY</helpMenu>
@@ -214,6 +259,9 @@
       <verticalLabel>Vertikal (Vänster fält)</verticalLabel>
       <enabledLabel>Aktiverad</enabledLabel>
       <disabledLabel>Inaktiverad</disabledLabel>
+      <colorSchemeLabel>Färgschema</colorSchemeLabel>
+      <darkLabel>Mörkt</darkLabel>
+      <lightLabel>Ljust</lightLabel>
    </variables>
    <variables lang="pl">
       <helpMenu>MENU</helpMenu>
@@ -226,6 +274,9 @@
       <verticalLabel>Pionowy (Lewy pasek)</verticalLabel>
       <enabledLabel>Włączone</enabledLabel>
       <disabledLabel>Wyłączone</disabledLabel>
+      <colorSchemeLabel>Schemat kolorów</colorSchemeLabel>
+      <darkLabel>Ciemny</darkLabel>
+      <lightLabel>Jasny</lightLabel>
    </variables>
    <variables lang="ca">
       <helpMenu>MENÚ</helpMenu>
@@ -238,6 +289,9 @@
       <verticalLabel>Vertical (Barra esquerra)</verticalLabel>
       <enabledLabel>Activat</enabledLabel>
       <disabledLabel>Desactivat</disabledLabel>
+      <colorSchemeLabel>Esquema de colors</colorSchemeLabel>
+      <darkLabel>Fosc</darkLabel>
+      <lightLabel>Clar</lightLabel>
    </variables>
    <variables lang="da">
       <helpMenu>MENU</helpMenu>
@@ -250,6 +304,9 @@
       <verticalLabel>Lodret (Venstre bar)</verticalLabel>
       <enabledLabel>Aktiveret</enabledLabel>
       <disabledLabel>Deaktiveret</disabledLabel>
+      <colorSchemeLabel>Farveskema</colorSchemeLabel>
+      <darkLabel>Mørk</darkLabel>
+      <lightLabel>Lys</lightLabel>
    </variables>
    <variables lang="fi">
       <helpMenu>VALIKKO</helpMenu>
@@ -262,6 +319,9 @@
       <verticalLabel>Pysty (Vasen palkki)</verticalLabel>
       <enabledLabel>Käytössä</enabledLabel>
       <disabledLabel>Ei käytössä</disabledLabel>
+      <colorSchemeLabel>Väriteema</colorSchemeLabel>
+      <darkLabel>Tumma</darkLabel>
+      <lightLabel>Vaalea</lightLabel>
    </variables>
    <variables lang="hu">
       <helpMenu>MENÜ</helpMenu>
@@ -274,6 +334,9 @@
       <verticalLabel>Függőleges (Bal sáv)</verticalLabel>
       <enabledLabel>Engedélyezve</enabledLabel>
       <disabledLabel>Letiltva</disabledLabel>
+      <colorSchemeLabel>Színséma</colorSchemeLabel>
+      <darkLabel>Sötét</darkLabel>
+      <lightLabel>Világos</lightLabel>
    </variables>
    <variables lang="no">
       <helpMenu>MENY</helpMenu>
@@ -286,6 +349,9 @@
       <verticalLabel>Vertikal (Venstre felt)</verticalLabel>
       <enabledLabel>Aktivert</enabledLabel>
       <disabledLabel>Deaktivert</disabledLabel>
+      <colorSchemeLabel>Fargeskjema</colorSchemeLabel>
+      <darkLabel>Mørk</darkLabel>
+      <lightLabel>Lys</lightLabel>
    </variables>
    <variables lang="ro">
       <helpMenu>MENIU</helpMenu>
@@ -298,6 +364,9 @@
       <verticalLabel>Vertical (Bara stângă)</verticalLabel>
       <enabledLabel>Activat</enabledLabel>
       <disabledLabel>Dezactivat</disabledLabel>
+      <colorSchemeLabel>Schemă de culori</colorSchemeLabel>
+      <darkLabel>Întunecat</darkLabel>
+      <lightLabel>Deschis</lightLabel>
    </variables>
    <variables lang="uk">
       <helpMenu>МЕНЮ</helpMenu>
@@ -305,11 +374,14 @@
       <aspectRatioLabel>Співвідношення сторін</aspectRatioLabel>
       <wallpaperLabel>Шпалери</wallpaperLabel>
       <layoutLabel>Макет системи</layoutLabel>
-      <videoLabel>Фонове відео</videoLabel>
+      <videoLabel>Фоновое відео</videoLabel>
       <horizontalLabel>Горизонтальний (XMB Classic)</horizontalLabel>
       <verticalLabel>Вертикальний (Ліва панель)</verticalLabel>
       <enabledLabel>Увімкнено</enabledLabel>
       <disabledLabel>Вимкнено</disabledLabel>
+      <colorSchemeLabel>Колірна схема</colorSchemeLabel>
+      <darkLabel>Темна</darkLabel>
+      <lightLabel>Світла</lightLabel>
    </variables>
    <variables lang="cs">
       <helpMenu>MENU</helpMenu>
@@ -322,6 +394,9 @@
       <verticalLabel>Vertikální (Levý panel)</verticalLabel>
       <enabledLabel>Povoleno</enabledLabel>
       <disabledLabel>Zakázáno</disabledLabel>
+      <colorSchemeLabel>Barevné schéma</colorSchemeLabel>
+      <darkLabel>Tmavé</darkLabel>
+      <lightLabel>Světlé</lightLabel>
    </variables>
    <variables lang="el">
       <helpMenu>ΜΕΝΟΥ</helpMenu>
@@ -334,6 +409,9 @@
       <verticalLabel>Κατακόρυφο (Αριστερή Μπάρα)</verticalLabel>
       <enabledLabel>Ενεργοποιημένο</enabledLabel>
       <disabledLabel>Απενεργοποιημένο</disabledLabel>
+      <colorSchemeLabel>Χρωματικό Σχήμα</colorSchemeLabel>
+      <darkLabel>Σκοτεινό</darkLabel>
+      <lightLabel>Φωτεινό</lightLabel>
    </variables>
    <variables lang="vi">
       <helpMenu>MENU</helpMenu>
@@ -346,6 +424,9 @@
       <verticalLabel>Dọc (Thanh bên trái)</verticalLabel>
       <enabledLabel>Bật</enabledLabel>
       <disabledLabel>Tắt</disabledLabel>
+      <colorSchemeLabel>Giao diện màu</colorSchemeLabel>
+      <darkLabel>Tối</darkLabel>
+      <lightLabel>Sáng</lightLabel>
    </variables>
    <variables lang="pt">
       <helpMenu>MENU</helpMenu>
@@ -358,6 +439,9 @@
       <verticalLabel>Vertical (Barra Esquerda)</verticalLabel>
       <enabledLabel>Ativado</enabledLabel>
       <disabledLabel>Desativado</disabledLabel>
+      <colorSchemeLabel>Esquema de Cores</colorSchemeLabel>
+      <darkLabel>Escuro</darkLabel>
+      <lightLabel>Claro</lightLabel>
    </variables>
    <variables lang="id">
       <helpMenu>MENU</helpMenu>
@@ -370,6 +454,9 @@
       <verticalLabel>Vertikal (Bilah Kiri)</verticalLabel>
       <enabledLabel>Aktif</enabledLabel>
       <disabledLabel>Nonaktif</disabledLabel>
+      <colorSchemeLabel>Skema Warna</colorSchemeLabel>
+      <darkLabel>Gelap</darkLabel>
+      <lightLabel>Terang</lightLabel>
    </variables>
    <subset name="aspect-ratio" displayName="${aspectRatioLabel}">
       <include name="4-3" displayName="4:3" />
@@ -413,6 +500,53 @@
       <include name="horizontal" displayName="${horizontalLabel}" />
       <include name="vertical" displayName="${verticalLabel}" />
    </subset>
+   <subset name="color-scheme" displayName="${colorSchemeLabel}">
+      <include name="dark" displayName="${darkLabel}">./_inc/colors/dark.xml</include>
+      <include name="light" displayName="${lightLabel}">./_inc/colors/light.xml</include>
+   </subset>
+   <view name="system, grid, menu">
+      <helpsystem name="help">
+         <textColor>${helpTextColor}</textColor>
+         <iconColor>${helpIconColor}</iconColor>
+      </helpsystem>
+   </view>
+   <view name="menu">
+      <menuText name="menutitle">
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.025</fontSize>
+         <color>${menuTextSelectedColor}</color>
+      </menuText>
+      <menuText name="menufooter">
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.018</fontSize>
+         <color>${menuTextColor}</color>
+      </menuText>
+      <menuText name="menutext">
+         <fontPath>${fontBold}</fontPath>
+         <fontSize>0.025</fontSize>
+         <color>${menuTextColor}</color>
+         <separatorColor>${menuSeparatorColor}</separatorColor>
+         <selectedColor>${menuTextSelectedColor}</selectedColor>
+      </menuText>
+      <menuTextSmall name="menutextsmall">
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.018</fontSize>
+         <color>${menuTextColor}</color>
+      </menuTextSmall>
+      <menuGroup name="menugroup">
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.022</fontSize>
+         <color>${menuTextSelectedColor}</color>
+         <separatorColor>${menuSeparatorColor}</separatorColor>
+         <backgroundColor>00000000</backgroundColor>
+         <lineSpacing>2.5</lineSpacing>
+      </menuGroup>
+      <menuBackground name="menubg">
+         <color>${menuBackgroundColor}</color>
+         <pos>-0.5 -0.5</pos>
+         <size>2 2</size>
+      </menuBackground>
+   </view>
    <view name="system, grid">
       <image name="bg_image" extra="true">
          <path>${wallpaperPath}</path>
@@ -434,18 +568,18 @@
    <view name="system">
       <image name="background_overlay" extra="true">
          <path>${spacerImage}</path>
-         <pos>-0.005 -0.005</pos>
-         <size>1.01 1.01</size>
-         <color>00000033</color>
+         <pos>-0.5 -0.5</pos>
+         <size>2 2</size>
+         <color>${systemBackgroundOverlayColor}</color>
          <zIndex>5</zIndex>
       </image>
    </view>
    <view name="grid">
       <image name="background_overlay" extra="true">
          <path>${spacerImage}</path>
-         <pos>-0.005 -0.005</pos>
-         <size>1.01 1.01</size>
-         <color>0000008C</color>
+         <pos>-0.5 -0.5</pos>
+         <size>2 2</size>
+         <color>${backgroundOverlayColor}</color>
          <zIndex>5</zIndex>
       </image>
    </view>
@@ -456,7 +590,7 @@
          <zIndex>40</zIndex>
          <color>00000000</color>
          <maxLogoCount>5</maxLogoCount>
-         <logoScale>1.0</logoScale>
+         <logoScale>1.3</logoScale>
          <scrollSound>./_inc/sounds/scroll.wav</scrollSound>
       </carousel>
       <image name="logo">

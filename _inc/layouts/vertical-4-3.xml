@@ -6,7 +6,7 @@
          <pos>0.02 0.125</pos>
          <size>0.20 0.75</size>
          <logoSize>0.17 0.17</logoSize>
-         <logoScale>1.0</logoScale>
+         <logoScale>1.3</logoScale>
          <maxLogoCount>3</maxLogoCount>
          <logoAlignment>center</logoAlignment>
          <defaultTransition>instant</defaultTransition>
