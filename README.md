@@ -55,7 +55,7 @@ You can easily add your own files:
 
 ### About Resolution and Aspect Ratio
 The theme will automatically stretch images and videos to fill 100% of your console's screen. Therefore, to prevent your media from looking distorted, **make sure the resolution of your image and video matches the aspect ratio of your device's screen**.
-- For **4:3** screen consoles (like the R36S, Miyoo Mini), we recommend media in **1024x768** or **640x480** resolution.
+- For **4:3** screen consoles (like the R36S), we recommend media in **1024x768** or **640x480** resolution.
 - For **1:1** screen consoles (like the R36 Ultra and R36 Pro Max), we recommend creating perfectly square media (e.g., **720x720** or **1080x1080**).
 
 ### Step-by-step to add files:
