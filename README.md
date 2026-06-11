@@ -51,6 +51,8 @@ The theme supports up to 20 custom wallpapers (Images and Videos). **Please note
 
 > **⚠️ Performance Tip:** If you experience slowdowns or frame drops in your device's menus, it is highly recommended to delete the `bg_1.mp4` file. Background videos can be heavy and cause performance drops on devices with less than 1GB of RAM.
 
+> **⚠️ Animated Background Requirement:** If you intend to use an animated video background (e.g., `bg_1.mp4`), you **must** also provide a static image of its first frame or a screenshot saved as a PNG file with the same number (e.g., `bg_1.png`). Skipping this matching PNG file can cause a black screen when transitioning between systems due to rendering limitations in the EmulationStation frontend.
+
 You can easily add your own files:
 
 ### About Resolution and Aspect Ratio
