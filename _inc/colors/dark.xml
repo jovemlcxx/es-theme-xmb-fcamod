@@ -1,0 +1,35 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables>
+      <!-- Menu System -->
+      <menuBackgroundColor>111111EE</menuBackgroundColor>
+      <statusBarBackgroundColor>000000</statusBarBackgroundColor>
+      <menuTextColor>ffffffAA</menuTextColor>
+      <menuTextSelectedColor>ffffff</menuTextSelectedColor>
+      <menuSeparatorColor>ffffff1A</menuSeparatorColor>
+      <!-- General -->
+      <backgroundColor>000000</backgroundColor>
+      <systemBackgroundColor>000000</systemBackgroundColor>
+      <accentColor>ffffff</accentColor>
+      <systemLogoColor>ffffff</systemLogoColor>
+      <textColor>ffffff</textColor>
+      <!-- Gamelist -->
+      <gamelistPanelColor>00000088</gamelistPanelColor>
+      <gamelistLogoColor>ffffffCC</gamelistLogoColor>
+      <gamelistSelectedColor>ffffff</gamelistSelectedColor>
+      <gamelistUnselectedColor>ffffff55</gamelistUnselectedColor>
+      <!-- Metadata -->
+      <metadataColor>ffffffCC</metadataColor>
+      <metadataLabelColor>ffffff66</metadataLabelColor>
+      <!-- Help -->
+      <helpTextColor>ffffff66</helpTextColor>
+      <helpIconColor>ffffff66</helpIconColor>
+      <statusBarIconColor>ffffff</statusBarIconColor>
+      <!-- Overlays (Dark) -->
+      <systemBackgroundOverlayColor>00000033</systemBackgroundOverlayColor>
+      <backgroundOverlayColor>0000008C</backgroundOverlayColor>
+      <!-- Menu Text Input -->
+      <menuTextInputImage>./_inc/images/menu-textinput-dark.png</menuTextInputImage>
+      <menuTextInputImageActive>./_inc/images/menu-textinput-dark-active.png</menuTextInputImageActive>
+   </variables>
+</theme>

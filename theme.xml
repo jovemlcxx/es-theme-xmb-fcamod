@@ -513,29 +513,29 @@
    <view name="menu">
       <menuText name="menutitle">
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.025</fontSize>
+         <fontSize>0.03</fontSize>
          <color>${menuTextSelectedColor}</color>
       </menuText>
       <menuText name="menufooter">
          <fontPath>${fontRegular}</fontPath>
-         <fontSize>0.018</fontSize>
+         <fontSize>0.02</fontSize>
          <color>${menuTextColor}</color>
       </menuText>
       <menuText name="menutext">
          <fontPath>${fontBold}</fontPath>
-         <fontSize>0.025</fontSize>
+         <fontSize>0.03</fontSize>
          <color>${menuTextColor}</color>
          <separatorColor>${menuSeparatorColor}</separatorColor>
          <selectedColor>${menuTextSelectedColor}</selectedColor>
       </menuText>
       <menuTextSmall name="menutextsmall">
          <fontPath>${fontRegular}</fontPath>
-         <fontSize>0.018</fontSize>
+         <fontSize>0.02</fontSize>
          <color>${menuTextColor}</color>
       </menuTextSmall>
       <menuGroup name="menugroup">
          <fontPath>${fontRegular}</fontPath>
-         <fontSize>0.022</fontSize>
+         <fontSize>0.03</fontSize>
          <color>${menuTextSelectedColor}</color>
          <separatorColor>${menuSeparatorColor}</separatorColor>
          <backgroundColor>00000000</backgroundColor>
@@ -546,6 +546,10 @@
          <pos>-0.5 -0.5</pos>
          <size>2 2</size>
       </menuBackground>
+      <menuTextEdit name="menutextedit">
+         <inactive>${menuTextInputImage}</inactive>
+         <active>${menuTextInputImageActive}</active>
+      </menuTextEdit>
    </view>
    <view name="system, grid">
       <image name="bg_image" extra="true">

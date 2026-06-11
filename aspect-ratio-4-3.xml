@@ -129,7 +129,7 @@
       <text name="md_name">
          <pos>0.40 0.42</pos>
          <size>0.60 0.08</size>
-         <fontSize>0.038</fontSize>
+         <fontSize>0.035</fontSize>
          <fontPath>${fontBold}</fontPath>
          <color>ffffff</color>
          <alignment>left</alignment>

@@ -1,0 +1,35 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <variables>
+      <!-- Menu System -->
+      <menuBackgroundColor>F0F0F0EE</menuBackgroundColor>
+      <statusBarBackgroundColor>000000</statusBarBackgroundColor>
+      <menuTextColor>000000AA</menuTextColor>
+      <menuTextSelectedColor>000000</menuTextSelectedColor>
+      <menuSeparatorColor>0000001A</menuSeparatorColor>
+      <!-- General -->
+      <backgroundColor>000000</backgroundColor>
+      <systemBackgroundColor>000000</systemBackgroundColor>
+      <accentColor>000000</accentColor>
+      <systemLogoColor>000000</systemLogoColor>
+      <textColor>000000</textColor>
+      <!-- Gamelist -->
+      <gamelistPanelColor>FFFFFF88</gamelistPanelColor>
+      <gamelistLogoColor>000000CC</gamelistLogoColor>
+      <gamelistSelectedColor>000000</gamelistSelectedColor>
+      <gamelistUnselectedColor>00000055</gamelistUnselectedColor>
+      <!-- Metadata -->
+      <metadataColor>000000CC</metadataColor>
+      <metadataLabelColor>00000066</metadataLabelColor>
+      <!-- Help -->
+      <helpTextColor>00000066</helpTextColor>
+      <helpIconColor>00000066</helpIconColor>
+      <statusBarIconColor>000000</statusBarIconColor>
+      <!-- Overlays (Light) -->
+      <systemBackgroundOverlayColor>00000033</systemBackgroundOverlayColor>
+      <backgroundOverlayColor>0000008C</backgroundOverlayColor>
+      <!-- Menu Text Input -->
+      <menuTextInputImage>./_inc/images/menu-textinput-light.png</menuTextInputImage>
+      <menuTextInputImageActive>./_inc/images/menu-textinput-light-active.png</menuTextInputImageActive>
+   </variables>
+</theme>
