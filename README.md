@@ -24,7 +24,6 @@ Validated against the frontend of each of these distributions:
 
 ## 🌟 Features
 
-<<<<<<< HEAD
 - **Classic XMB Interface:** Horizontal system carousel with the selected system on the left and its physical media right below it, like the PSP/PS3 XMB.
 - **PSP-style Game List:** Icon and name on every row, 5 games per screen. The selected game sits right on top of the same line used by the system screen, so both screens line up. Names stay on a single line (long ones end in "..." and the selected one scrolls) and stay visible even while scrolling fast through hundreds of games.
 - **Continuous Animated Background:** The background video keeps playing while you browse systems, instead of restarting on every move. It can be turned off in the settings.
@@ -34,17 +33,6 @@ Validated against the frontend of each of these distributions:
   - **4:3:** For R36S, RG351MP and other standard handhelds (640x480).
   - **1:1:** For square screens like the RGB30, R36 Ultra and R36 Pro Max (720x720).
 - **Two Layouts:** Horizontal (Classic XMB) or Vertical (Left Bar, 5 systems on screen). The game list follows the chosen layout.
-=======
-- **Classic XMB Interface:** System carousel with the same geometry as the PSP/PS3 XMB: five icons on screen, the selected one at a quarter of the screen with its physical media right below it.
-- **PSP-style Game List:** Icon and name on every row. Names stay visible even while scrolling fast through hundreds of games.
-- **Continuous Animated Background:** The background video keeps playing while you browse systems, instead of restarting on every move. It can be turned off in the settings.
-- **375 System Icons:** Console and physical media icons for every system of ArkOS, dArkOS, ArchR and Batocera (see [System Icon Coverage](#-system-icon-coverage)).
-- **Nintendo/Xbox or PlayStation Buttons:** The footer can show Nintendo/Xbox or PlayStation (○ ✕) button icons, with an option for devices with swapped A/B buttons.
-- **Multiple Aspect Ratios:**
-  - **4:3:** For R36S, RG351MP and other standard handhelds (640x480). Shows 3 games per screen.
-  - **1:1:** For square screens like the RGB30, R36 Ultra and R36 Pro Max (720x720). Shows 5 games per screen.
-- **Two Layouts:** Horizontal (Classic XMB) or Vertical (Left Bar).
->>>>>>> c614822348732f335b031e373123d196c02727d4
 - **Dark and Light Menus:** The settings menu, including on-screen keyboard text boxes (e.g. Wi-Fi password), follows the chosen color scheme.
 - **Translated:** Theme settings are available in 26 languages (the button options are in English, Portuguese and Spanish so far).
 - **High-Quality Typography:** Uses the *FOT-NewRodin Pro* fonts for an authentic look.
@@ -54,17 +42,10 @@ Validated against the frontend of each of these distributions:
 **New**
 - **PlayStation button icons:** new **Button Icons** option (Nintendo / Xbox or PlayStation) for the footer. PlayStation icons follow the physical button position (A = ○, B = ✕).
 - **Confirm Button (A/B) option:** the footer can show B as the confirm button for users who swapped A/B in the system settings.
-<<<<<<< HEAD
 - **PSP-style game list:** icon and name on every row, 5 games per screen, with the selected game on the system screen's line. Names stay on a single line and remain visible while scrolling fast.
 - **System icons for every distribution:** 376 console and media icons covering ArkOS, dArkOS, dArkOSRE-R36, ArchR and Batocera, including missing ones recovered from the base theme and RetroArch Assets (Wolfenstein, DOOM and Cave Story floppies, Sega Pico, Commodore PET, Sharp MZ, arcade boards, game ports and more).
 - **Vertical layout with 5 systems:** the left bar now shows 5 systems on 4:3 too.
 - **Batocera, ArchR and dArkOSRE-R36 compatibility:** the theme is validated against their frontend, and their extra languages are supported.
-=======
-- **PSP-style game list:** icon and name on every row, with bigger icons. 3 games per screen on 4:3 and 5 on 1:1. Game names now stay visible while scrolling fast.
-- **System carousel matching the PSP/PS3 XMB:** same icon size, spacing and selected position as the original XMB, with the media icon centered below the selected system.
-- **System icons for every distribution:** 375 console and media icons covering ArkOS, dArkOS, ArchR and Batocera, including missing ones recovered from the base theme and RetroArch Assets (Wolfenstein, DOOM and Cave Story floppies, Sega Pico, Commodore PET, Sharp MZ, arcade boards, game ports and more).
-- **Batocera and ArchR compatibility:** the theme is validated against their frontend, and their extra languages are supported.
->>>>>>> c614822348732f335b031e373123d196c02727d4
 
 **Fixed**
 - **Background video restarting:** the video no longer restarts when moving between systems, and the wallpaper image covers the gap while it loads.
@@ -154,11 +135,7 @@ These come from the FCAMOD frontend itself and cannot be changed by a theme:
 
 This project uses assets, logic, and design inspirations from several amazing community projects:
 
-<<<<<<< HEAD
 - **Base Project:** [anthonycaccese/xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de) - Main structural reference, system and PlayStation button icons, and sounds, adapted for the older FCAMOD engine.
-=======
-- **Base Project:** [anthonycaccese/xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de) - Main structural reference, carousel geometry, system and PlayStation button icons, and sounds, adapted for the older FCAMOD engine.
->>>>>>> c614822348732f335b031e373123d196c02727d4
     - [mohamedhany1024/ps3-xmb-web](https://github.com/mohamedhany1024/ps3-xmb-web) - Logic and layout reference for the PS3 XMB style.
     - [RobZombie9043/xmb-es-de](https://github.com/RobZombie9043/xmb-es-de) - Additional layout inspirations.
     - [lcdyk0517/arkos4clone](https://github.com/lcdyk0517/arkos4clone) - Structural guidance for ArkOS compatibility.
