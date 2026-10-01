@@ -22,34 +22,31 @@
       <carousel name="systemcarousel">
          <type>horizontal</type>
          <logoAlignment>center</logoAlignment>
-         <!-- Same layout as xmb-menu-es-de: one icon every 25% of the screen, selected icon at 1/4
-              (ES-DE horizontalOffset -0.25). FCAMOD has no offset, so the carousel is 2 screens
-              wide (8 x 0.25) and starts at -0.75, putting its center at 0.25. -->
-         <pos>-0.75 0.1259259</pos>
-         <size>2 0.2314815</size>
-         <logoSize>0.1444444 0.1925926</logoSize>
-         <logoScale>1.2</logoScale>
-         <maxLogoCount>8</maxLogoCount>
+         <pos>-0.79 0.20</pos>
+         <size>1.98 0.22</size>
+         <logoSize>0.12 0.12</logoSize>
+         <logoScale>1.3</logoScale>
+         <maxLogoCount>9</maxLogoCount>
          <defaultTransition>instant</defaultTransition>
          <origin>0 0</origin>
       </carousel>
       <image name="e_system_content" extra="true">
-         <pos>0.25 0.4916667</pos>
-         <maxSize>0.1736111 0.2314815</maxSize>
+         <pos>0.20 0.49</pos>
+         <maxSize>0.15 0.15</maxSize>
          <origin>0.5 0.5</origin>
       </image>
       <text name="e_system_name" extra="true">
-         <pos>0.42 0.41</pos>
-         <size>0.58 0.07</size>
+         <pos>0.30 0.41</pos>
+         <size>0.65 0.07</size>
          <fontSize>0.06</fontSize>
       </text>
       <image name="e_metadata_line" extra="true">
-         <pos>0.42 0.50</pos>
-         <size>0.58 0.002</size>
+         <pos>0.30 0.50</pos>
+         <size>0.72 0.002</size>
       </image>
       <text name="systemInfo">
-         <pos>0.42 0.52</pos>
-         <size>0.58 0.05</size>
+         <pos>0.30 0.52</pos>
+         <size>0.65 0.05</size>
          <fontSize>0.03</fontSize>
       </text>
    </view>

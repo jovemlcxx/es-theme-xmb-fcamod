@@ -1,25 +1,37 @@
 <theme>
    <formatVersion>7</formatVersion>
-   <!-- Game list (PSP XMB): full-width list, icon on the left and the name on the
-        right of every item. The right info panel is hidden because the names use its space. -->
+   <!-- Game list (PSP XMB): icon on the left and the name next to it on every row, 5 rows of
+        0.14. The selected row (the middle one) sits right on top of the system view's line
+        (same start, same end): grid top = line y - 3 rows. The right info panel is hidden. -->
    <view name="grid">
       <imagegrid name="gamegrid">
-         <pos>0.03 0.125</pos>
-         <size>0.94 0.75</size>
-         <autoLayout>1 3</autoLayout>
+         <pos>0.03 0.08</pos>
+         <size>0.94 0.70</size>
+         <autoLayout>1 5</autoLayout>
       </imagegrid>
       <gridtile name="default">
-         <size>0.94 0.25</size>
+         <size>0.94 0.14</size>
       </gridtile>
       <image name="gridtile.image">
          <pos>0 0.5</pos>
          <!-- maxSize keeps the aspect ratio; <size> would stretch the icon -->
-         <maxSize>0.36 0.9</maxSize>
+         <maxSize>0.266 0.9</maxSize>
          <origin>0 0.5</origin>
       </image>
       <text name="gridtile">
-         <pos>0.39 0</pos>
-         <size>0.61 1</size>
+         <!-- names start at x=0.3, where the line starts;
+              box is 0.8 of the row: one full line (with descenders) fits, and FCAMOD only wraps
+              text above 1.95 x line height (~0.83 of the row on 1:1), so long names get "..."
+              instead of a second line. The selected name scrolls. -->
+         <pos>0.287 0.1</pos>
+         <size>0.713 0.8</size>
+      </text>
+      <image name="md_line" extra="true">
+         <pos>0.3 0.5</pos>
+         <size>0.72 0.002</size>
+         <visible>true</visible>
+      </image>
+      <text name="gridtile">
          <fontPath>${fontRegular}</fontPath>
          <fontSize>0.04</fontSize>
          <color>ffffff88</color>
@@ -29,16 +41,14 @@
       <text name="gridtile:selected">
          <fontPath>${fontBold}</fontPath>
          <color>ffffff</color>
+         <singleLineScroll>true</singleLineScroll>
       </text>
       <text name="md_name">
          <visible>false</visible>
       </text>
-      <image name="md_line" extra="true">
-         <visible>false</visible>
-      </image>
       <text name="md_description">
          <visible>false</visible>
       </text>
    </view>
-   <include subset="aspect-ratio" name="1-1">./psp-1-1.xml</include>
+   <include subset="layout" name="vertical">./psp-vertical.xml</include>
 </theme>
