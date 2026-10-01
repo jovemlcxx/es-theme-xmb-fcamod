@@ -1,0 +1,18 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- Background video off. visible=false only hides a video, it keeps decoding, so both
+        videos also point to a missing file (VideoComponent ignores non-existent paths).
+        FCAMOD additionally skips creating an invisible staticBackgroundVideo;
+        emulationstation-next (ArchR/Batocera) creates it anyway, hence the path. -->
+   <view name="system">
+      <video name="staticBackgroundVideo">
+         <path>./background/disabled.mp4</path>
+         <visible>false</visible>
+      </video>
+   </view>
+   <view name="grid">
+      <video name="bg_video" extra="true">
+         <path>./background/disabled.mp4</path>
+      </video>
+   </view>
+</theme>

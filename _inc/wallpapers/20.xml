@@ -1,0 +1,6 @@
+﻿<theme>
+   <variables>
+      <wallpaperPath>./_inc/background/bg_20.png</wallpaperPath>
+      <wallpaperVideoPath>./_inc/background/bg_20.mp4</wallpaperVideoPath>
+   </variables>
+</theme>
