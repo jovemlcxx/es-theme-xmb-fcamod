@@ -32,7 +32,7 @@ Validated against the frontend of each of these distributions:
 - **Multiple Aspect Ratios:**
   - **4:3:** For R36S, RG351MP and other standard handhelds (640x480).
   - **1:1:** For square screens like the RGB30, R36 Ultra and R36 Pro Max (720x720).
-- **Two Layouts:** Horizontal (Classic XMB) or Vertical (Left Bar, 5 systems on screen). The game list follows the chosen layout.
+- **Two Layouts:** Horizontal (Classic XMB) or Vertical (Left Bar). The game list follows the chosen layout.
 - **Dark and Light Menus:** The settings menu, including on-screen keyboard text boxes (e.g. Wi-Fi password), follows the chosen color scheme.
 - **Translated:** Theme settings are available in 26 languages (the button options are in English, Portuguese and Spanish so far).
 - **High-Quality Typography:** Uses the *FOT-NewRodin Pro* fonts for an authentic look.
@@ -44,7 +44,6 @@ Validated against the frontend of each of these distributions:
 - **Confirm Button (A/B) option:** the footer can show B as the confirm button for users who swapped A/B in the system settings.
 - **PSP-style game list:** icon and name on every row, 5 games per screen, with the selected game on the system screen's line. Names stay on a single line and remain visible while scrolling fast.
 - **System icons for every distribution:** 376 console and media icons covering ArkOS, dArkOS, dArkOSRE-R36, ArchR and Batocera, including missing ones recovered from the base theme and RetroArch Assets (Wolfenstein, DOOM and Cave Story floppies, Sega Pico, Commodore PET, Sharp MZ, arcade boards, game ports and more).
-- **Vertical layout with 5 systems:** the left bar now shows 5 systems on 4:3 too.
 - **Batocera, ArchR and dArkOSRE-R36 compatibility:** the theme is validated against their frontend, and their extra languages are supported.
 
 **Fixed**

@@ -5,10 +5,9 @@
          <type>vertical</type>
          <pos>0.02 0.125</pos>
          <size>0.20 0.75</size>
-         <!-- 5 icons: 0.75 / 5 = 0.15 of height each; 0.11 x 1.3 (selected) still fits -->
-         <logoSize>0.15 0.11</logoSize>
+         <logoSize>0.17 0.17</logoSize>
          <logoScale>1.3</logoScale>
-         <maxLogoCount>5</maxLogoCount>
+         <maxLogoCount>3</maxLogoCount>
          <logoAlignment>center</logoAlignment>
          <defaultTransition>instant</defaultTransition>
       </carousel>
