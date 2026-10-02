@@ -50,5 +50,7 @@
          <visible>false</visible>
       </text>
    </view>
+   <include subset="aspect-ratio" name="16-9">./psp-16-9.xml</include>
+   <include subset="aspect-ratio" name="21-9">./psp-21-9.xml</include>
    <include subset="layout" name="vertical">./psp-vertical.xml</include>
 </theme>

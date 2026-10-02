@@ -10,7 +10,23 @@ A theme inspired by the XMB (Cross Media Bar) of the PSP and PS3, made for handh
 
 Optimized for **FCAMOD**, the EmulationStation fork by [christianhaitian](https://github.com/christianhaitian/EmulationStation-fcamod).
 
-![Preview](./xmb.png)
+<p align="center">
+  <img src="./screenshots/4-3/horizontal.png" width="49%" alt="System screen, horizontal layout">
+  <img src="./screenshots/4-3/vertical.png" width="49%" alt="System screen, vertical layout">
+</p>
+<p align="center"><i>System screen: Horizontal (Classic XMB) and Vertical (Left Bar) layouts</i></p>
+
+## 📸 Screenshots
+
+System screen (Horizontal and Vertical layouts) and game list on every supported aspect ratio. Single images are in [`screenshots/`](./screenshots).
+
+<p align="center">
+  <img src="./screenshots/4-3.png" width="24%" alt="4:3 (640x480)">
+  <img src="./screenshots/1-1.png" width="24%" alt="1:1 (720x720)">
+  <img src="./screenshots/16-9.png" width="24%" alt="16:9 (854x480)">
+  <img src="./screenshots/21-9.png" width="24%" alt="21:9 (2560x1080)">
+</p>
+<p align="center"><i>4:3 · 1:1 · 16:9 (beta) · 21:9 (beta)</i></p>
 
 ## 💻 Supported Systems
 
@@ -34,7 +50,11 @@ Validated against the frontend of each of these distributions:
 - **Multiple Aspect Ratios:**
   - **4:3:** For R36S, RG351MP and other standard handhelds (640x480).
   - **1:1:** For square screens like the RGB30, R36 Ultra and R36 Pro Max (720x720).
-- **Two Layouts:** Horizontal (Classic XMB) or Vertical (Left Bar). The game list follows the chosen layout.
+  - **16:9 (beta):** For widescreen handhelds (e.g. RG503, RGB10 Max, Odroid Go Super) and TVs.
+  - **21:9 (beta):** For ultrawide monitors (e.g. Batocera on PC).
+  - The game list shows 5 games per screen on every aspect ratio.
+  - On wide screens everything keeps the 4:3 look and size, with more systems visible in the carousel.
+- **Two Layouts:** Horizontal (Classic XMB) or Vertical (Left Bar, 5 systems on screen). The game list follows the chosen layout.
 - **Dark and Light Menus:** The settings menu, including on-screen keyboard text boxes (e.g. Wi-Fi password), follows the chosen color scheme.
 - **Translated:** Theme settings are available in 26 languages (the button options are in English, Portuguese and Spanish so far).
 - **High-Quality Typography:** Uses the *FOT-NewRodin Pro* fonts for an authentic look.
@@ -42,6 +62,8 @@ Validated against the frontend of each of these distributions:
 ## 🆕 What's New
 
 **New**
+- **Vertical layout with 5 systems:** the left bar shows 5 systems on every aspect ratio, kept clear of the status icons on top and the footer.
+- **16:9 and 21:9 support (beta):** widescreen and ultrawide layouts for the system screen, game list, footer and vertical layout.
 - **PlayStation button icons:** new **Button Icons** option (Nintendo / Xbox or PlayStation) for the footer. PlayStation icons follow the physical button position (A = ○, B = ✕).
 - **Confirm Button (A/B) option:** the footer can show B as the confirm button for users who swapped A/B in the system settings.
 - **PSP-style game list:** icon and name on every row, 5 games per screen, with the selected game on the system screen's line. Names stay on a single line and remain visible while scrolling fast.
@@ -71,7 +93,7 @@ Validated against the frontend of each of these distributions:
 
 | Option | Choices | Notes |
 |---|---|---|
-| **Aspect Ratio** | 4:3 / 1:1 | Pick the one that matches your screen. |
+| **Aspect Ratio** | 4:3 / 1:1 / 16:9 (beta) / 21:9 (beta) | Pick the one that matches your screen. The beta ones have not been tested on every device yet: feedback and screenshots are welcome. |
 | **Background Video** | Enabled / Disabled | Disable it on slow devices; the static wallpaper is used instead. |
 | **Wallpaper** | 1 to 20 | Only `1` is included; see [Wallpaper Customization](#%EF%B8%8F-wallpaper-customization). |
 | **System Layout** | Horizontal (Classic XMB) / Vertical (Left Bar) | |
@@ -91,6 +113,8 @@ The theme supports up to 20 wallpapers, each with a static image and an optional
 Images and videos are stretched to fill the whole screen. To avoid distortion, **use media with the same aspect ratio as your screen**:
 - **4:3** consoles (like the R36S): **1024x768** or **640x480**.
 - **1:1** consoles (like the R36 Ultra and R36 Pro Max): square media, e.g. **720x720** or **1080x1080**.
+- **16:9** screens: e.g. **854x480**, **1280x720** or **1920x1080**.
+- **21:9** screens: e.g. **2560x1080** or **3440x1440**.
 
 ### Step-by-step to add files
 

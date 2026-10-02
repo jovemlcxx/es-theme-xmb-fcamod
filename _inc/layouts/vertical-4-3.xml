@@ -3,17 +3,20 @@
    <view name="system">
       <carousel name="systemcarousel">
          <type>vertical</type>
-         <pos>0.02 0.125</pos>
-         <size>0.20 0.75</size>
-         <logoSize>0.17 0.17</logoSize>
+         <!-- 5 systems kept between y=0.10 and 0.90 so they never reach the status icons on top
+              or the footer (starts at 0.92): 0.80 / 5 = 0.16 per item. Icons 0.09 high
+              (selected x1.3 = 0.117) leave ~0.04 between them on small 4:3 screens. -->
+         <pos>0.02 0.10</pos>
+         <size>0.20 0.80</size>
+         <logoSize>0.13 0.09</logoSize>
          <logoScale>1.3</logoScale>
-         <maxLogoCount>3</maxLogoCount>
+         <maxLogoCount>5</maxLogoCount>
          <logoAlignment>center</logoAlignment>
          <defaultTransition>instant</defaultTransition>
       </carousel>
       <image name="e_system_content" extra="true">
          <pos>0.30 0.50</pos>
-         <maxSize>0.10 0.15</maxSize>
+         <maxSize>0.10 0.12</maxSize>
          <origin>0.5 0.5</origin>
       </image>
       <text name="e_system_name" extra="true">

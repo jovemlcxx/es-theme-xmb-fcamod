@@ -2,4 +2,6 @@
    <formatVersion>7</formatVersion>
    <include subset="aspect-ratio" name="4-3">./vertical-4-3.xml</include>
    <include subset="aspect-ratio" name="1-1">./vertical-1-1.xml</include>
+   <include subset="aspect-ratio" name="16-9">./vertical-16-9.xml</include>
+   <include subset="aspect-ratio" name="21-9">./vertical-21-9.xml</include>
 </theme>

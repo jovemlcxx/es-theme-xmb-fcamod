@@ -438,6 +438,8 @@
    <subset name="aspect-ratio" displayName="${aspectRatioLabel}">
       <include name="4-3" displayName="4:3" />
       <include name="1-1" displayName="1:1" />
+      <include name="16-9" displayName="16:9 (beta)" />
+      <include name="21-9" displayName="21:9 (beta)" />
    </subset>
    <!-- FCAMOD ignores inline content in subset includes (only file paths load),
         so this only registers the options; "disabled" is applied at the end of the file. -->
@@ -615,6 +617,8 @@
    </view>
    <include subset="aspect-ratio" name="4-3">./aspect-ratio-4-3.xml</include>
    <include subset="aspect-ratio" name="1-1">./aspect-ratio-1-1.xml</include>
+   <include subset="aspect-ratio" name="16-9">./aspect-ratio-16-9.xml</include>
+   <include subset="aspect-ratio" name="21-9">./aspect-ratio-21-9.xml</include>
    <include subset="layout" name="vertical">./_inc/layouts/vertical.xml</include>
    <include subset="background-video" name="disabled">./_inc/video-disabled.xml</include>
    <!-- Game list: PSP XMB style (icon + name on every row; names stay visible while scrolling). -->
