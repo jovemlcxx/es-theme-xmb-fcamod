@@ -2,6 +2,7 @@
 
 ![Platform](https://img.shields.io/badge/Platform-EmulationStation-purple)
 ![Style](https://img.shields.io/badge/Style-XMB-blue)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Github](https://img.shields.io/badge/Github-Repository-black?logo=github)](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
 
 A theme inspired by the XMB (Cross Media Bar) of the PSP and PS3, made for handhelds running the EmulationStation frontend. It brings the classic console interface to your device with clean, optimized code and a layout faithful to the original.
@@ -156,6 +157,17 @@ These come from the FCAMOD frontend itself and cannot be changed by a theme:
 - **Sounds:** The theme includes the full XMB sound set, but stock FCAMOD only plays the navigation, launch and back sounds. The select, favorite and quick system select sounds are ignored.
 - **Background while scrolling:** While you scroll fast through the game list, FCAMOD hides the selected game's background image and video; they come back as soon as you stop. Game names stay visible.
 - **A/B swap:** The theme cannot detect the system's A/B swap setting, which is why the **Confirm Button (A/B)** option exists. The full native button legend was not used because it does not fit small screens in most languages.
+
+## ⚖️ License
+
+This theme is **free** and licensed under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/):
+
+- ✅ You may share and adapt it, as long as you give credit and keep the same license.
+- ❌ **Selling this theme is not allowed**, including modified versions and devices, SD cards or images sold with it pre-installed.
+
+If you paid for this theme, you were scammed: the official download is always free at [github.com/jovemlcxx/es-theme-xmb-fcamod](https://github.com/jovemlcxx/es-theme-xmb-fcamod).
+
+Based on [xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de), licensed under CC BY-NC-SA. Third-party assets keep their own licenses (see [`LICENSE`](./LICENSE)).
 
 ## 🛠️ Credits and References
 
