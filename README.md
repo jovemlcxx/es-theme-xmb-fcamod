@@ -21,10 +21,7 @@ Optimized for **FCAMOD**, the EmulationStation fork by [christianhaitian](https:
 System screen (Horizontal and Vertical layouts) and game list on every supported aspect ratio. Single images are in [`screenshots/`](./screenshots).
 
 <p align="center">
-  <img src="./screenshots/4-3.png" width="24%" alt="4:3 (640x480)">
-  <img src="./screenshots/1-1.png" width="24%" alt="1:1 (720x720)">
-  <img src="./screenshots/16-9.png" width="24%" alt="16:9 (854x480)">
-  <img src="./screenshots/21-9.png" width="24%" alt="21:9 (2560x1080)">
+  <img src="./screenshots/overview.png" alt="4:3, 1:1, 16:9 and 21:9 screenshots">
 </p>
 <p align="center"><i>4:3 · 1:1 · 16:9 (beta) · 21:9 (beta)</i></p>
 
