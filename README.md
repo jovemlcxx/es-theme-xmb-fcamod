@@ -18,8 +18,10 @@ Validated against the frontend of each of these distributions:
 - [ArkOS](https://github.com/christianhaitian/arkos) (including [arkos4clone](https://github.com/lcdyk0517/arkos4clone))
 - [dArkOS](https://github.com/christianhaitian/dArkOS)
 - [dArkOSRE-R36](https://github.com/southoz/dArkOSRE-R36)
+- [dArkOSen](https://github.com/djparentx/dArkOSen-R36S)
 - [ArchR](https://github.com/archr-linux/Arch-R)
 - [Batocera](https://batocera.org/)
+- [EmuELEC](https://github.com/EmuELEC/EmuELEC)
 - And other systems based on the FCAMOD engine.
 
 ## 🌟 Features
@@ -27,7 +29,7 @@ Validated against the frontend of each of these distributions:
 - **Classic XMB Interface:** Horizontal system carousel with the selected system on the left and its physical media right below it, like the PSP/PS3 XMB.
 - **PSP-style Game List:** Icon and name on every row, 5 games per screen. The selected game sits right on top of the same line used by the system screen, so both screens line up. Names stay on a single line (long ones end in "..." and the selected one scrolls) and stay visible even while scrolling fast through hundreds of games.
 - **Continuous Animated Background:** The background video keeps playing while you browse systems, instead of restarting on every move. It can be turned off in the settings.
-- **376 System Icons:** Console and physical media icons for every system of ArkOS, dArkOS, dArkOSRE-R36, ArchR and Batocera (see [System Icon Coverage](#-system-icon-coverage)).
+- **400 System Icons:** Console and physical media icons for every system of ArkOS, dArkOS, dArkOSRE-R36, dArkOSen, ArchR, Batocera and EmuELEC (see [System Icon Coverage](#-system-icon-coverage)).
 - **Nintendo/Xbox or PlayStation Buttons:** The footer can show Nintendo/Xbox or PlayStation (○ ✕) button icons, with an option for devices with swapped A/B buttons.
 - **Multiple Aspect Ratios:**
   - **4:3:** For R36S, RG351MP and other standard handhelds (640x480).
@@ -43,8 +45,8 @@ Validated against the frontend of each of these distributions:
 - **PlayStation button icons:** new **Button Icons** option (Nintendo / Xbox or PlayStation) for the footer. PlayStation icons follow the physical button position (A = ○, B = ✕).
 - **Confirm Button (A/B) option:** the footer can show B as the confirm button for users who swapped A/B in the system settings.
 - **PSP-style game list:** icon and name on every row, 5 games per screen, with the selected game on the system screen's line. Names stay on a single line and remain visible while scrolling fast.
-- **System icons for every distribution:** 376 console and media icons covering ArkOS, dArkOS, dArkOSRE-R36, ArchR and Batocera, including missing ones recovered from the base theme and RetroArch Assets (Wolfenstein, DOOM and Cave Story floppies, Sega Pico, Commodore PET, Sharp MZ, arcade boards, game ports and more).
-- **Batocera, ArchR and dArkOSRE-R36 compatibility:** the theme is validated against their frontend, and their extra languages are supported.
+- **System icons for every distribution:** 400 console and media icons covering ArkOS, dArkOS, dArkOSRE-R36, dArkOSen, ArchR, Batocera and EmuELEC, including missing ones recovered from the base theme and RetroArch Assets (Wolfenstein, DOOM and Cave Story floppies, Sega Pico, Commodore PET, Sharp MZ, arcade boards, game ports and more).
+- **Batocera, ArchR, dArkOSRE-R36, dArkOSen and EmuELEC compatibility:** the theme is validated against their frontend, and their extra languages are supported.
 
 **Fixed**
 - **Background video restarting:** the video no longer restarts when moving between systems, and the wallpaper image covers the gap while it loads.
@@ -75,7 +77,7 @@ Validated against the frontend of each of these distributions:
 | **System Layout** | Horizontal (Classic XMB) / Vertical (Left Bar) | |
 | **Color Scheme** | Dark / Light | Applies to the settings menu and on-screen keyboard. |
 | **Button Icons** | Nintendo / Xbox, PlayStation | PlayStation follows the physical button position: A = ○, B = ✕. |
-| **Confirm Button (A/B)** | A / B | Set to **B** if you swapped A/B in the system settings, so the footer shows the right button. |
+| **Confirm Button (A/B)** | A / B | Set to **B** if you swapped A/B in the system settings, so the footer shows the right button. **dArkOSen** ships with A/B swapped by default: use **B** there. |
 
 ## 🖼️ Wallpaper Customization
 
@@ -110,15 +112,19 @@ Systems with no icon in any of these sources use the generic controller icon.
 | ArkOS (incl. arkos4clone) | 136/136 | 130 | 6 |
 | dArkOS | 129/129 | 127 | 2 |
 | dArkOSRE-R36 | 126/126 | 124 | 2 |
+| dArkOSen | 127/127 | 125 | 2 |
 | ArchR | 136/136 | 134 | 2 |
 | Batocera | 260/260 | 249 | 11 |
+| EmuELEC | 168/168 | 160 | 8 |
 
 Systems currently using the generic icon:
 - **ArkOS:** `bbk`, `gametank`, `krkr2`, `native32`, `onscripter`, `spmp8000`
 - **dArkOS:** `gametank`, `onscripter`
 - **dArkOSRE-R36:** `gametank`, `onscripter`
+- **dArkOSen:** `gametank`, `onscripter`
 - **ArchR:** `bk`, `ios`
 - **Batocera:** `bk`, `camplynx`, `cgenie`, `commanderx16`, `gametank`, `laser310`, `mc10`, `pcw`, `pdp1`, `segaai`, `tvgames`
+- **EmuELEC:** `bk`, `iphone`, `mc10`, `mtx512`, `p2000t`, `redshift`, `tvgc`, `x16`
 
 To add a missing icon, place `<system theme>.png` in `_inc/systems/controller/` (console) and `_inc/systems/physical-media/` (media). The file name must match the system's `<theme>` in `es_systems.cfg` exactly, **including upper/lower case**. A system that is in none of the lists above (e.g. a custom system) shows its name as text instead.
 
