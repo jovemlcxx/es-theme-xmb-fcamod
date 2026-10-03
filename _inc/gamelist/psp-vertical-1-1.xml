@@ -3,26 +3,27 @@
    <!-- Vertical layout (1:1): follow that layout's system view line. -->
    <view name="grid">
       <imagegrid name="gamegrid">
-         <pos>0.03 0.09</pos>
-         <size>0.94 0.70</size>
+         <pos>0.01 0.062</pos>
+         <size>0.96 0.756</size>
          <autoLayout>1 5</autoLayout>
       </imagegrid>
       <gridtile name="default">
-         <size>0.94 0.14</size>
+         <size>0.96 0.14</size>
       </gridtile>
       <image name="gridtile.image">
-         <pos>0 0.5</pos>
-         <!-- maxSize keeps the aspect ratio; <size> would stretch the icon -->
-         <maxSize>0.372 0.9</maxSize>
-         <origin>0 0.5</origin>
+         <pos>0.1925 0.5</pos>
+         <!-- centered in its box (pos x = half the box width); maxSize keeps the aspect ratio,
+              <size> would stretch the icon -->
+         <maxSize>0.3851 1</maxSize>
+         <origin>0.5 0.5</origin>
       </image>
       <text name="gridtile">
          <!-- names start at x=0.4, where the line starts;
               box is 0.8 of the row: one full line (with descenders) fits, and FCAMOD only wraps
               text above 1.95 x line height (~0.83 of the row on 1:1), so long names get "..."
               instead of a second line. The selected name scrolls. -->
-         <pos>0.394 0.1</pos>
-         <size>0.606 0.8</size>
+         <pos>0.4066 0.1</pos>
+         <size>0.5934 0.8</size>
       </text>
       <image name="md_line" extra="true">
          <pos>0.4 0.51</pos>
