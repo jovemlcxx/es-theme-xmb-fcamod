@@ -5,181 +5,98 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Github](https://img.shields.io/badge/Github-Repository-black?logo=github)](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
 
-A theme inspired by the XMB (Cross Media Bar) of the PSP and PS3, made for handhelds running the EmulationStation frontend. It brings the classic console interface to your device with clean, optimized code and a layout faithful to the original.
-
-**Official Repository:** [github.com/jovemlcxx/es-theme-xmb-fcamod](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
-
-Optimized for **FCAMOD**, the EmulationStation fork by [christianhaitian](https://github.com/christianhaitian/EmulationStation-fcamod).
+A theme inspired by the XMB (Cross Media Bar) of the PSP and PS3, made for handhelds running EmulationStation. Optimized for **FCAMOD**, the EmulationStation fork by [christianhaitian](https://github.com/christianhaitian/EmulationStation-fcamod), and validated on other frontends (see [Supported Systems](#-supported-systems)).
 
 <p align="center">
   <img src="./screenshots/4-3/horizontal.png" width="49%" alt="System screen, horizontal layout">
   <img src="./screenshots/4-3/vertical.png" width="49%" alt="System screen, vertical layout">
 </p>
-<p align="center"><i>System screen: Horizontal (Classic XMB) and Vertical (Left Bar) layouts</i></p>
-
-## 📸 Screenshots
-
-System screen (Horizontal and Vertical layouts) and game list on every supported aspect ratio. Single images are in [`screenshots/`](./screenshots).
+<p align="center"><i>System screen: Horizontal (XMB Classic) and Vertical (Left Bar) layouts</i></p>
 
 <p align="center">
   <img src="./screenshots/overview.png" alt="4:3, 1:1, 16:9 and 21:9 screenshots">
 </p>
-<p align="center"><i>4:3 · 1:1 · 16:9 (beta) · 21:9 (beta)</i></p>
-
-## 💻 Supported Systems
-
-Validated against the frontend of each of these distributions:
-- [ArkOS](https://github.com/christianhaitian/arkos) (including [arkos4clone](https://github.com/lcdyk0517/arkos4clone))
-- [dArkOS](https://github.com/christianhaitian/dArkOS)
-- [dArkOSRE-R36](https://github.com/southoz/dArkOSRE-R36)
-- [dArkOSen](https://github.com/djparentx/dArkOSen-R36S)
-- [ArchR](https://github.com/archr-linux/Arch-R)
-- [Batocera](https://batocera.org/)
-- [EmuELEC](https://github.com/EmuELEC/EmuELEC)
-- And other systems based on the FCAMOD engine.
+<p align="center"><i>System screens and game list on 4:3 · 1:1 · 16:9 · 21:9. Single images are in <a href="./screenshots">screenshots/</a>.</i></p>
 
 ## 🌟 Features
 
-- **Classic XMB Interface:** Horizontal system carousel with the selected system on the left and its physical media right below it, like the PSP/PS3 XMB.
-- **PSP-style Game List:** Icon and name on every row, 5 games per screen. The selected game sits right on top of the same line used by the system screen, so both screens line up. Names stay on a single line (long ones end in "..." and the selected one scrolls) and stay visible even while scrolling fast through hundreds of games.
-- **Continuous Animated Background:** The background video keeps playing while you browse systems, instead of restarting on every move. It can be turned off in the settings.
-- **400 System Icons:** Console and physical media icons for every system of ArkOS, dArkOS, dArkOSRE-R36, dArkOSen, ArchR, Batocera and EmuELEC (see [System Icon Coverage](#-system-icon-coverage)).
-- **Nintendo/Xbox or PlayStation Buttons:** The footer can show Nintendo/Xbox or PlayStation (○ ✕) button icons, with an option for devices with swapped A/B buttons.
-- **Multiple Aspect Ratios:**
-  - **4:3:** For R36S, RG351MP and other standard handhelds (640x480).
-  - **1:1:** For square screens like the RGB30, R36 Ultra and R36 Pro Max (720x720).
-  - **16:9 (beta):** For widescreen handhelds (e.g. RG503, RGB10 Max, Odroid Go Super) and TVs.
-  - **21:9 (beta):** For ultrawide monitors (e.g. Batocera on PC).
-  - The game list shows 5 games per screen on every aspect ratio.
-  - On wide screens everything keeps the 4:3 look and size, with more systems visible in the carousel.
-- **Two Layouts:** Horizontal (Classic XMB) or Vertical (Left Bar, 5 systems on screen). The game list follows the chosen layout.
-- **Dark and Light Menus:** The settings menu, including on-screen keyboard text boxes (e.g. Wi-Fi password), follows the chosen color scheme.
-- **Translated:** Theme settings are available in 26 languages (the button options are in English, Portuguese and Spanish so far).
-- **High-Quality Typography:** Uses the *FOT-NewRodin Pro* fonts for an authentic look.
+- **System screen:** XMB carousel with the selected system's name, game count and physical media icon (cartridge, disc, tape...), or a **Vertical** layout with 5 systems on the left. Every system has an icon; unknown ones show their name.
+- **Game list:** PSP style, 5 games per screen, the selected one on the same line as the system screen. Each game shows its logo centered and with its proportions kept (see [Game List Icons](#-game-list-icons)). Names stay on one line (long ones end in "...", the selected one scrolls) and stay visible while scrolling fast. The selected game's image and video (after 2 s) fill the background, darkened.
+- **Background:** Animated video that keeps playing while browsing systems, with up to 20 wallpapers (see [Wallpapers](#%EF%B8%8F-wallpapers)).
+- **Aspect ratios:** 4:3 (R36S, RG351MP, 640x480), 1:1 (RGB30, R36 Ultra, R36 Pro Max, 720x720), 16:9 (RG503, RGB10 Max, Odroid Go Super, TVs) and 21:9 (ultrawide monitors). Wide screens keep the 4:3 look, with more systems in the carousel.
+- **Footer and clock:** Start (menu) and confirm buttons in Nintendo/Xbox or PlayStation (○ ✕) style, and the frontend clock in the top right corner.
+- **Menus:** Dark or Light settings menu, including on-screen keyboard text boxes.
+- **XMB sounds and fonts:** Full XMB sound set and the original *FOT-NewRodin Pro* fonts.
+- **Translated:** Settings follow the frontend language (26 languages; button options in English, Portuguese and Spanish so far).
 
-## 🆕 What's New
+## 💻 Supported Systems
 
-**New**
-- **Vertical layout with 5 systems:** the left bar shows 5 systems on every aspect ratio, kept clear of the status icons on top and the footer.
-- **16:9 and 21:9 support (beta):** widescreen and ultrawide layouts for the system screen, game list, footer and vertical layout.
-- **PlayStation button icons:** new **Button Icons** option (Nintendo / Xbox or PlayStation) for the footer. PlayStation icons follow the physical button position (A = ○, B = ✕).
-- **Confirm Button (A/B) option:** the footer can show B as the confirm button for users who swapped A/B in the system settings.
-- **PSP-style game list:** icon and name on every row, 5 games per screen, with the selected game on the system screen's line. Names stay on a single line and remain visible while scrolling fast.
-- **System icons for every distribution:** 400 console and media icons covering ArkOS, dArkOS, dArkOSRE-R36, dArkOSen, ArchR, Batocera and EmuELEC, including missing ones recovered from the base theme and RetroArch Assets (Wolfenstein, DOOM and Cave Story floppies, Sega Pico, Commodore PET, Sharp MZ, arcade boards, game ports and more).
-- **Batocera, ArchR, dArkOSRE-R36, dArkOSen and EmuELEC compatibility:** the theme is validated against their frontend, and their extra languages are supported.
+Validated against each distribution's frontend. Every system they list has a console icon (carousel) and a physical media icon:
 
-**Fixed**
-- **Background video restarting:** the video no longer restarts when moving between systems, and the wallpaper image covers the gap while it loads.
-- **Background Video option:** turning the video off now works (it was always on), and it really stops decoding instead of just hiding.
-- **Unreadable text boxes in Dark mode:** typed text (e.g. Wi-Fi password) was white on a white box.
-- **Systems without icon:** a missing icon left an empty slot (or black text on ArchR/Batocera); now every listed system has an icon, and unknown systems show their name in white.
-- **Wrong icons:** several systems showed another system's icon (Sega Pico used PICO-8, Wolfenstein used DOOM, Daphne had no icon on Linux because of the file name case).
-- **Translations:** Ukrainian (`ua`) users got English, and the two Portuguese blocks conflicted.
-- **Cleanup:** removed settings and files the frontend never used (e.g. wallpapers 21–30, unsupported elements and properties).
+| Distribution | Systems |
+|---|---|
+| [ArkOS](https://github.com/christianhaitian/arkos) | 136 |
+| [arkos4clone](https://github.com/lcdyk0517/arkos4clone) | 136 |
+| [darkos4clone](https://github.com/lcdyk0517/arkos4clone) | 135 |
+| [dArkOS](https://github.com/christianhaitian/dArkOS) | 129 |
+| [dArkOSRE-R36](https://github.com/southoz/dArkOSRE-R36) | 126 |
+| [dArkOSen](https://github.com/djparentx/dArkOSen-R36S) | 127 |
+| [ArchR](https://github.com/archr-linux/Arch-R) | 136 |
+| [Batocera](https://batocera.org/) | 260 |
+| [EmuELEC](https://github.com/EmuELEC/EmuELEC) | 168 |
+| [Knulli](https://knulli.org/) | 242 |
+
+Other FCAMOD-based systems also work. Icons come from the base theme [xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de), from [RetroArch Assets](https://github.com/libretro/retroarch-assets), or from an icon of the same hardware or game under another name (e.g. `pce-cd` → PC Engine CD, game ports → Ports); the few systems with no icon anywhere use a generic controller icon.
+
+**Adding an icon:** place `<system theme>.png` in `_inc/systems/controller/` (console) and `_inc/systems/physical-media/` (media). The name must match the system's `<theme>` in `es_systems.cfg` exactly, **including upper/lower case**.
 
 ## 📂 Installation
 
-1. Connect to your device via SCP or SFTP.
-2. Navigate to your themes directory (usually `/roms/themes/` or `~/.emulationstation/themes/`).
-3. Copy the theme folder to this directory.
-   - **Note:** The folder must be named `es-theme-xmb-fcamod` or `es-theme-xmb-fcamod-main` (if downloaded directly from GitHub).
-   - **Updating:** delete the old theme folder before copying the new one, so files removed from the theme do not linger.
-4. In EmulationStation, go to **UI Settings** > **Theme Set** and select the theme.
-5. Go to **UI Settings** > **Theme Configuration** to customize it.
+1. Copy the theme folder to your themes directory via SCP/SFTP: usually `/roms/themes/`, `~/.emulationstation/themes/`, or `/userdata/themes/` on Batocera and Knulli. The folder must be named `es-theme-xmb-fcamod` (or `es-theme-xmb-fcamod-main` if downloaded from GitHub). **When updating**, delete the old folder first.
+2. Select it in **UI Settings** > **Theme Set**, and customize it in **UI Settings** > **Theme Configuration**:
 
-### ⚙️ Theme Configuration
-
-| Option | Choices | Notes |
+| Option | Choices (default first) | Notes |
 |---|---|---|
-| **Aspect Ratio** | 4:3 / 1:1 / 16:9 (beta) / 21:9 (beta) | Pick the one that matches your screen. The beta ones have not been tested on every device yet: feedback and screenshots are welcome. |
-| **Background Video** | Enabled / Disabled | Disable it on slow devices; the static wallpaper is used instead. |
-| **Wallpaper** | 1 to 20 | Only `1` is included; see [Wallpaper Customization](#%EF%B8%8F-wallpaper-customization). |
-| **System Layout** | Horizontal (Classic XMB) / Vertical (Left Bar) | |
-| **Color Scheme** | Dark / Light | Applies to the settings menu and on-screen keyboard. |
-| **Button Icons** | Nintendo / Xbox, PlayStation | PlayStation follows the physical button position: A = ○, B = ✕. |
-| **Confirm Button (A/B)** | A / B | Set to **B** if you swapped A/B in the system settings, so the footer shows the right button. **dArkOSen** ships with A/B swapped by default: use **B** there. |
+| **Aspect Ratio** | 4:3 / 1:1 / 16:9 / 21:9 | Match your screen. |
+| **Background Video** | Enabled / Disabled | Disable it on slow devices (less than 1GB of RAM); the wallpaper image is used instead. |
+| **Wallpaper** | 1 to 20 | Only `1` is included. |
+| **System Layout** | Horizontal (XMB Classic) / Vertical (Left Bar) | The game list follows it. |
+| **Color Scheme** | Dark / Light | Settings menu and on-screen keyboard. |
+| **Button Icons** | Nintendo / Xbox, PlayStation | PlayStation follows the button position: A = ○, B = ✕. |
+| **Confirm Button (A/B)** | A / B | Use **B** if you swapped A/B in the system (**dArkOSen** ships swapped). |
 
-## 🖼️ Wallpaper Customization
+Leave the frontend's **Gamelist View Style** and **Grid Size** on **automatic**: other values replace the theme's game list layout.
 
-The theme supports up to 20 wallpapers, each with a static image and an optional animated video. **Only one wallpaper (`bg_1.png` and `bg_1.mp4`) is included by default.**
+## 👾 Game List Icons
 
-> **⚠️ Performance Tip:** If menus feel slow on your device, set **Theme Configuration** > **Background Video** to **Disabled**. Background videos can be heavy on devices with less than 1GB of RAM.
+Each game shows its **marquee** image. Any size or shape works (wide logos, square art like 720x720, tall images): it is scaled to fit and centered, and names always start on the line. In the scraper, pick **Marquee** or **Wheel** (logo) as the source; both are saved as the marquee. Games without one (e.g. most Ports) show the default game icon, and folders the folder icon.
 
-> **⚠️ Always provide the PNG:** Every video wallpaper (e.g. `bg_2.mp4`) needs a matching PNG (`bg_2.png`), ideally its first frame. The PNG is shown while the video loads and whenever the video is disabled; without it the screen stays black in those moments.
+## 🖼️ Wallpapers
 
-### About Resolution and Aspect Ratio
-Images and videos are stretched to fill the whole screen. To avoid distortion, **use media with the same aspect ratio as your screen**:
-- **4:3** consoles (like the R36S): **1024x768** or **640x480**.
-- **1:1** consoles (like the R36 Ultra and R36 Pro Max): square media, e.g. **720x720** or **1080x1080**.
-- **16:9** screens: e.g. **854x480**, **1280x720** or **1920x1080**.
-- **21:9** screens: e.g. **2560x1080** or **3440x1440**.
+Each wallpaper is a `bg_{number}.png` image plus an optional `bg_{number}.mp4` video (e.g. `bg_2.png`, `bg_2.mp4`) in `_inc/background/`, selected in **Theme Configuration** > **Wallpaper**.
 
-### Step-by-step to add files
-
-1. **Prepare your files:**
-   - Static images in **.png** format.
-   - Animated backgrounds in **.mp4** format.
-2. **Rename the files** following the pattern `bg_{number}.png` / `bg_{number}.mp4` (e.g. `bg_2.png`, `bg_2.mp4`).
-3. **Copy them** into the theme's `_inc/background/` directory.
-4. **Select the wallpaper:** open **Theme Configuration** > **Wallpaper** and choose its number.
-
-## 🎮 System Icon Coverage
-
-Every system has a console icon (carousel) and a physical media icon (cartridge, disc, tape, floppy...). Icons come, in order of preference, from the base theme [xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de), from [RetroArch Assets](https://github.com/libretro/retroarch-assets) (monochrome, or other styles converted to monochrome), or from an existing icon of the same hardware or game under another name (e.g. `pce-cd` → PC Engine CD, game ports → Ports, arcade boards → Arcade).
-
-Systems with no icon in any of these sources use the generic controller icon.
-
-| Distribution | Systems with icon | Specific icon | Generic icon |
-|---|---|---|---|
-| ArkOS (incl. arkos4clone) | 136/136 | 130 | 6 |
-| dArkOS | 129/129 | 127 | 2 |
-| dArkOSRE-R36 | 126/126 | 124 | 2 |
-| dArkOSen | 127/127 | 125 | 2 |
-| ArchR | 136/136 | 134 | 2 |
-| Batocera | 260/260 | 249 | 11 |
-| EmuELEC | 168/168 | 160 | 8 |
-
-Systems currently using the generic icon:
-- **ArkOS:** `bbk`, `gametank`, `krkr2`, `native32`, `onscripter`, `spmp8000`
-- **dArkOS:** `gametank`, `onscripter`
-- **dArkOSRE-R36:** `gametank`, `onscripter`
-- **dArkOSen:** `gametank`, `onscripter`
-- **ArchR:** `bk`, `ios`
-- **Batocera:** `bk`, `camplynx`, `cgenie`, `commanderx16`, `gametank`, `laser310`, `mc10`, `pcw`, `pdp1`, `segaai`, `tvgames`
-- **EmuELEC:** `bk`, `iphone`, `mc10`, `mtx512`, `p2000t`, `redshift`, `tvgc`, `x16`
-
-To add a missing icon, place `<system theme>.png` in `_inc/systems/controller/` (console) and `_inc/systems/physical-media/` (media). The file name must match the system's `<theme>` in `es_systems.cfg` exactly, **including upper/lower case**. A system that is in none of the lists above (e.g. a custom system) shows its name as text instead.
+- **Always include the PNG**, ideally the video's first frame: it shows while the video loads and when video is disabled (otherwise the screen stays black).
+- Media is stretched to the full screen, so **use your screen's aspect ratio**: 4:3 (1024x768, 640x480), 1:1 (720x720, 1080x1080), 16:9 (854x480, 1280x720, 1920x1080) or 21:9 (2560x1080, 3440x1440).
 
 ## ⚠️ Known Limitations
 
-These come from the FCAMOD frontend itself and cannot be changed by a theme:
+These come from the frontends and cannot be changed by a theme:
 
-- **Sounds:** The theme includes the full XMB sound set, but stock FCAMOD only plays the navigation, launch and back sounds. The select, favorite and quick system select sounds are ignored.
-- **Background while scrolling:** While you scroll fast through the game list, FCAMOD hides the selected game's background image and video; they come back as soon as you stop. Game names stay visible.
-- **A/B swap:** The theme cannot detect the system's A/B swap setting, which is why the **Confirm Button (A/B)** option exists. The full native button legend was not used because it does not fit small screens in most languages.
+- **Sounds:** Stock FCAMOD only plays the navigation, launch and back sounds; select, favorite and quick system select are ignored.
+- **Fast scrolling:** FCAMOD hides the selected game's background while you scroll fast; it returns when you stop.
+- **A/B swap:** The theme cannot detect it, hence the **Confirm Button (A/B)** option. The full native button legend does not fit small screens in most languages.
+- **Batocera, Knulli, ArchR and EmuELEC:** a long name that was scrolling may stay shifted and cut off after you move to another game, until the list is redrawn. FCAMOD is not affected.
 
 ## ⚖️ License
 
-This theme is **free** and licensed under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/):
+This theme is **free** and licensed under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/): you may share and adapt it with credit and the same license, but ❌ **selling it is not allowed**, including modified versions and devices, SD cards or images sold with it pre-installed. If you paid for it, you were scammed: the official download is always free at [github.com/jovemlcxx/es-theme-xmb-fcamod](https://github.com/jovemlcxx/es-theme-xmb-fcamod).
 
-- ✅ You may share and adapt it, as long as you give credit and keep the same license.
-- ❌ **Selling this theme is not allowed**, including modified versions and devices, SD cards or images sold with it pre-installed.
+Based on [xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de) (CC BY-NC-SA). Third-party assets keep their own licenses (see [`LICENSE`](./LICENSE)).
 
-If you paid for this theme, you were scammed: the official download is always free at [github.com/jovemlcxx/es-theme-xmb-fcamod](https://github.com/jovemlcxx/es-theme-xmb-fcamod).
+## 🛠️ Credits
 
-Based on [xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de), licensed under CC BY-NC-SA. Third-party assets keep their own licenses (see [`LICENSE`](./LICENSE)).
-
-## 🛠️ Credits and References
-
-This project uses assets, logic, and design inspirations from several amazing community projects:
-
-- **Base Project:** [anthonycaccese/xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de) - Main structural reference, system and PlayStation button icons, and sounds, adapted for the older FCAMOD engine.
-    - [mohamedhany1024/ps3-xmb-web](https://github.com/mohamedhany1024/ps3-xmb-web) - Logic and layout reference for the PS3 XMB style.
-    - [RobZombie9043/xmb-es-de](https://github.com/RobZombie9043/xmb-es-de) - Additional layout inspirations.
-    - [lcdyk0517/arkos4clone](https://github.com/lcdyk0517/arkos4clone) - Structural guidance for ArkOS compatibility.
-- **Icons:** Additional system and media icons from the [RetroArch Assets](https://github.com/libretro/retroarch-assets) repository; extra button icons from [EmulationStation-fcamod](https://github.com/christianhaitian/EmulationStation-fcamod).
-- **Background Video:** Animated background created by **TizzyT** ([Original Video](https://youtu.be/69RqDjCYiek)).
-
----
-
-*Developed for the Retro Gaming community.*
+- [anthonycaccese/xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de): base project; structure, system and PlayStation button icons and sounds, adapted for FCAMOD.
+- [mohamedhany1024/ps3-xmb-web](https://github.com/mohamedhany1024/ps3-xmb-web) and [RobZombie9043/xmb-es-de](https://github.com/RobZombie9043/xmb-es-de): XMB layout references.
+- [lcdyk0517/arkos4clone](https://github.com/lcdyk0517/arkos4clone): guidance for ArkOS compatibility.
+- [RetroArch Assets](https://github.com/libretro/retroarch-assets): additional system and media icons. [EmulationStation-fcamod](https://github.com/christianhaitian/EmulationStation-fcamod): extra button icons.
+- **TizzyT:** animated background ([original video](https://youtu.be/69RqDjCYiek)).
