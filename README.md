@@ -31,24 +31,39 @@ A theme inspired by the XMB (Cross Media Bar) of the PSP and PS3, made for handh
 
 ## 💻 Supported Systems
 
-Validated against each distribution's frontend. Every system they list has a console icon (carousel) and a physical media icon:
+The theme was checked against the frontend of each distribution below. "Platforms" are the consoles and computers each one lists in its menu (NES, PlayStation, Arcade...): every one of them gets a console icon in the carousel and a physical media icon (cartridge, disc, tape...).
 
-| Distribution | Systems |
-|---|---|
-| [ArkOS](https://github.com/christianhaitian/arkos) | 136 |
-| [arkos4clone](https://github.com/lcdyk0517/arkos4clone) | 136 |
-| [darkos4clone](https://github.com/lcdyk0517/arkos4clone) | 135 |
-| [dArkOS](https://github.com/christianhaitian/dArkOS) | 129 |
-| [dArkOSRE-R36](https://github.com/southoz/dArkOSRE-R36) | 126 |
-| [dArkOSen](https://github.com/djparentx/dArkOSen-R36S) | 127 |
-| [ArchR](https://github.com/archr-linux/Arch-R) | 136 |
-| [Batocera](https://batocera.org/) | 260 |
-| [EmuELEC](https://github.com/EmuELEC/EmuELEC) | 168 |
-| [Knulli](https://knulli.org/) | 242 |
+| Distribution | Platforms | With their own icon | With the generic icon* |
+|---|---|---|---|
+| [ArkOS](https://github.com/christianhaitian/arkos) | 136 | 130 | 6 |
+| [arkos4clone](https://github.com/lcdyk0517/arkos4clone) | 136 | 130 | 6 |
+| [darkos4clone](https://github.com/lcdyk0517/arkos4clone) | 135 | 129 | 6 |
+| [dArkOS](https://github.com/christianhaitian/dArkOS) | 129 | 127 | 2 |
+| [dArkOSRE-R36](https://github.com/southoz/dArkOSRE-R36) | 126 | 124 | 2 |
+| [dArkOSen](https://github.com/djparentx/dArkOSen-R36S) | 127 | 125 | 2 |
+| [ArchR](https://github.com/archr-linux/Arch-R) | 136 | 134 | 2 |
+| [Batocera](https://batocera.org/) | 260 | 249 | 11 |
+| [EmuELEC](https://github.com/EmuELEC/EmuELEC) | 168 | 160 | 8 |
+| [Knulli](https://knulli.org/) | 242 | 237 | 5 |
 
-Other FCAMOD-based systems also work. Icons come from the base theme [xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de), from [RetroArch Assets](https://github.com/libretro/retroarch-assets), or from an icon of the same hardware or game under another name (e.g. `pce-cd` → PC Engine CD, game ports → Ports); the few systems with no icon anywhere use a generic controller icon.
+\* Rare platforms with no icon available anywhere use a generic controller icon. Other FCAMOD-based distributions work too; platforms the theme does not know show their name instead.
 
-**Adding an icon:** place `<system theme>.png` in `_inc/systems/controller/` (console) and `_inc/systems/physical-media/` (media). The name must match the system's `<theme>` in `es_systems.cfg` exactly, **including upper/lower case**.
+<details>
+<summary>Where the icons come from, and how to add one</summary>
+
+Icons come from the base theme [xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de), from [RetroArch Assets](https://github.com/libretro/retroarch-assets), or from an icon of the same hardware or game under another name (e.g. `pce-cd` → PC Engine CD, game ports → Ports).
+
+To add one, place `<system theme>.png` in `_inc/systems/controller/` (console) and `_inc/systems/physical-media/` (media). The file name must match the platform's `<theme>` in `es_systems.cfg` exactly, **including upper/lower case**.
+
+Platforms currently using the generic icon:
+- **ArkOS, arkos4clone, darkos4clone:** `bbk`, `gametank`, `krkr2`, `native32`, `onscripter`, `spmp8000`
+- **dArkOS, dArkOSRE-R36, dArkOSen:** `gametank`, `onscripter`
+- **ArchR:** `bk`, `ios`
+- **Batocera:** `bk`, `camplynx`, `cgenie`, `commanderx16`, `gametank`, `laser310`, `mc10`, `pcw`, `pdp1`, `segaai`, `tvgames`
+- **EmuELEC:** `bk`, `iphone`, `mc10`, `mtx512`, `p2000t`, `redshift`, `tvgc`, `x16`
+- **Knulli:** `camplynx`, `commanderx16`, `laser310`, `pdp1`, `plugnplay`
+
+</details>
 
 ## 📂 Installation
 
@@ -73,10 +88,73 @@ Each game shows its **marquee** image. Any size or shape works (wide logos, squa
 
 ## 🖼️ Wallpapers
 
-Each wallpaper is a `bg_{number}.png` image plus an optional `bg_{number}.mp4` video (e.g. `bg_2.png`, `bg_2.mp4`) in `_inc/background/`, selected in **Theme Configuration** > **Wallpaper**.
+The theme has 20 wallpaper slots. Each one is an **image** (`.png`) and, optionally, an **animated video** (`.mp4`) that plays on top of it. Only slot `1` comes with the theme; you can fill the others with your own.
 
-- **Always include the PNG**, ideally the video's first frame: it shows while the video loads and when video is disabled (otherwise the screen stays black).
-- Media is stretched to the full screen, so **use your screen's aspect ratio**: 4:3 (1024x768, 640x480), 1:1 (720x720, 1080x1080), 16:9 (854x480, 1280x720, 1920x1080) or 21:9 (2560x1080, 3440x1440).
+### 1. Find your screen size
+
+Your wallpaper should have **the same proportion as your screen**. The theme stretches it to fill the whole screen, so a wallpaper with another shape ends up squashed or stretched.
+
+| Screen | Proportion | Size to use | Examples |
+|---|---|---|---|
+| Standard handheld | 4:3 | **640x480** (or 1024x768) | R36S, RG351MP, RG353V |
+| Square screen | 1:1 | **720x720** | RGB30, R36 Ultra, R36 Pro Max |
+| Widescreen handheld | 16:9 | **854x480** or **960x544** | RGB10 Max, Odroid Go Super, RG503 |
+| TV / monitor | 16:9 | **1920x1080** (or 1280x720) | Batocera on a TV or PC |
+| Ultrawide monitor | 21:9 | **2560x1080** | Batocera on PC |
+
+> 💡 Not sure? Use the size of your device's screen resolution. Using a bigger size than the screen only makes the file heavier.
+
+### 2. Crop your image
+
+Any free tool works. The idea is always the same: create a canvas with the size above, place your image on it and enlarge it until it covers the whole canvas. The parts that go outside are cut off.
+
+**With [Canva](https://www.canva.com/) (browser or phone, free):**
+1. **Create a design** > **Custom size** and type the size from the table (e.g. `640` x `480` px).
+2. **Uploads** > **Upload files** and pick your image, then drag it onto the page.
+3. Right-click it (or long-press on the phone) > **Set image as background**. It fills the page; double-click it to move it and choose which part stays visible.
+4. **Share** > **Download** > **PNG** > **Download**.
+
+**With [Photopea](https://www.photopea.com/) (free, in the browser, Photoshop-like):**
+1. **File** > **New**, type the width and height, **Create**.
+2. **File** > **Open & Place** and pick your image.
+3. Hold **Shift** and drag a corner until the image covers the whole canvas, then press **Enter**.
+4. **File** > **Export as** > **PNG** > **Save**.
+
+On a PC you can also use **Paint** (Windows) or **Preview** (Mac) with the crop and resize tools, as long as the final size matches the table.
+
+### 3. Prepare a video (optional)
+
+Videos follow the same rule: same size as the screen, in **.mp4**.
+
+- **Canva:** create the design with the custom size, upload the video, set it as background, then **Share** > **Download** > **MP4 Video**.
+- **[ezgif.com](https://ezgif.com/video-resize) (no sign-up):** **Video resize** to change the size and **Crop video** to cut the edges; save the result as MP4. Good for short clips.
+- **CapCut / Clipchamp:** free editors that also export MP4 with a custom size, if you want to trim or edit the clip.
+
+To keep it smooth on handhelds:
+- Keep it **short** (10 to 30 seconds): it loops forever, so a clip whose end matches its start looks best.
+- Remove the **sound** (in Canva, mute the video before downloading): a background does not need it, and the file gets smaller.
+- Prefer **30 fps** and a file **under ~20 MB**. Big or long videos can stutter or slow down the menus on devices with less than 1GB of RAM.
+
+**Always make the matching image too**, ideally the video's **first frame**: it shows while the video loads and whenever the video is disabled; without it the screen stays black in those moments. On ezgif, **Video to JPG/PNG** splits the video into images: keep the first one. In Canva, downloading the same design as **PNG** also gives you a still image of it.
+
+<details>
+<summary>Advanced: ffmpeg commands</summary>
+
+```
+ffmpeg -i input.mp4 -vf "scale=640:480:force_original_aspect_ratio=increase,crop=640:480" -an -r 30 -c:v libx264 -crf 23 -movflags +faststart bg_2.mp4
+ffmpeg -i bg_2.mp4 -frames:v 1 bg_2.png
+```
+The first command fills and crops the video to 640x480 (change both pairs of numbers to your size), removes the sound and converts it to 30 fps. The second saves its first frame as the PNG.
+
+</details>
+
+### 4. Name the files and copy them
+
+1. Pick a free slot number from **2 to 20** and name the files with it: `bg_2.png` and, if you have one, `bg_2.mp4`. Both must use the **same number**, all in lower case.
+2. Copy them to the theme's `_inc/background/` folder (e.g. `/roms/themes/es-theme-xmb-fcamod/_inc/background/`).
+3. On the device: **Theme Configuration** > **Wallpaper** > choose the number. To show only the image, set **Background Video** to **Disabled**.
+
+> ⚠️ Keep your wallpapers when updating the theme: copy your `bg_*` files somewhere before deleting the old theme folder, and put them back afterwards.
 
 ## ⚠️ Known Limitations
 
