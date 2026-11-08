@@ -1,30 +1,78 @@
-# XMB Theme for EmulationStation
+# es-theme-xmb-fcamod
 
-![Platform](https://img.shields.io/badge/Platform-EmulationStation-purple)
-![Style](https://img.shields.io/badge/Style-XMB-blue)
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Github](https://img.shields.io/badge/Github-Repository-black?logo=github)](https://github.com/jovemlcxx/es-theme-xmb-fcamod)
+**EN** · [BR](README.pt-BR.md)
 
-A theme inspired by the XMB (Cross Media Bar) of the PSP and PS3, made for handhelds running EmulationStation. Optimized for **FCAMOD**, the EmulationStation fork by [christianhaitian](https://github.com/christianhaitian/EmulationStation-fcamod), and validated on other frontends (see [Supported Systems](#-supported-systems)).
+![Platform](https://img.shields.io/badge/Platform-EmulationStation-8A2BE2?style=flat-square) [![Reddit](https://img.shields.io/badge/Reddit-u%2Fjovemlcxx-FF4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/user/jovemlcxx/) [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support_me-FF5E5B?style=flat-square&logo=ko-fi&logoColor=white)](https://ko-fi.com/jovemlcxx)
+
+A theme inspired by the XMB (Cross Media Bar) of the PSP and PS3 for **EmulationStation-fcamod** handhelds (ArkOS family and clones), with the XMB carousel, the PSP-style game list, 20 wallpapers with animated video, four aspect ratios and **three icon styles**: PSP (soft shadows), Flat White and Flat Black.
 
 <p align="center">
   <img src="images/carousel-snes.jpg" width="49%"> <img src="images/gamelist-castlevania.jpg" width="49%"><br>
   <img src="images/gamelist-chrono-trigger.jpg" width="49%"> <img src="images/gamelist-mario-kart.jpg" width="49%">
 </p>
-<p align="center"><i>System view and game list on a real R36S (dArkOS4Clone), 640×480, PSP icon style.</i></p>
 
-## 🌟 Features
+[Install](#install) · [The theme](#the-theme) · [Options](#options) · [Compatibility](#compatibility) · [Customize](#customize) · [Credits](#credits-and-license)
 
-- **System screen:** XMB carousel with the selected system's name, game count and physical media icon (cartridge, disc, tape...), or a **Vertical** layout with 5 systems on the left. Every system has an icon; unknown ones show their name.
-- **Game list:** PSP style, 5 games per screen, the selected one on the same line as the system screen. Each game shows its logo centered and with its proportions kept (see [Game List Icons](#-game-list-icons)). Names stay on one line (long ones end in "...", the selected one scrolls) and stay visible while scrolling fast. The selected game's image and video (after 2 s) fill the background, darkened.
-- **Background:** Animated video that keeps playing while browsing systems, with up to 20 wallpapers (see [Wallpapers](#%EF%B8%8F-wallpapers)).
-- **Aspect ratios:** 4:3 (R36S, RG351MP, 640x480), 1:1 (RGB30, R36 Ultra, R36 Pro Max, 720x720), 16:9 (RG503, RGB10 Max, Odroid Go Super, TVs) and 21:9 (ultrawide monitors). Wide screens keep the 4:3 look, with more systems in the carousel.
-- **Footer and clock:** Start (menu) and confirm buttons in Nintendo/Xbox or PlayStation (○ ✕) style, and the frontend clock in the top right corner.
-- **Menus:** Dark or Light settings menu, including on-screen keyboard text boxes.
-- **XMB sounds and fonts:** Full XMB sound set and the original *FOT-NewRodin Pro* fonts.
-- **Translated:** Settings follow the frontend language (26 languages; button options in English, Portuguese and Spanish so far).
+## Install
 
-## 💻 Supported Systems
+1. Download this repository (**Code → Download ZIP**) or clone it.
+2. Copy the folder to the themes folder of your device: `/roms/themes/` (the `themes` folder of the games partition), `~/.emulationstation/themes/`, or `/userdata/themes/` on Batocera and Knulli. It must be named `es-theme-xmb-fcamod` (or `es-theme-xmb-fcamod-main` from the ZIP). When updating, keep your own `_inc/background/bg_*` files and delete the old folder first.
+3. **START → UI Settings → Theme Set → es-theme-xmb-fcamod**. The options are in **UI Settings → Theme Configuration**.
+
+Leave the frontend's **Gamelist View Style** and **Grid Size** on **automatic**: other values replace the theme's game list layout.
+
+## The theme
+
+- **System view:** XMB carousel with the selected system's name, game count and physical media icon (cartridge, disc, tape...), or a **vertical** layout with the carousel on the left. A background video keeps playing while you browse systems.
+- **Game list:** PSP style, 5 games per screen, the selected one on the same line as the system view, each with its marquee / wheel logo centered. Players and play count under the name, and the card icon for games without media.
+- **Icon styles:** **PSP** (white with a soft shadow, the XMB look), **Flat White** and **Flat Black**. The style changes the system and menu icons, the game list icons, the horizontal line, the text colour and the footer buttons.
+- **Footer:** Start (menu) and confirm buttons in Nintendo / Xbox or PlayStation (○ ✕) style, which you can also hide, and the frontend clock at the top.
+- **Aspect ratios:** 4:3 (R36S, RG351MP, 640×480), 1:1 (RGB30, R36 Ultra, R36 Pro Max, 720×720), 16:9 and 21:9.
+- **XMB sounds and fonts:** the full XMB sound set and the *FOT-NewRodin Pro* fonts.
+- **Translated:** every setting follows the frontend language (26 languages).
+
+## Options
+
+| Option | Choices (default first) | Notes |
+|---|---|---|
+| **Aspect Ratio** | 4:3 / 1:1 / 16:9 / 21:9 | Match your screen. |
+| **Wallpaper** | 1 to 20 | Only `1` is included. |
+| **Icon Style** | PSP / Flat White / Flat Black | System, menu and game list icons, horizontal line, text colour and footer buttons (PSP adds the soft shadow). Flat Black also lightens the backgrounds: a white translucent mask in the game list and no dimming in the system view. |
+| **Background Video** | Enabled / Disabled | Disable it on slow devices (less than 1 GB of RAM); the wallpaper image is used instead. |
+| **System Layout** | Horizontal (XMB Classic) / Vertical (Left Bar) | The game list follows it. |
+| **Color Scheme** | Dark / Light | Settings menu and on-screen keyboard. |
+| **Button Icons** | Nintendo / Xbox, PlayStation | PlayStation follows the button position: A = ○, B = ✕. |
+| **Confirm Button (A/B)** | A / B | Use **B** if you swapped A/B in the system (**dArkOSen** ships swapped). |
+| **Footer Buttons** | Enabled / Disabled | Shows or hides the button legend at the bottom. |
+
+## Compatibility
+
+What has actually been tested, and how:
+
+| | Theme |
+|---|---|
+| dArkOS4Clone | ✅ |
+| ArkOS, arkos4clone, dArkOS, dArkOSRE-R36, dArkOSen | 🧪 |
+| Batocera, Knulli, EmuELEC, ArchR, muOS | not tested |
+
+- ✅ **Validated on real hardware** (R36S): system view, game list, the three icon styles, footer, clock, battery and menu.
+- 🧪 **Checked in a simulator and against each system's EmulationStation source**, not on a real device: the theme loads and renders the same on the ES of dArkOS / dArkOSRE and dArkOSen. The only difference is the carousel's unselected items, drawn translucent by the stock ES unless the "Steam Deck UI Fixes" build is installed.
+
+Known limits of the frontend that a theme cannot change are in [Known limitations](#known-limitations).
+
+**Help test your system:** tell me your system, its version and what looks wrong, by [opening an issue](https://github.com/jovemlcxx/es-theme-xmb-fcamod/issues) or [on Reddit](https://www.reddit.com/user/jovemlcxx/) (u/jovemlcxx).
+
+## Customize
+
+Files are named after the system's `<theme>` entry in `es_systems.cfg` (e.g. `snes`, `megadrive`), not the ROM folder.
+
+| What | Where | Size |
+|---|---|---|
+| Icons of a system, per style | `_inc/icons/<psp-style, flat-white, flat-black>/controller/<theme>.png` (console) and `.../physical-media/<theme>.png` (media) | 256×256 with a transparent margin (the glyph is 71 % of the image) |
+| Wallpapers | `_inc/background/bg_<1-20>.png` / `.mp4` | the size of your screen |
+| Layout | `aspect-ratio-4-3.xml`, `-1-1`, `-16-9`, `-21-9` | written as fractions of the screen |
+
+### 💻 Supported Systems
 
 The theme was checked against the frontend of each distribution below. "Platforms" are the consoles and computers each one lists in its menu (NES, PlayStation, Arcade...): every one of them gets a console icon in the carousel and a physical media icon (cartridge, disc, tape...).
 
@@ -60,34 +108,15 @@ Platforms currently using the generic icon:
 
 </details>
 
-## 📂 Installation
-
-1. Copy the theme folder to your themes directory via SCP/SFTP: usually `/roms/themes/`, `~/.emulationstation/themes/`, or `/userdata/themes/` on Batocera and Knulli. The folder must be named `es-theme-xmb-fcamod` (or `es-theme-xmb-fcamod-main` if downloaded from GitHub). **When updating**, delete the old folder first.
-2. Select it in **UI Settings** > **Theme Set**, and customize it in **UI Settings** > **Theme Configuration**:
-
-| Option | Choices (default first) | Notes |
-|---|---|---|
-| **Aspect Ratio** | 4:3 / 1:1 / 16:9 / 21:9 | Match your screen. |
-| **Background Video** | Enabled / Disabled | Disable it on slow devices (less than 1GB of RAM); the wallpaper image is used instead. |
-| **Wallpaper** | 1 to 20 | Only `1` is included. |
-| **System Layout** | Horizontal (XMB Classic) / Vertical (Left Bar) | The game list follows it. |
-| **Icon Style** | PSP / Flat White / Flat Black | Changes the system icons, the game list icons, the horizontal line, the text colour (PSP adds a soft shadow) and the footer buttons. Flat Black also lightens the backgrounds (white translucent mask in the game list, no dimming in the system view). |
-| **Footer Buttons** | Enabled / Disabled | Shows or hides the button legend at the bottom. |
-| **Color Scheme** | Dark / Light | Settings menu and on-screen keyboard. |
-| **Button Icons** | Nintendo / Xbox, PlayStation | PlayStation follows the button position: A = ○, B = ✕. |
-| **Confirm Button (A/B)** | A / B | Use **B** if you swapped A/B in the system (**dArkOSen** ships swapped). |
-
-Leave the frontend's **Gamelist View Style** and **Grid Size** on **automatic**: other values replace the theme's game list layout.
-
-## 👾 Game List Icons
+### 👾 Game List Icons
 
 Each game shows its **marquee** image. Any size or shape works (wide logos, square art like 720x720, tall images): it is scaled to fit and centered, and names always start on the line. In the scraper, pick **Marquee** or **Wheel** (logo) as the source; both are saved as the marquee. Games without one (e.g. most Ports) show the default game icon, and folders the folder icon.
 
-## 🖼️ Wallpapers
+### 🖼️ Wallpapers
 
 The theme has 20 wallpaper slots. Each one is an **image** (`.png`) and, optionally, an **animated video** (`.mp4`) that plays on top of it. Only slot `1` comes with the theme; you can fill the others with your own.
 
-### 1. Find your screen size
+#### 1. Find your screen size
 
 Your wallpaper should have **the same proportion as your screen**. The theme stretches it to fill the whole screen, so a wallpaper with another shape ends up squashed or stretched.
 
@@ -101,7 +130,7 @@ Your wallpaper should have **the same proportion as your screen**. The theme str
 
 > 💡 Not sure? Use the size of your device's screen resolution. Using a bigger size than the screen only makes the file heavier.
 
-### 2. Crop your image
+#### 2. Crop your image
 
 Any free tool works. The idea is always the same: create a canvas with the size above, place your image on it and enlarge it until it covers the whole canvas. The parts that go outside are cut off.
 
@@ -119,7 +148,7 @@ Any free tool works. The idea is always the same: create a canvas with the size 
 
 On a PC you can also use **Paint** (Windows) or **Preview** (Mac) with the crop and resize tools, as long as the final size matches the table.
 
-### 3. Prepare a video (optional)
+#### 3. Prepare a video (optional)
 
 Videos follow the same rule: same size as the screen, in **.mp4**.
 
@@ -145,7 +174,7 @@ The first command fills and crops the video to 640x480 (change both pairs of num
 
 </details>
 
-### 4. Name the files and copy them
+#### 4. Name the files and copy them
 
 1. Pick a free slot number from **2 to 20** and name the files with it: `bg_2.png` and, if you have one, `bg_2.mp4`. Both must use the **same number**, all in lower case.
 2. Copy them to the theme's `_inc/background/` folder (e.g. `/roms/themes/es-theme-xmb-fcamod/_inc/background/`).
@@ -153,7 +182,7 @@ The first command fills and crops the video to 640x480 (change both pairs of num
 
 > ⚠️ Keep your wallpapers when updating the theme: copy your `bg_*` files somewhere before deleting the old theme folder, and put them back afterwards.
 
-## ⚠️ Known Limitations
+## Known limitations
 
 These come from the frontends and cannot be changed by a theme:
 
@@ -162,16 +191,16 @@ These come from the frontends and cannot be changed by a theme:
 - **A/B swap:** The theme cannot detect it, hence the **Confirm Button (A/B)** option. The full native button legend does not fit small screens in most languages.
 - **Batocera, Knulli, ArchR and EmuELEC:** a long name that was scrolling may stay shifted and cut off after you move to another game, until the list is redrawn. FCAMOD is not affected.
 
-## ⚖️ License
+## Credits and license
 
-This theme is **free** and licensed under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/): you may share and adapt it with credit and the same license, but ❌ **selling it is not allowed**, including modified versions and devices, SD cards or images sold with it pre-installed. If you paid for it, you were scammed: the official download is always free at [github.com/jovemlcxx/es-theme-xmb-fcamod](https://github.com/jovemlcxx/es-theme-xmb-fcamod).
-
-Based on [xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de) (CC BY-NC-SA). Third-party assets keep their own licenses (see [`LICENSE`](./LICENSE)).
-
-## 🛠️ Credits
+**License:** [CC BY-NC-SA 4.0](LICENSE), the same as my other themes. Free: selling it, alone or bundled with devices, SD cards or images, is not allowed. Third-party assets keep their own licenses (see [`LICENSE`](./LICENSE)). The PSP icon style is an original interpretation of the XMB look: no image from Sony's PSP is included.
 
 - [anthonycaccese/xmb-menu-es-de](https://github.com/anthonycaccese/xmb-menu-es-de): base project; structure, system and PlayStation button icons and sounds, adapted for FCAMOD.
 - [mohamedhany1024/ps3-xmb-web](https://github.com/mohamedhany1024/ps3-xmb-web) and [RobZombie9043/xmb-es-de](https://github.com/RobZombie9043/xmb-es-de): XMB layout references.
 - [lcdyk0517/arkos4clone](https://github.com/lcdyk0517/arkos4clone): guidance for ArkOS compatibility.
 - [RetroArch Assets](https://github.com/libretro/retroarch-assets): additional system and media icons. [EmulationStation-fcamod](https://github.com/christianhaitian/EmulationStation-fcamod): extra button icons.
 - **TizzyT:** animated background ([original video](https://youtu.be/69RqDjCYiek)).
+
+**Support:** if this theme is useful to you, you can support my work on [Ko-fi](https://ko-fi.com/jovemlcxx). Thank you! ☕
+
+[![Ko-fi](https://img.shields.io/badge/Support_me_on-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/jovemlcxx)
