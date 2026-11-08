@@ -31,6 +31,9 @@
       <iconStyleLabel>Icon Style</iconStyleLabel>
       <footerButtonsLabel>Footer Buttons</footerButtonsLabel>
       <iconPspLabel>PSP</iconPspLabel>
+      <wallpaper1Label>1 (default)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
       <iconFlatWhiteLabel>Flat White</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Flat Black</iconFlatBlackLabel>
       <buttonIconsLabel>Button Icons</buttonIconsLabel>
@@ -97,6 +100,9 @@
       <iconFlatBlackLabel>Chapado Preto</iconFlatBlackLabel>
       <darkLabel>Escuro</darkLabel>
       <lightLabel>Claro</lightLabel>
+      <wallpaper1Label>1 (padrão)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="es">
       <buttonIconsLabel>Iconos de Botones</buttonIconsLabel>
@@ -118,6 +124,9 @@
       <iconFlatBlackLabel>Plano Negro</iconFlatBlackLabel>
       <darkLabel>Oscuro</darkLabel>
       <lightLabel>Claro</lightLabel>
+      <wallpaper1Label>1 (predeterminado)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="fr">
       <helpSelect>SÉLECTIONNER</helpSelect>
@@ -138,6 +147,9 @@
       <iconFlatWhiteLabel>Plat Blanc</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Plat Noir</iconFlatBlackLabel>
       <footerButtonsLabel>Boutons du Bas</footerButtonsLabel>
+      <wallpaper1Label>1 (par défaut)</wallpaper1Label>
+      <ratio169Label>16:9 (bêta)</ratio169Label>
+      <ratio219Label>21:9 (bêta)</ratio219Label>
    </variables>
    <variables lang="de">
       <helpMenu>MENÜ</helpMenu>
@@ -159,6 +171,9 @@
       <iconFlatWhiteLabel>Flach Weiß</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Flach Schwarz</iconFlatBlackLabel>
       <footerButtonsLabel>Fußzeilen-Tasten</footerButtonsLabel>
+      <wallpaper1Label>1 (Standard)</wallpaper1Label>
+      <ratio169Label>16:9 (Beta)</ratio169Label>
+      <ratio219Label>21:9 (Beta)</ratio219Label>
    </variables>
    <variables lang="it">
       <helpSelect>SELEZIONA</helpSelect>
@@ -179,6 +194,9 @@
       <iconFlatWhiteLabel>Piatto Bianco</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Piatto Nero</iconFlatBlackLabel>
       <footerButtonsLabel>Pulsanti a Piè di Pagina</footerButtonsLabel>
+      <wallpaper1Label>1 (predefinito)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="ja">
       <helpMenu>メニュー</helpMenu>
@@ -200,6 +218,9 @@
       <iconFlatWhiteLabel>フラット白</iconFlatWhiteLabel>
       <iconFlatBlackLabel>フラット黒</iconFlatBlackLabel>
       <footerButtonsLabel>フッターボタン</footerButtonsLabel>
+      <wallpaper1Label>1 (デフォルト)</wallpaper1Label>
+      <ratio169Label>16:9 (ベータ)</ratio169Label>
+      <ratio219Label>21:9 (ベータ)</ratio219Label>
    </variables>
    <variables lang="ko">
       <helpMenu>메뉴</helpMenu>
@@ -221,6 +242,9 @@
       <iconFlatWhiteLabel>플랫 화이트</iconFlatWhiteLabel>
       <iconFlatBlackLabel>플랫 블랙</iconFlatBlackLabel>
       <footerButtonsLabel>하단 버튼</footerButtonsLabel>
+      <wallpaper1Label>1 (기본값)</wallpaper1Label>
+      <ratio169Label>16:9 (베타)</ratio169Label>
+      <ratio219Label>21:9 (베타)</ratio219Label>
    </variables>
    <variables lang="ru">
       <helpMenu>МЕНЮ</helpMenu>
@@ -242,6 +266,9 @@
       <iconFlatWhiteLabel>Плоский белый</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Плоский чёрный</iconFlatBlackLabel>
       <footerButtonsLabel>Кнопки внизу</footerButtonsLabel>
+      <wallpaper1Label>1 (по умолчанию)</wallpaper1Label>
+      <ratio169Label>16:9 (бета)</ratio169Label>
+      <ratio219Label>21:9 (бета)</ratio219Label>
    </variables>
    <variables lang="zh-cn,zh">
       <helpMenu>菜单</helpMenu>
@@ -263,6 +290,9 @@
       <iconFlatWhiteLabel>扁平白</iconFlatWhiteLabel>
       <iconFlatBlackLabel>扁平黑</iconFlatBlackLabel>
       <footerButtonsLabel>底部按钮</footerButtonsLabel>
+      <wallpaper1Label>1 (默认)</wallpaper1Label>
+      <ratio169Label>16:9 (测试版)</ratio169Label>
+      <ratio219Label>21:9 (测试版)</ratio219Label>
    </variables>
    <variables lang="zh-tw">
       <helpMenu>菜單</helpMenu>
@@ -284,6 +314,9 @@
       <iconFlatWhiteLabel>扁平白</iconFlatWhiteLabel>
       <iconFlatBlackLabel>扁平黑</iconFlatBlackLabel>
       <footerButtonsLabel>底部按鈕</footerButtonsLabel>
+      <wallpaper1Label>1 (預設)</wallpaper1Label>
+      <ratio169Label>16:9 (測試版)</ratio169Label>
+      <ratio219Label>21:9 (測試版)</ratio219Label>
    </variables>
    <variables lang="sv">
       <helpMenu>MENY</helpMenu>
@@ -305,6 +338,9 @@
       <iconFlatWhiteLabel>Platt vit</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Platt svart</iconFlatBlackLabel>
       <footerButtonsLabel>Sidfotsknappar</footerButtonsLabel>
+      <wallpaper1Label>1 (standard)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="pl">
       <helpMenu>MENU</helpMenu>
@@ -326,6 +362,9 @@
       <iconFlatWhiteLabel>Płaski biały</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Płaski czarny</iconFlatBlackLabel>
       <footerButtonsLabel>Przyciski w stopce</footerButtonsLabel>
+      <wallpaper1Label>1 (domyślne)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="uk,ua">
       <helpMenu>МЕНЮ</helpMenu>
@@ -347,6 +386,9 @@
       <iconFlatWhiteLabel>Плоский білий</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Плоский чорний</iconFlatBlackLabel>
       <footerButtonsLabel>Кнопки внизу</footerButtonsLabel>
+      <wallpaper1Label>1 (за замовчуванням)</wallpaper1Label>
+      <ratio169Label>16:9 (бета)</ratio169Label>
+      <ratio219Label>21:9 (бета)</ratio219Label>
    </variables>
    <variables lang="el">
       <helpMenu>ΜΕΝΟΥ</helpMenu>
@@ -368,6 +410,9 @@
       <iconFlatWhiteLabel>Επίπεδο Λευκό</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Επίπεδο Μαύρο</iconFlatBlackLabel>
       <footerButtonsLabel>Κουμπιά Υποσέλιδου</footerButtonsLabel>
+      <wallpaper1Label>1 (προεπιλογή)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="vi">
       <helpMenu>MENU</helpMenu>
@@ -389,6 +434,9 @@
       <iconFlatWhiteLabel>Phẳng trắng</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Phẳng đen</iconFlatBlackLabel>
       <footerButtonsLabel>Nút chân trang</footerButtonsLabel>
+      <wallpaper1Label>1 (mặc định)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="tr">
       <helpMenu>MENÜ</helpMenu>
@@ -410,6 +458,9 @@
       <iconFlatWhiteLabel>Düz Beyaz</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Düz Siyah</iconFlatBlackLabel>
       <footerButtonsLabel>Alt Düğmeler</footerButtonsLabel>
+      <wallpaper1Label>1 (varsayılan)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="nl">
       <helpMenu>MENU</helpMenu>
@@ -431,6 +482,9 @@
       <iconFlatWhiteLabel>Plat wit</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Plat zwart</iconFlatBlackLabel>
       <footerButtonsLabel>Voettekstknoppen</footerButtonsLabel>
+      <wallpaper1Label>1 (standaard)</wallpaper1Label>
+      <ratio169Label>16:9 (bèta)</ratio169Label>
+      <ratio219Label>21:9 (bèta)</ratio219Label>
    </variables>
    <variables lang="ca">
       <helpMenu>MENÚ</helpMenu>
@@ -452,6 +506,9 @@
       <iconFlatWhiteLabel>Pla Blanc</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Pla Negre</iconFlatBlackLabel>
       <footerButtonsLabel>Botons del Peu</footerButtonsLabel>
+      <wallpaper1Label>1 (per defecte)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="fi">
       <helpMenu>VALIKKO</helpMenu>
@@ -473,6 +530,9 @@
       <iconFlatWhiteLabel>Litteä valkoinen</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Litteä musta</iconFlatBlackLabel>
       <footerButtonsLabel>Alapalkin painikkeet</footerButtonsLabel>
+      <wallpaper1Label>1 (oletus)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="hu">
       <helpMenu>MENÜ</helpMenu>
@@ -494,6 +554,9 @@
       <iconFlatWhiteLabel>Lapos fehér</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Lapos fekete</iconFlatBlackLabel>
       <footerButtonsLabel>Lábléc gombjai</footerButtonsLabel>
+      <wallpaper1Label>1 (alapértelmezett)</wallpaper1Label>
+      <ratio169Label>16:9 (béta)</ratio169Label>
+      <ratio219Label>21:9 (béta)</ratio219Label>
    </variables>
    <variables lang="no,nb,nn">
       <helpMenu>MENY</helpMenu>
@@ -515,6 +578,9 @@
       <iconFlatWhiteLabel>Flat hvit</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Flat svart</iconFlatBlackLabel>
       <footerButtonsLabel>Bunntekstknapper</footerButtonsLabel>
+      <wallpaper1Label>1 (standard)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="ro">
       <helpMenu>MENIU</helpMenu>
@@ -536,6 +602,9 @@
       <iconFlatWhiteLabel>Plat alb</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Plat negru</iconFlatBlackLabel>
       <footerButtonsLabel>Butoane subsol</footerButtonsLabel>
+      <wallpaper1Label>1 (implicit)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="cs">
       <helpMenu>MENU</helpMenu>
@@ -557,6 +626,9 @@
       <iconFlatWhiteLabel>Plochá bílá</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Plochá černá</iconFlatBlackLabel>
       <footerButtonsLabel>Tlačítka zápatí</footerButtonsLabel>
+      <wallpaper1Label>1 (výchozí)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="id">
       <helpMenu>MENU</helpMenu>
@@ -578,6 +650,9 @@
       <iconFlatWhiteLabel>Datar Putih</iconFlatWhiteLabel>
       <iconFlatBlackLabel>Datar Hitam</iconFlatBlackLabel>
       <footerButtonsLabel>Tombol Footer</footerButtonsLabel>
+      <wallpaper1Label>1 (bawaan)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <variables lang="pt">
       <buttonIconsLabel>Ícones dos Botões</buttonIconsLabel>
@@ -599,15 +674,18 @@
       <iconFlatBlackLabel>Chapado Preto</iconFlatBlackLabel>
       <darkLabel>Escuro</darkLabel>
       <lightLabel>Claro</lightLabel>
+      <wallpaper1Label>1 (padrão)</wallpaper1Label>
+      <ratio169Label>16:9 (beta)</ratio169Label>
+      <ratio219Label>21:9 (beta)</ratio219Label>
    </variables>
    <subset name="aspect-ratio" displayName="${aspectRatioLabel}">
       <include name="4-3" displayName="4:3" />
       <include name="1-1" displayName="1:1" />
-      <include name="16-9" displayName="16:9 (beta)" />
-      <include name="21-9" displayName="21:9 (beta)" />
+      <include name="16-9" displayName="${ratio169Label}" />
+      <include name="21-9" displayName="${ratio219Label}" />
    </subset>
    <subset name="wallpaper" displayName="${wallpaperLabel}">
-      <include name="1" displayName="1 (default)">./_inc/wallpapers/1.xml</include>
+      <include name="1" displayName="${wallpaper1Label}">./_inc/wallpapers/1.xml</include>
       <include name="2" displayName="2">./_inc/wallpapers/2.xml</include>
       <include name="3" displayName="3">./_inc/wallpapers/3.xml</include>
       <include name="4" displayName="4">./_inc/wallpapers/4.xml</include>
