@@ -1,0 +1,26 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- Background video ON (chosen by the "background-video" subset in theme.xml). -->
+   <!-- System view: one shared background for all systems (not per-system extras), so the video keeps playing while scrolling. Drawn under all
+        extras, so the dark overlay is applied as a color tint instead of an overlay image. -->
+   <view name="system">
+      <video name="staticBackgroundVideo">
+         <path>${wallpaperVideoPath}</path>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <color>${systemTint}</color>
+         <delay>0</delay>
+      </video>
+   </view>
+   <view name="grid">
+      <video name="bg_video" extra="true">
+         <path>${wallpaperVideoPath}</path>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>1</zIndex>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>false</showSnapshotDelay>
+         <delay>0</delay>
+      </video>
+   </view>
+</theme>

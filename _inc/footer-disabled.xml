@@ -1,0 +1,19 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- Footer buttons OFF: hides the hand-made legend (button icons and texts) of the system view and the game list. Parsed after
+        aspect-ratio-*.xml, so it overrides their elements. -->
+   <view name="system,grid">
+      <image name="e_help_start_icon" extra="true">
+         <visible>false</visible>
+      </image>
+      <text name="e_help_start_text" extra="true">
+         <visible>false</visible>
+      </text>
+      <image name="e_help_a_icon" extra="true">
+         <visible>false</visible>
+      </image>
+      <text name="e_help_a_text" extra="true">
+         <visible>false</visible>
+      </text>
+   </view>
+</theme>

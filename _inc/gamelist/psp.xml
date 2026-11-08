@@ -5,7 +5,7 @@
         (same start, same end): grid top = line y - 3 rows. The right info panel is hidden. -->
    <view name="grid">
       <imagegrid name="gamegrid">
-         <pos>0.03 0.052</pos>
+         <pos>0.03 0.077</pos>
          <size>0.94 0.756</size>
          <autoLayout>1 5</autoLayout>
          <!-- FCAMOD defaults the grid margin to 0.07 of the screen: without this the rows were
@@ -21,7 +21,8 @@
          <size>0.6702 0.14</size>
       </gridtile>
       <image name="gridtile.image">
-         <!-- centered in the icon area left of the row (negative x). maxSize keeps the aspect ratio. -->
+         <!-- Icons are centered in their drawing area (both axes, as in the original design). ES places a merged label relative to the tile minus the
+              icon's real offset, which changes with every artwork, so the name box does NOT depend on it here: see the text block (fixed padding). -->
          <pos>-0.216 0.5</pos>
          <maxSize>0.3731 1</maxSize>
          <origin>0.5 0.5</origin>
@@ -31,24 +32,37 @@
               box is 0.8 of the row: one full line (with descenders) fits, and FCAMOD only wraps
               text above 1.95 x line height (~0.83 of the row on 1:1), so long names get "..."
               instead of a second line. The selected name scrolls. -->
-         <pos>0 0.1</pos>
-         <size>0.713 0.8</size>
+         <pos>0 0</pos>
+         <size>0.713 1</size>
       </text>
       <image name="md_line" extra="true">
          <pos>0.3 0.5</pos>
-         <size>0.72 0.002</size>
+         <size>0.72 0.1</size>
+         <origin>0 0.5</origin>
          <visible>true</visible>
       </image>
       <text name="gridtile">
          <fontPath>${fontRegular}</fontPath>
          <fontSize>0.04</fontSize>
-         <color>ffffff88</color>
+         <color>${textColor88}</color>
+         <glowColor>${textGlowColor}</glowColor>
+         <glowSize>${textGlowSize}</glowSize>
+         <glowOffset>${textGlowOffset}</glowOffset>
          <alignment>left</alignment>
-         <verticalAlignment>center</verticalAlignment>
+         <verticalAlignment>top</verticalAlignment>
+         <!-- Name placed independently of the icon's height: ES scales pos/size by a reference that changes with each artwork, the padding scales
+              by the fixed tile. Top-aligned, 0.194 of the tile down = centered on the row (same spot as the original). -->
+         <padding>0 0.194 0 0</padding>
+         <!-- MUST be explicit: ES (GridTextProperties) never initializes autoScroll, so when the theme omits it the unselected rows get a random
+              value and long names start scrolling / jumping on their own. Only the selected row scrolls (below). -->
+         <singleLineScroll>false</singleLineScroll>
       </text>
       <text name="gridtile:selected">
          <fontPath>${fontBold}</fontPath>
-         <color>ffffff</color>
+         <color>${textColor}</color>
+         <glowColor>${textGlowColor}</glowColor>
+         <glowSize>${textGlowSize}</glowSize>
+         <glowOffset>${textGlowOffset}</glowOffset>
          <singleLineScroll>true</singleLineScroll>
       </text>
       <text name="md_name">
@@ -57,6 +71,73 @@
       <text name="md_description">
          <visible>false</visible>
       </text>
+      <!-- selected-game info: arrow beside the icon, system name above the name, players + play count under the line (the ES-fcamod has
+           no play time field, so the clock icon shows how many times the game was played) -->
+      <image name="e_gl_arrow" extra="true">
+         <pos>0.016 0.454</pos>
+         <maxSize>0.028 0.098</maxSize>
+         <origin>0.5 0.5</origin>
+         <path>${iconGamelistPath}/arrow.png</path>
+         <color>${textColorCC}</color>
+         <zIndex>60</zIndex>
+      </image>
+      <text name="e_gl_system" extra="true">
+         <pos>0.3 0.3745</pos>
+         <size>0.7 0.045</size>
+         <text>${system.fullName}</text>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.024</fontSize>
+         <color>${textColor77}</color>
+         <glowColor>${textGlowColor}</glowColor>
+         <glowSize>${textGlowSize}</glowSize>
+         <glowOffset>${textGlowOffset}</glowOffset>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>60</zIndex>
+      </text>
+      <image name="e_gl_players_icon" extra="true">
+         <pos>0.317 0.528</pos>
+         <maxSize>0.0476 0.0518</maxSize>
+         <path>${iconGamelistPath}/players.png</path>
+         <origin>0.5 0.5</origin>
+         <color>${textColor88}</color>
+         <zIndex>60</zIndex>
+      </image>
+      <text name="md_players">
+         <pos>0.342 0.512</pos>
+         <size>0.1 0.032</size>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.022</fontSize>
+         <color>${textColor88}</color>
+         <glowColor>${textGlowColor}</glowColor>
+         <glowSize>${textGlowSize}</glowSize>
+         <glowOffset>${textGlowOffset}</glowOffset>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>60</zIndex>
+      </text>
+      <image name="e_gl_plays_icon" extra="true">
+         <pos>0.411 0.528</pos>
+         <maxSize>0.0476 0.0518</maxSize>
+         <path>${iconGamelistPath}/playtime.png</path>
+         <origin>0.5 0.5</origin>
+         <color>${textColor88}</color>
+         <zIndex>60</zIndex>
+      </image>
+      <text name="md_playcount">
+         <pos>0.436 0.512</pos>
+         <size>0.12 0.032</size>
+         <fontPath>${fontRegular}</fontPath>
+         <fontSize>0.022</fontSize>
+         <color>${textColor88}</color>
+         <glowColor>${textGlowColor}</glowColor>
+         <glowSize>${textGlowSize}</glowSize>
+         <glowOffset>${textGlowOffset}</glowOffset>
+         <alignment>left</alignment>
+         <verticalAlignment>center</verticalAlignment>
+         <zIndex>60</zIndex>
+      </text>
+      <!-- /selected-game info -->
    </view>
    <include subset="aspect-ratio" name="16-9">./psp-16-9.xml</include>
    <include subset="aspect-ratio" name="21-9">./psp-21-9.xml</include>

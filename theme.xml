@@ -3,8 +3,19 @@
    <variables>
       <fontRegular>./_inc/fonts/FOT-NewRodin Pro DB.otf</fontRegular>
       <fontBold>./_inc/fonts/FOT-NewRodin Pro B.otf</fontBold>
-      <systemCarouselImagePath>./_inc/systems/controller</systemCarouselImagePath>
-      <systemContentImagePath>./_inc/systems/physical-media</systemContentImagePath>
+      <systemCarouselImagePath>./_inc/icons/psp-style/controller</systemCarouselImagePath>
+      <systemContentImagePath>./_inc/icons/psp-style/physical-media</systemContentImagePath>
+      <iconMenuPath>./_inc/icons/psp-style/menu</iconMenuPath>
+      <!-- iconCanvasScale: the icon images have a 20 % transparent margin on every side (room for the shadow / halo of the PSP style), so the carousel logoSize and the e_system_content maxSize in aspect-ratio-*.xml and _inc/layouts/vertical-*.xml are 1.4x the original values: the glyph keeps its original size on screen. -->
+      <lineImage>./_inc/icons/psp-style/line.png</lineImage>
+      <lineColor>ffffff</lineColor>
+      <textColor>ffffff</textColor>
+      <textColorCC>ffffffcc</textColorCC>
+      <textColor88>ffffff88</textColor88>
+      <textColor77>ffffff77</textColor77>
+      <textGlowColor>0a103010</textGlowColor>
+      <textGlowSize>3</textGlowSize>
+      <textGlowOffset>2 3</textGlowOffset>
       <spacerImage>./_inc/images/white.png</spacerImage>
       <helpMenu>MENU</helpMenu>
       <helpSelect>SELECT</helpSelect>
@@ -17,6 +28,11 @@
       <enabledLabel>Enabled</enabledLabel>
       <disabledLabel>Disabled</disabledLabel>
       <colorSchemeLabel>Color Scheme</colorSchemeLabel>
+      <iconStyleLabel>Icon Style</iconStyleLabel>
+      <footerButtonsLabel>Footer Buttons</footerButtonsLabel>
+      <iconPspLabel>PSP</iconPspLabel>
+      <iconFlatWhiteLabel>Flat White</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Flat Black</iconFlatBlackLabel>
       <buttonIconsLabel>Button Icons</buttonIconsLabel>
       <confirmButtonLabel>Confirm Button (A/B)</confirmButtonLabel>
       <darkLabel>Dark</darkLabel>
@@ -30,8 +46,13 @@
       <wallpaperPath>./_inc/background/bg_1.png</wallpaperPath>
       <wallpaperVideoPath>./_inc/background/bg_1.mp4</wallpaperVideoPath>
       <buttonStyle>nintendo</buttonStyle>
+      <iconButtonsPath>./_inc/icons/psp-style/buttons</iconButtonsPath>
+      <iconGamelistPath>./_inc/icons/psp-style/gamelist</iconGamelistPath>
+      <iconPlaceholderPath>./_inc/icons/psp-style/placeholders</iconPlaceholderPath>
       <confirmButton>a</confirmButton>
       <systemBackgroundTint>CCCCCCFF</systemBackgroundTint>
+      <maskColor>0000008C</maskColor>
+      <systemTint>CCCCCCFF</systemTint>
       <backgroundOverlayColor>0000008C</backgroundOverlayColor>
    </variables>
    <view name="system, grid, menu">
@@ -70,6 +91,10 @@
       <enabledLabel>Ativado</enabledLabel>
       <disabledLabel>Desativado</disabledLabel>
       <colorSchemeLabel>Esquema de Cores</colorSchemeLabel>
+      <iconStyleLabel>Estilo dos Ícones</iconStyleLabel>
+      <footerButtonsLabel>Botões do Rodapé</footerButtonsLabel>
+      <iconFlatWhiteLabel>Chapado Branco</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Chapado Preto</iconFlatBlackLabel>
       <darkLabel>Escuro</darkLabel>
       <lightLabel>Claro</lightLabel>
    </variables>
@@ -87,6 +112,10 @@
       <enabledLabel>Activado</enabledLabel>
       <disabledLabel>Desactivado</disabledLabel>
       <colorSchemeLabel>Esquema de Color</colorSchemeLabel>
+      <iconStyleLabel>Estilo de Iconos</iconStyleLabel>
+      <footerButtonsLabel>Botones del Pie</footerButtonsLabel>
+      <iconFlatWhiteLabel>Plano Blanco</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Plano Negro</iconFlatBlackLabel>
       <darkLabel>Oscuro</darkLabel>
       <lightLabel>Claro</lightLabel>
    </variables>
@@ -103,6 +132,12 @@
       <colorSchemeLabel>Schéma de Couleur</colorSchemeLabel>
       <darkLabel>Sombre</darkLabel>
       <lightLabel>Clair</lightLabel>
+      <buttonIconsLabel>Icônes des Boutons</buttonIconsLabel>
+      <confirmButtonLabel>Bouton de Confirmation (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Style des Icônes</iconStyleLabel>
+      <iconFlatWhiteLabel>Plat Blanc</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Plat Noir</iconFlatBlackLabel>
+      <footerButtonsLabel>Boutons du Bas</footerButtonsLabel>
    </variables>
    <variables lang="de">
       <helpMenu>MENÜ</helpMenu>
@@ -118,6 +153,12 @@
       <colorSchemeLabel>Farbschema</colorSchemeLabel>
       <darkLabel>Dunkel</darkLabel>
       <lightLabel>Hell</lightLabel>
+      <buttonIconsLabel>Tastensymbole</buttonIconsLabel>
+      <confirmButtonLabel>Bestätigungstaste (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Symbolstil</iconStyleLabel>
+      <iconFlatWhiteLabel>Flach Weiß</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Flach Schwarz</iconFlatBlackLabel>
+      <footerButtonsLabel>Fußzeilen-Tasten</footerButtonsLabel>
    </variables>
    <variables lang="it">
       <helpSelect>SELEZIONA</helpSelect>
@@ -132,6 +173,12 @@
       <colorSchemeLabel>Schema Colori</colorSchemeLabel>
       <darkLabel>Scuro</darkLabel>
       <lightLabel>Chiaro</lightLabel>
+      <buttonIconsLabel>Icone dei Pulsanti</buttonIconsLabel>
+      <confirmButtonLabel>Pulsante di Conferma (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Stile Icone</iconStyleLabel>
+      <iconFlatWhiteLabel>Piatto Bianco</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Piatto Nero</iconFlatBlackLabel>
+      <footerButtonsLabel>Pulsanti a Piè di Pagina</footerButtonsLabel>
    </variables>
    <variables lang="ja">
       <helpMenu>メニュー</helpMenu>
@@ -147,6 +194,12 @@
       <colorSchemeLabel>カラースキーム</colorSchemeLabel>
       <darkLabel>ダーク</darkLabel>
       <lightLabel>ライト</lightLabel>
+      <buttonIconsLabel>ボタンアイコン</buttonIconsLabel>
+      <confirmButtonLabel>決定ボタン (A/B)</confirmButtonLabel>
+      <iconStyleLabel>アイコンスタイル</iconStyleLabel>
+      <iconFlatWhiteLabel>フラット白</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>フラット黒</iconFlatBlackLabel>
+      <footerButtonsLabel>フッターボタン</footerButtonsLabel>
    </variables>
    <variables lang="ko">
       <helpMenu>메뉴</helpMenu>
@@ -162,6 +215,12 @@
       <colorSchemeLabel>색상 테마</colorSchemeLabel>
       <darkLabel>어두운</darkLabel>
       <lightLabel>밝은</lightLabel>
+      <buttonIconsLabel>버튼 아이콘</buttonIconsLabel>
+      <confirmButtonLabel>확인 버튼 (A/B)</confirmButtonLabel>
+      <iconStyleLabel>아이콘 스타일</iconStyleLabel>
+      <iconFlatWhiteLabel>플랫 화이트</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>플랫 블랙</iconFlatBlackLabel>
+      <footerButtonsLabel>하단 버튼</footerButtonsLabel>
    </variables>
    <variables lang="ru">
       <helpMenu>МЕНЮ</helpMenu>
@@ -177,6 +236,12 @@
       <colorSchemeLabel>Цветовая схема</colorSchemeLabel>
       <darkLabel>Тёмная</darkLabel>
       <lightLabel>Светлая</lightLabel>
+      <buttonIconsLabel>Значки кнопок</buttonIconsLabel>
+      <confirmButtonLabel>Кнопка подтверждения (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Стиль значков</iconStyleLabel>
+      <iconFlatWhiteLabel>Плоский белый</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Плоский чёрный</iconFlatBlackLabel>
+      <footerButtonsLabel>Кнопки внизу</footerButtonsLabel>
    </variables>
    <variables lang="zh-cn,zh">
       <helpMenu>菜单</helpMenu>
@@ -192,6 +257,12 @@
       <colorSchemeLabel>配色方案</colorSchemeLabel>
       <darkLabel>深色</darkLabel>
       <lightLabel>浅色</lightLabel>
+      <buttonIconsLabel>按钮图标</buttonIconsLabel>
+      <confirmButtonLabel>确认键 (A/B)</confirmButtonLabel>
+      <iconStyleLabel>图标样式</iconStyleLabel>
+      <iconFlatWhiteLabel>扁平白</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>扁平黑</iconFlatBlackLabel>
+      <footerButtonsLabel>底部按钮</footerButtonsLabel>
    </variables>
    <variables lang="zh-tw">
       <helpMenu>菜單</helpMenu>
@@ -207,6 +278,12 @@
       <colorSchemeLabel>配色方案</colorSchemeLabel>
       <darkLabel>深色</darkLabel>
       <lightLabel>淺色</lightLabel>
+      <buttonIconsLabel>按鈕圖示</buttonIconsLabel>
+      <confirmButtonLabel>確認鍵 (A/B)</confirmButtonLabel>
+      <iconStyleLabel>圖示樣式</iconStyleLabel>
+      <iconFlatWhiteLabel>扁平白</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>扁平黑</iconFlatBlackLabel>
+      <footerButtonsLabel>底部按鈕</footerButtonsLabel>
    </variables>
    <variables lang="sv">
       <helpMenu>MENY</helpMenu>
@@ -222,6 +299,12 @@
       <colorSchemeLabel>Färgschema</colorSchemeLabel>
       <darkLabel>Mörkt</darkLabel>
       <lightLabel>Ljust</lightLabel>
+      <buttonIconsLabel>Knappikoner</buttonIconsLabel>
+      <confirmButtonLabel>Bekräftelseknapp (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Ikonstil</iconStyleLabel>
+      <iconFlatWhiteLabel>Platt vit</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Platt svart</iconFlatBlackLabel>
+      <footerButtonsLabel>Sidfotsknappar</footerButtonsLabel>
    </variables>
    <variables lang="pl">
       <helpMenu>MENU</helpMenu>
@@ -237,6 +320,12 @@
       <colorSchemeLabel>Schemat kolorów</colorSchemeLabel>
       <darkLabel>Ciemny</darkLabel>
       <lightLabel>Jasny</lightLabel>
+      <buttonIconsLabel>Ikony przycisków</buttonIconsLabel>
+      <confirmButtonLabel>Przycisk potwierdzenia (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Styl ikon</iconStyleLabel>
+      <iconFlatWhiteLabel>Płaski biały</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Płaski czarny</iconFlatBlackLabel>
+      <footerButtonsLabel>Przyciski w stopce</footerButtonsLabel>
    </variables>
    <variables lang="uk,ua">
       <helpMenu>МЕНЮ</helpMenu>
@@ -252,6 +341,12 @@
       <colorSchemeLabel>Колірна схема</colorSchemeLabel>
       <darkLabel>Темна</darkLabel>
       <lightLabel>Світла</lightLabel>
+      <buttonIconsLabel>Значки кнопок</buttonIconsLabel>
+      <confirmButtonLabel>Кнопка підтвердження (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Стиль значків</iconStyleLabel>
+      <iconFlatWhiteLabel>Плоский білий</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Плоский чорний</iconFlatBlackLabel>
+      <footerButtonsLabel>Кнопки внизу</footerButtonsLabel>
    </variables>
    <variables lang="el">
       <helpMenu>ΜΕΝΟΥ</helpMenu>
@@ -267,6 +362,12 @@
       <colorSchemeLabel>Χρωματικό Σχήμα</colorSchemeLabel>
       <darkLabel>Σκοτεινό</darkLabel>
       <lightLabel>Φωτεινό</lightLabel>
+      <buttonIconsLabel>Εικονίδια Κουμπιών</buttonIconsLabel>
+      <confirmButtonLabel>Κουμπί Επιβεβαίωσης (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Στυλ Εικονιδίων</iconStyleLabel>
+      <iconFlatWhiteLabel>Επίπεδο Λευκό</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Επίπεδο Μαύρο</iconFlatBlackLabel>
+      <footerButtonsLabel>Κουμπιά Υποσέλιδου</footerButtonsLabel>
    </variables>
    <variables lang="vi">
       <helpMenu>MENU</helpMenu>
@@ -282,6 +383,12 @@
       <colorSchemeLabel>Giao diện màu</colorSchemeLabel>
       <darkLabel>Tối</darkLabel>
       <lightLabel>Sáng</lightLabel>
+      <buttonIconsLabel>Biểu tượng nút</buttonIconsLabel>
+      <confirmButtonLabel>Nút xác nhận (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Kiểu biểu tượng</iconStyleLabel>
+      <iconFlatWhiteLabel>Phẳng trắng</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Phẳng đen</iconFlatBlackLabel>
+      <footerButtonsLabel>Nút chân trang</footerButtonsLabel>
    </variables>
    <variables lang="tr">
       <helpMenu>MENÜ</helpMenu>
@@ -297,6 +404,12 @@
       <colorSchemeLabel>Renk Şeması</colorSchemeLabel>
       <darkLabel>Koyu</darkLabel>
       <lightLabel>Açık</lightLabel>
+      <buttonIconsLabel>Düğme Simgeleri</buttonIconsLabel>
+      <confirmButtonLabel>Onay Düğmesi (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Simge Stili</iconStyleLabel>
+      <iconFlatWhiteLabel>Düz Beyaz</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Düz Siyah</iconFlatBlackLabel>
+      <footerButtonsLabel>Alt Düğmeler</footerButtonsLabel>
    </variables>
    <variables lang="nl">
       <helpMenu>MENU</helpMenu>
@@ -312,6 +425,12 @@
       <colorSchemeLabel>Kleurenschema</colorSchemeLabel>
       <darkLabel>Donker</darkLabel>
       <lightLabel>Licht</lightLabel>
+      <buttonIconsLabel>Knoppictogrammen</buttonIconsLabel>
+      <confirmButtonLabel>Bevestigingsknop (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Pictogramstijl</iconStyleLabel>
+      <iconFlatWhiteLabel>Plat wit</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Plat zwart</iconFlatBlackLabel>
+      <footerButtonsLabel>Voettekstknoppen</footerButtonsLabel>
    </variables>
    <variables lang="ca">
       <helpMenu>MENÚ</helpMenu>
@@ -327,6 +446,12 @@
       <colorSchemeLabel>Esquema de colors</colorSchemeLabel>
       <darkLabel>Fosc</darkLabel>
       <lightLabel>Clar</lightLabel>
+      <buttonIconsLabel>Icones dels Botons</buttonIconsLabel>
+      <confirmButtonLabel>Botó de Confirmació (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Estil de les Icones</iconStyleLabel>
+      <iconFlatWhiteLabel>Pla Blanc</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Pla Negre</iconFlatBlackLabel>
+      <footerButtonsLabel>Botons del Peu</footerButtonsLabel>
    </variables>
    <variables lang="fi">
       <helpMenu>VALIKKO</helpMenu>
@@ -342,6 +467,12 @@
       <colorSchemeLabel>Väriteema</colorSchemeLabel>
       <darkLabel>Tumma</darkLabel>
       <lightLabel>Vaalea</lightLabel>
+      <buttonIconsLabel>Painikekuvakkeet</buttonIconsLabel>
+      <confirmButtonLabel>Vahvistuspainike (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Kuvaketyyli</iconStyleLabel>
+      <iconFlatWhiteLabel>Litteä valkoinen</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Litteä musta</iconFlatBlackLabel>
+      <footerButtonsLabel>Alapalkin painikkeet</footerButtonsLabel>
    </variables>
    <variables lang="hu">
       <helpMenu>MENÜ</helpMenu>
@@ -357,6 +488,12 @@
       <colorSchemeLabel>Színséma</colorSchemeLabel>
       <darkLabel>Sötét</darkLabel>
       <lightLabel>Világos</lightLabel>
+      <buttonIconsLabel>Gombikonok</buttonIconsLabel>
+      <confirmButtonLabel>Megerősítő gomb (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Ikonstílus</iconStyleLabel>
+      <iconFlatWhiteLabel>Lapos fehér</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Lapos fekete</iconFlatBlackLabel>
+      <footerButtonsLabel>Lábléc gombjai</footerButtonsLabel>
    </variables>
    <variables lang="no,nb,nn">
       <helpMenu>MENY</helpMenu>
@@ -372,6 +509,12 @@
       <colorSchemeLabel>Fargeskjema</colorSchemeLabel>
       <darkLabel>Mørk</darkLabel>
       <lightLabel>Lys</lightLabel>
+      <buttonIconsLabel>Knappeikoner</buttonIconsLabel>
+      <confirmButtonLabel>Bekreftelsesknapp (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Ikonstil</iconStyleLabel>
+      <iconFlatWhiteLabel>Flat hvit</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Flat svart</iconFlatBlackLabel>
+      <footerButtonsLabel>Bunntekstknapper</footerButtonsLabel>
    </variables>
    <variables lang="ro">
       <helpMenu>MENIU</helpMenu>
@@ -387,6 +530,12 @@
       <colorSchemeLabel>Schemă de culori</colorSchemeLabel>
       <darkLabel>Întunecat</darkLabel>
       <lightLabel>Deschis</lightLabel>
+      <buttonIconsLabel>Pictograme butoane</buttonIconsLabel>
+      <confirmButtonLabel>Buton de confirmare (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Stil pictograme</iconStyleLabel>
+      <iconFlatWhiteLabel>Plat alb</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Plat negru</iconFlatBlackLabel>
+      <footerButtonsLabel>Butoane subsol</footerButtonsLabel>
    </variables>
    <variables lang="cs">
       <helpMenu>MENU</helpMenu>
@@ -402,6 +551,12 @@
       <colorSchemeLabel>Barevné schéma</colorSchemeLabel>
       <darkLabel>Tmavé</darkLabel>
       <lightLabel>Světlé</lightLabel>
+      <buttonIconsLabel>Ikony tlačítek</buttonIconsLabel>
+      <confirmButtonLabel>Potvrzovací tlačítko (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Styl ikon</iconStyleLabel>
+      <iconFlatWhiteLabel>Plochá bílá</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Plochá černá</iconFlatBlackLabel>
+      <footerButtonsLabel>Tlačítka zápatí</footerButtonsLabel>
    </variables>
    <variables lang="id">
       <helpMenu>MENU</helpMenu>
@@ -417,6 +572,12 @@
       <colorSchemeLabel>Skema Warna</colorSchemeLabel>
       <darkLabel>Gelap</darkLabel>
       <lightLabel>Terang</lightLabel>
+      <buttonIconsLabel>Ikon Tombol</buttonIconsLabel>
+      <confirmButtonLabel>Tombol Konfirmasi (A/B)</confirmButtonLabel>
+      <iconStyleLabel>Gaya Ikon</iconStyleLabel>
+      <iconFlatWhiteLabel>Datar Putih</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Datar Hitam</iconFlatBlackLabel>
+      <footerButtonsLabel>Tombol Footer</footerButtonsLabel>
    </variables>
    <variables lang="pt">
       <buttonIconsLabel>Ícones dos Botões</buttonIconsLabel>
@@ -432,6 +593,10 @@
       <enabledLabel>Ativado</enabledLabel>
       <disabledLabel>Desativado</disabledLabel>
       <colorSchemeLabel>Esquema de Cores</colorSchemeLabel>
+      <iconStyleLabel>Estilo dos Ícones</iconStyleLabel>
+      <footerButtonsLabel>Botões do Rodapé</footerButtonsLabel>
+      <iconFlatWhiteLabel>Chapado Branco</iconFlatWhiteLabel>
+      <iconFlatBlackLabel>Chapado Preto</iconFlatBlackLabel>
       <darkLabel>Escuro</darkLabel>
       <lightLabel>Claro</lightLabel>
    </variables>
@@ -440,12 +605,6 @@
       <include name="1-1" displayName="1:1" />
       <include name="16-9" displayName="16:9 (beta)" />
       <include name="21-9" displayName="21:9 (beta)" />
-   </subset>
-   <!-- FCAMOD ignores inline content in subset includes (only file paths load),
-        so this only registers the options; "disabled" is applied at the end of the file. -->
-   <subset name="background-video" displayName="${videoLabel}">
-      <include name="enabled" displayName="${enabledLabel}" />
-      <include name="disabled" displayName="${disabledLabel}" />
    </subset>
    <subset name="wallpaper" displayName="${wallpaperLabel}">
       <include name="1" displayName="1 (default)">./_inc/wallpapers/1.xml</include>
@@ -469,6 +628,22 @@
       <include name="19" displayName="19">./_inc/wallpapers/19.xml</include>
       <include name="20" displayName="20">./_inc/wallpapers/20.xml</include>
    </subset>
+   <!-- Icon style: PSP (default), flat white, flat black. Each include sets the paths of the system icons, the menu icons and the horizontal line. -->
+   <subset name="icon-style" displayName="${iconStyleLabel}">
+      <include name="psp" displayName="${iconPspLabel}">./_inc/icons/psp-style.xml</include>
+      <include name="flat-white" displayName="${iconFlatWhiteLabel}">./_inc/icons/flat-white.xml</include>
+      <include name="flat-black" displayName="${iconFlatBlackLabel}">./_inc/icons/flat-black.xml</include>
+   </subset>
+   <!-- ^ it sits BEFORE the background-video subset on purpose: video-enabled.xml reads ${systemTint} when it is parsed, so the icon style must already have set it
+        (otherwise the video keeps the dark default tint while the still image gets the style's: the picture darkens when the video starts). -->
+   <!-- Background video on/off. It sits AFTER the wallpaper subset on purpose: the video elements are defined in video-enabled.xml and resolve
+        ${wallpaperVideoPath} when they are parsed, so the chosen wallpaper must already have set it. "disabled" defines NO video element at all
+        (overriding the path/visible of existing elements left the gamelist video playing). -->
+   <subset name="background-video" displayName="${videoLabel}">
+      <include name="enabled" displayName="${enabledLabel}">./_inc/video-enabled.xml</include>
+      <include name="disabled" displayName="${disabledLabel}">./_inc/video-disabled.xml</include>
+   </subset>
+   <!-- Extra icons around the selected system in the system view (sibling console above, players and add-on below). On by default. -->
    <subset name="layout" displayName="${layoutLabel}">
       <include name="horizontal" displayName="${horizontalLabel}" />
       <include name="vertical" displayName="${verticalLabel}" />
@@ -485,6 +660,11 @@
    </subset>
    <!-- The footer is hand-made (the native one does not fit the screen), so the confirm
         button has to be set by hand when A/B is swapped in the system settings. -->
+   <!-- Footer buttons on / off. After aspect-ratio (which defines the elements) so that "disabled" can hide them. -->
+   <subset name="footer-buttons" displayName="${footerButtonsLabel}">
+      <include name="enabled" displayName="${enabledLabel}">./_inc/footer-enabled.xml</include>
+      <include name="disabled" displayName="${disabledLabel}">./_inc/footer-disabled.xml</include>
+   </subset>
    <subset name="confirm-button" displayName="${confirmButtonLabel}">
       <include name="a" displayName="A" />
       <include name="b" displayName="B">./_inc/buttons/confirm-b.xml</include>
@@ -521,6 +701,22 @@
       <menuBackground name="menubg">
          <color>${menuBackgroundColor}</color>
       </menuBackground>
+      <menuIcons name="menuicons">
+         <iconSystem>${iconMenuPath}/System.png</iconSystem>
+         <iconUpdates>${iconMenuPath}/Updates.png</iconUpdates>
+         <iconGames>${iconMenuPath}/Games.png</iconGames>
+         <iconControllers>${iconMenuPath}/Controllers.png</iconControllers>
+         <iconUI>${iconMenuPath}/UI.png</iconUI>
+         <iconSound>${iconMenuPath}/Sound.png</iconSound>
+         <iconNetwork>${iconMenuPath}/Network.png</iconNetwork>
+         <iconScraper>${iconMenuPath}/Scraper.png</iconScraper>
+         <iconAdvanced>${iconMenuPath}/Advanced.png</iconAdvanced>
+         <iconQuit>${iconMenuPath}/Quit.png</iconQuit>
+         <iconRestart>${iconMenuPath}/Restart.png</iconRestart>
+         <iconShutdown>${iconMenuPath}/Shutdown.png</iconShutdown>
+         <iconFastShutdown>${iconMenuPath}/FastShutdown.png</iconFastShutdown>
+         <iconRetroachievements>${iconMenuPath}/Retroachievements.png</iconRetroachievements>
+      </menuIcons>
       <menuTextEdit name="menutextedit">
          <inactive>${menuTextInputImage}</inactive>
          <active>${menuTextInputImageActive}</active>
@@ -534,15 +730,8 @@
          <path>${wallpaperPath}</path>
          <pos>0 0</pos>
          <size>1 1</size>
-         <color>${systemBackgroundTint}</color>
+         <color>${systemTint}</color>
       </image>
-      <video name="staticBackgroundVideo">
-         <path>${wallpaperVideoPath}</path>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <color>${systemBackgroundTint}</color>
-         <delay>0</delay>
-      </video>
    </view>
    <view name="grid">
       <image name="bg_image" extra="true">
@@ -551,22 +740,13 @@
          <size>1 1</size>
          <zIndex>0</zIndex>
       </image>
-      <video name="bg_video" extra="true">
-         <path>${wallpaperVideoPath}</path>
-         <pos>0 0</pos>
-         <size>1 1</size>
-         <zIndex>1</zIndex>
-         <showSnapshotNoVideo>true</showSnapshotNoVideo>
-         <showSnapshotDelay>false</showSnapshotDelay>
-         <delay>0</delay>
-      </video>
    </view>
    <view name="grid">
       <image name="background_overlay" extra="true">
          <path>${spacerImage}</path>
          <pos>-0.5 -0.5</pos>
          <size>2 2</size>
-         <color>${backgroundOverlayColor}</color>
+         <color>${maskColor}</color>
          <zIndex>5</zIndex>
       </image>
    </view>
@@ -588,7 +768,10 @@
       <text name="logoText">
          <fontPath>${fontBold}</fontPath>
          <fontSize>0.035</fontSize>
-         <color>ffffff</color>
+         <color>${textColor}</color>
+         <glowColor>${textGlowColor}</glowColor>
+         <glowSize>${textGlowSize}</glowSize>
+         <glowOffset>${textGlowOffset}</glowOffset>
          <forceUppercase>false</forceUppercase>
       </text>
       <image name="e_system_content" extra="true">
@@ -599,18 +782,24 @@
       <text name="e_system_name" extra="true">
          <text>${system.fullName}</text>
          <fontPath>${fontBold}</fontPath>
-         <color>ffffff</color>
+         <color>${textColor}</color>
+         <glowColor>${textGlowColor}</glowColor>
+         <glowSize>${textGlowSize}</glowSize>
+         <glowOffset>${textGlowOffset}</glowOffset>
          <alignment>left</alignment>
          <zIndex>50</zIndex>
       </text>
       <image name="e_metadata_line" extra="true">
-         <path>${spacerImage}</path>
-         <color>ffffff88</color>
+         <path>${lineImage}</path>
+         <color>${lineColor}</color>
          <zIndex>45</zIndex>
       </image>
       <text name="systemInfo">
          <fontPath>${fontRegular}</fontPath>
-         <color>ffffff</color>
+         <color>${textColor}</color>
+         <glowColor>${textGlowColor}</glowColor>
+         <glowSize>${textGlowSize}</glowSize>
+         <glowOffset>${textGlowOffset}</glowOffset>
          <alignment>left</alignment>
          <zIndex>50</zIndex>
       </text>
@@ -620,7 +809,6 @@
    <include subset="aspect-ratio" name="16-9">./aspect-ratio-16-9.xml</include>
    <include subset="aspect-ratio" name="21-9">./aspect-ratio-21-9.xml</include>
    <include subset="layout" name="vertical">./_inc/layouts/vertical.xml</include>
-   <include subset="background-video" name="disabled">./_inc/video-disabled.xml</include>
    <!-- Game list: PSP XMB style (icon + name on every row; names stay visible while scrolling). -->
    <include>./_inc/gamelist/psp.xml</include>
 </theme>

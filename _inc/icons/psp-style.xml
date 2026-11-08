@@ -1,0 +1,24 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- Icon style "psp": the system icons, the menu icons and the horizontal line and the text colour come from _inc/icons/psp-style/. Paths are complete
+        because FCAMOD does not resolve a variable inside another variable. -->
+   <variables>
+      <systemCarouselImagePath>./_inc/icons/psp-style/controller</systemCarouselImagePath>
+      <systemContentImagePath>./_inc/icons/psp-style/physical-media</systemContentImagePath>
+      <iconMenuPath>./_inc/icons/psp-style/menu</iconMenuPath>
+      <lineImage>./_inc/icons/psp-style/line.png</lineImage>
+      <lineColor>ffffff</lineColor>
+      <iconButtonsPath>./_inc/icons/psp-style/buttons</iconButtonsPath>
+      <iconGamelistPath>./_inc/icons/psp-style/gamelist</iconGamelistPath>
+      <iconPlaceholderPath>./_inc/icons/psp-style/placeholders</iconPlaceholderPath>
+      <maskColor>0000008C</maskColor>
+      <systemTint>CCCCCCFF</systemTint>
+      <textColor>ffffff</textColor>
+      <textColorCC>ffffffcc</textColorCC>
+      <textColor88>ffffff88</textColor88>
+      <textColor77>ffffff77</textColor77>
+      <textGlowColor>0a103010</textGlowColor>
+      <textGlowSize>3</textGlowSize>
+      <textGlowOffset>2 3</textGlowOffset>
+   </variables>
+</theme>

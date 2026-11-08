@@ -1,0 +1,24 @@
+<theme>
+   <formatVersion>7</formatVersion>
+   <!-- Icon style "flat-white": the system icons, the menu icons and the horizontal line and the text colour come from _inc/icons/flat-white/. Paths are complete
+        because FCAMOD does not resolve a variable inside another variable. -->
+   <variables>
+      <systemCarouselImagePath>./_inc/icons/flat-white/controller</systemCarouselImagePath>
+      <systemContentImagePath>./_inc/icons/flat-white/physical-media</systemContentImagePath>
+      <iconMenuPath>./_inc/icons/flat-white/menu</iconMenuPath>
+      <lineImage>./_inc/icons/flat-white/line.png</lineImage>
+      <lineColor>ffffff</lineColor>
+      <iconButtonsPath>./_inc/icons/flat-white/buttons</iconButtonsPath>
+      <iconGamelistPath>./_inc/icons/flat-white/gamelist</iconGamelistPath>
+      <iconPlaceholderPath>./_inc/icons/flat-white/placeholders</iconPlaceholderPath>
+      <maskColor>0000008C</maskColor>
+      <systemTint>CCCCCCFF</systemTint>
+      <textColor>ffffff</textColor>
+      <textColorCC>ffffffcc</textColorCC>
+      <textColor88>ffffff88</textColor88>
+      <textColor77>ffffff77</textColor77>
+      <textGlowColor>00000000</textGlowColor>
+      <textGlowSize>0</textGlowSize>
+      <textGlowOffset>0 0</textGlowOffset>
+   </variables>
+</theme>

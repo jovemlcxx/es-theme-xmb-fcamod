@@ -3,17 +3,17 @@
    <view name="system">
       <carousel name="systemcarousel">
          <type>vertical</type>
-         <pos>0.02 0.07</pos>
+         <pos>0 0.034</pos>
          <size>0.22 0.86</size>
-         <logoSize>0.12 0.12</logoSize>
+         <logoSize>0.168 0.168</logoSize>
          <logoScale>1.3</logoScale>
          <maxLogoCount>5</maxLogoCount>
          <logoAlignment>center</logoAlignment>
          <defaultTransition>instant</defaultTransition>
       </carousel>
       <image name="e_system_content" extra="true">
-         <pos>0.30 0.50</pos>
-         <maxSize>0.12 0.12</maxSize>
+         <pos>0.2045 0.464</pos>
+         <maxSize>0.4896 0.196</maxSize>
          <origin>0.5 0.5</origin>
       </image>
       <text name="e_system_name" extra="true">
@@ -24,7 +24,8 @@
       </text>
       <image name="e_metadata_line" extra="true">
          <pos>0.40 0.51</pos>
-         <size>0.60 0.002</size>
+         <size>0.60 0.1</size>
+         <origin>0 0.5</origin>
       </image>
       <text name="systemInfo">
          <pos>0.40 0.53</pos>
@@ -39,7 +40,8 @@
       </text>
       <image name="md_line" extra="true">
          <pos>0.40 0.51</pos>
-         <size>0.60 0.002</size>
+         <size>0.60 0.1</size>
+         <origin>0 0.5</origin>
       </image>
       <text name="md_description">
          <pos>0.40 0.53</pos>

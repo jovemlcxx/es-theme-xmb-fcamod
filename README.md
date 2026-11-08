@@ -8,15 +8,10 @@
 A theme inspired by the XMB (Cross Media Bar) of the PSP and PS3, made for handhelds running EmulationStation. Optimized for **FCAMOD**, the EmulationStation fork by [christianhaitian](https://github.com/christianhaitian/EmulationStation-fcamod), and validated on other frontends (see [Supported Systems](#-supported-systems)).
 
 <p align="center">
-  <img src="./screenshots/4-3/horizontal.png" width="49%" alt="System screen, horizontal layout">
-  <img src="./screenshots/4-3/vertical.png" width="49%" alt="System screen, vertical layout">
+  <img src="images/carousel-snes.jpg" width="49%"> <img src="images/gamelist-castlevania.jpg" width="49%"><br>
+  <img src="images/gamelist-chrono-trigger.jpg" width="49%"> <img src="images/gamelist-mario-kart.jpg" width="49%">
 </p>
-<p align="center"><i>System screen: Horizontal (XMB Classic) and Vertical (Left Bar) layouts</i></p>
-
-<p align="center">
-  <img src="./screenshots/overview.png" alt="4:3, 1:1, 16:9 and 21:9 screenshots">
-</p>
-<p align="center"><i>System screens and game list on 4:3 · 1:1 · 16:9 · 21:9. Single images are in <a href="./screenshots">screenshots/</a>.</i></p>
+<p align="center"><i>System view and game list on a real R36S (dArkOS4Clone), 640×480, PSP icon style.</i></p>
 
 ## 🌟 Features
 
@@ -76,6 +71,8 @@ Platforms currently using the generic icon:
 | **Background Video** | Enabled / Disabled | Disable it on slow devices (less than 1GB of RAM); the wallpaper image is used instead. |
 | **Wallpaper** | 1 to 20 | Only `1` is included. |
 | **System Layout** | Horizontal (XMB Classic) / Vertical (Left Bar) | The game list follows it. |
+| **Icon Style** | PSP / Flat White / Flat Black | Changes the system icons, the game list icons, the horizontal line, the text colour (PSP adds a soft shadow) and the footer buttons. Flat Black also lightens the backgrounds (white translucent mask in the game list, no dimming in the system view). |
+| **Footer Buttons** | Enabled / Disabled | Shows or hides the button legend at the bottom. |
 | **Color Scheme** | Dark / Light | Settings menu and on-screen keyboard. |
 | **Button Icons** | Nintendo / Xbox, PlayStation | PlayStation follows the button position: A = ○, B = ✕. |
 | **Confirm Button (A/B)** | A / B | Use **B** if you swapped A/B in the system (**dArkOSen** ships swapped). |
